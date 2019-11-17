@@ -25,14 +25,22 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-        child: Tooltip(
-          message: "This is the Tooltip widget showing where I long clicked",
-          child: RaisedButton(
-            onPressed: () {},
-            child: Text("Click"),
-          ),
+          child: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                Colors.red,
+                Colors.orange,
+                Colors.yellow,
+                Colors.green,
+                Colors.blue,
+                Colors.indigo,
+                Colors.purple
+              ]),
         ),
-      ),
+      )),
     );
   }
 }
