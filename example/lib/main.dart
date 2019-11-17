@@ -25,15 +25,14 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-        child: TextField(
-          decoration: InputDecoration(
-            labelText: "TextField Widget",
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.all(
-                Radius.circular(4),
-              ),
-            ),
+        child: RaisedButton(
+          onPressed: () {},
+          color: Colors.blue,
+          textColor: Colors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
           ),
+          child: Text("Raised Button"),
         ),
       ),
     );
