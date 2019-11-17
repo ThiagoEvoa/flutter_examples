@@ -25,9 +25,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-          child: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
+        child: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
               colors: [
@@ -38,9 +38,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 Colors.blue,
                 Colors.indigo,
                 Colors.purple
-              ]),
+              ],
+            ),
+          ),
         ),
-      )),
+      ),
     );
   }
 }
