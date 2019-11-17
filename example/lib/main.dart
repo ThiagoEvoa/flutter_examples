@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() => runApp(MyApp());
 
@@ -25,23 +26,13 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-        child: RichText(
-          text: TextSpan(
-            text: 'Rich ',
-            style: TextStyle(color: Theme.of(context).primaryColor),
-            children: <TextSpan>[
-              TextSpan(
-                text: 'Text',
-                style: TextStyle(
-                    fontStyle: FontStyle.italic, fontWeight: FontWeight.bold),
-              ),
-              TextSpan(
-                text: 'Widget',
-                style: TextStyle(
-                    color: Theme.of(context).primaryColorDark, fontSize: 30),
-              ),
-            ],
-          ),
+        child: SelectableText(
+          'Click to copy the text',
+          onTap: () {
+            Clipboard.setData(
+              ClipboardData(text: 'SelectableText Widget'),
+            );
+          },
         ),
       ),
     );
