@@ -1,3 +1,5 @@
+import 'package:example/page1.dart';
+import 'package:example/page2.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -23,28 +25,31 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Appbar"),
-        centerTitle: true,
-        backgroundColor: Colors.blue,
-        leading: FlutterLogo(),
-        actions: <Widget>[
-          IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.menu),
-          )
-        ],
-      ),
-      body: Container(),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: Colors.blue,
-        child: Icon(Icons.add),
-        mini: false,
-        tooltip: 'This is the FloatingActionButton',
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10),
+    return DefaultTabController(
+      length: 2,
+      initialIndex: 1,
+      child: Scaffold(
+        appBar: AppBar(
+          bottom: TabBar(
+            indicatorColor: Colors.white,
+            tabs: <Widget>[
+              Tab(
+                text: "Tab1",
+              ),
+              Tab(
+                text: "Tab2",
+              ),
+            ],
+          ),
+        ),
+        body: Center(
+          child: TabBarView(
+            // physics: NeverScrollableScrollPhysics(),
+            children: <Widget>[
+              Page1(),
+              Page2(),
+            ],
+          ),
         ),
       ),
     );
