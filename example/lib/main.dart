@@ -25,12 +25,22 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-        child: Text(
-          "Text Widget",
-          style: TextStyle(
-            color: Colors.blue,
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
+        child: RichText(
+          text: TextSpan(
+            text: 'Rich ',
+            style: TextStyle(color: Theme.of(context).primaryColor),
+            children: <TextSpan>[
+              TextSpan(
+                text: 'Text',
+                style: TextStyle(
+                    fontStyle: FontStyle.italic, fontWeight: FontWeight.bold),
+              ),
+              TextSpan(
+                text: 'Widget',
+                style: TextStyle(
+                    color: Theme.of(context).primaryColorDark, fontSize: 30),
+              ),
+            ],
           ),
         ),
       ),
