@@ -14,7 +14,7 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 - [RaiseButton]():
 - [FlatButton]():
 - [Icon]():
-- [IcnoButton]():
+- [IconButton]():
 - [Animated Icon]():
 - [Image Asset]():
 - [Image NetWork]():
