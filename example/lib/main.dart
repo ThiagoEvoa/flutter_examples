@@ -21,37 +21,34 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  double _width = 200;
-  double _height = 200;
+  Future<void> _dialog() async {
+    return showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (context) {
+        return AlertDialog(
+          title: Text('AlertDialog'),
+          content: Text('AlertDialog example'),
+          actions: <Widget>[
+            FlatButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: Text("ok"),
+            )
+          ],
+        );
+      },
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-        child: InkWell(
-          onTap: () {
-            setState(() {
-              _width += 100;
-              _height += 100;
-            });
-          },
-          onDoubleTap: () {
-            setState(() {
-              _width -= 100;
-              _height -= 100;
-            });
-          },
-          child: AnimatedContainer(
-            duration: Duration(seconds: 3),
-            width: _width,
-            height: _height,
-            child: FlutterLogo(),
-            decoration: BoxDecoration(
-              color: Colors.blue[50],
-              shape: BoxShape.circle,
-              border: Border.all(color: Colors.blue),
-            ),
-          ),
+        child: RaisedButton(
+          onPressed: _dialog,
+          child: Text('Show'),
         ),
       ),
     );
