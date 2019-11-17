@@ -18,7 +18,7 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 - [Animated Icon]():
 - [Image Asset]():
 - [Image NetWork]():
-- [Hero]():
+- [InkWell]():
 - [Container]():
 - [Animated Container]():
 - [AlertDialog]():
@@ -52,6 +52,7 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 - [Form]():
 - [Dark Theme]():
 - [Navigation]():
+- [Hero]():
 
 ### Management State
 - [SetState]():
