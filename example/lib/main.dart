@@ -25,11 +25,12 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-        child: Icon(
-          Icons.android,
+        child: IconButton(
+          onPressed: () {},
           color: Colors.blue,
-          size: 100,
-          semanticLabel: 'Android icon',
+          iconSize: 100,
+          tooltip: 'IconButton',
+          icon: Icon(Icons.android),
         ),
       ),
     );
