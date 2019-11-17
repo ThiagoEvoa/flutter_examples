@@ -25,10 +25,15 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-        child: InkWell(
-          onTap: () {},
-          child: Image.network(
-              'https://miro.medium.com/max/1000/1*ilC2Aqp5sZd1wi0CopD1Hw.png'),
+        child: Container(
+          width: 200,
+          height: 200,
+          child: FlutterLogo(),
+          decoration: BoxDecoration(
+            color: Colors.blue[50],
+            shape: BoxShape.circle,
+            border: Border.all(color: Colors.blue),
+          ),
         ),
       ),
     );
