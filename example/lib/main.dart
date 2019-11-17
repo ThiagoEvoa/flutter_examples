@@ -21,21 +21,16 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  bool value = false;
-
   @override
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-        child: Switch(
-          value: value,
-          activeColor: Colors.blue,
-          activeTrackColor: Colors.blue[100],
-          onChanged: (value) {
-            setState(() {
-              this.value = value;
-            });
-          },
+        child: Tooltip(
+          message: "This is the Tooltip widget showing where I long clicked",
+          child: RaisedButton(
+            onPressed: () {},
+            child: Text("Click"),
+          ),
         ),
       ),
     );
