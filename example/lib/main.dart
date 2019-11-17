@@ -25,15 +25,17 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+        child: Wrap(
+          direction: Axis.vertical,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          spacing: 10,
+          runSpacing: 20,
           children: <Widget>[
             Text(
-              'Row example ',
+              'Wrap example',
             ),
             Text(
-              'Aligning widgets beside another',
+              'A alternative between Column and row',
             ),
           ],
         ),
