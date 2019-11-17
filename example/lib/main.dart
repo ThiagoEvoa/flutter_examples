@@ -21,16 +21,16 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  double value = 0;
+  bool value = false;
 
   @override
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-        child: Slider(
+        child: Switch(
           value: value,
           activeColor: Colors.blue,
-          inactiveColor: Colors.blue[100],
+          activeTrackColor: Colors.blue[100],
           onChanged: (value) {
             setState(() {
               this.value = value;
