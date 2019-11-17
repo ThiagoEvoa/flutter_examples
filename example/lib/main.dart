@@ -51,16 +51,7 @@ class _MyHomePageState extends State<MyHomePage>
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-        child: IconButton(
-          onPressed: _handleOnPressed,
-          color: Colors.blue,
-          iconSize: 100,
-          tooltip: 'IconButton',
-          icon: AnimatedIcon(
-            icon: AnimatedIcons.play_pause,
-            progress: _animationController,
-          ),
-        ),
+        child: Image.asset('images/flutter.png'),
       ),
     );
   }
