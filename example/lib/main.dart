@@ -24,27 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: Center(
-        child: Stack(
-          children: <Widget>[
-            Container(
-              height: 200,
-              width: 200,
-              color: Colors.red,
-            ),
-            Container(
-              height: 150,
-              width: 150,
-              color: Colors.green,
-            ),
-            Container(
-              height: 50,
-              width: 50,
-              color: Colors.blue,
-            ),
-          ],
-        ),
-      ),
+      color: Colors.blue,
     );
   }
 }
