@@ -25,14 +25,10 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-        child: RaisedButton(
+        child: FlatButton(
           onPressed: () {},
-          color: Colors.blue,
-          textColor: Colors.white,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(50),
-          ),
-          child: Text("Raised Button"),
+          textColor: Colors.blue,
+          child: Text("Flat Button"),
         ),
       ),
     );
