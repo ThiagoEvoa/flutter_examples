@@ -1,3 +1,4 @@
+import 'package:example/menu_item_enum.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -24,66 +25,27 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: <Widget>[
-            DrawerHeader(
-              decoration: BoxDecoration(
-                color: Theme.of(context).primaryColor,
+      appBar: AppBar(
+        actions: <Widget>[
+          PopupMenuButton(
+            icon: Icon(Icons.menu),
+            onSelected: (result) {},
+            itemBuilder: (context) => <PopupMenuEntry<MenuItens>>[
+              const PopupMenuItem<MenuItens>(
+                value: MenuItens.option1,
+                child: Text("First Option"),
               ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Expanded(
-                    flex: 2,
-                    child: Container(
-                      height: 80,
-                      width: 80,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Colors.white,
-                      ),
-                      child: IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.person,
-                          color: Theme.of(context).primaryColor,
-                          size: 50,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Text(
-                    "Drawer",
-                    style: TextStyle(color: Colors.white, fontSize: 16),
-                  ),
-                  Text(
-                    "Example",
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ],
+              const PopupMenuItem<MenuItens>(
+                value: MenuItens.option2,
+                child: Text("Second Option"),
               ),
-            ),
-            ListTile(
-              selected: false,
-              onTap: () {
-                Scaffold.of(context).openEndDrawer();
-              },
-              leading: Icon(
-                Icons.home,
-                color: Colors.blue,
+              const PopupMenuItem<MenuItens>(
+                value: MenuItens.option3,
+                child: Text("Third Option"),
               ),
-              title: Text(
-                "Option 1",
-                style: TextStyle(
-                  color: Colors.blue,
-                ),
-              ),
-            )
-          ],
-        ),
+            ],
+          ),
+        ],
       ),
     );
   }
