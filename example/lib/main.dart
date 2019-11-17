@@ -25,17 +25,22 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-        child: Wrap(
-          direction: Axis.vertical,
-          crossAxisAlignment: WrapCrossAlignment.center,
-          spacing: 10,
-          runSpacing: 20,
+        child: Stack(
           children: <Widget>[
-            Text(
-              'Wrap example',
+            Container(
+              height: 200,
+              width: 200,
+              color: Colors.red,
             ),
-            Text(
-              'A alternative between Column and row',
+            Container(
+              height: 150,
+              width: 150,
+              color: Colors.green,
+            ),
+            Container(
+              height: 50,
+              width: 50,
+              color: Colors.blue,
             ),
           ],
         ),
