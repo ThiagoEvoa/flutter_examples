@@ -21,21 +21,30 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  Future<void> _dialog() async {
-    return showDialog(
+  Future<void> _generalDialog() async {
+    return showGeneralDialog(
       context: context,
       barrierDismissible: false,
-      builder: (context) {
+      transitionDuration: Duration(seconds: 3),
+      transitionBuilder: (context, animation, secondaryAnimation, child) {
+        var fadeTween = CurveTween(curve: Curves.fastOutSlowIn);
+        var fadeAnimation = fadeTween.animate(animation);
+        return FadeTransition(
+          opacity: fadeAnimation,
+          child: child,
+        );
+      },
+      pageBuilder: (context, animation, secondaryAnimation) {
         return AlertDialog(
-          title: Text('AlertDialog'),
-          content: Text('AlertDialog example'),
+          title: Text("GeneralDialog"),
+          content: Text("GeneralDialog example"),
           actions: <Widget>[
             FlatButton(
               onPressed: () {
                 Navigator.of(context).pop();
               },
               child: Text("ok"),
-            )
+            ),
           ],
         );
       },
@@ -47,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Material(
       child: Center(
         child: RaisedButton(
-          onPressed: _dialog,
+          onPressed: _generalDialog,
           child: Text('Show'),
         ),
       ),
