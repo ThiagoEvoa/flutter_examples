@@ -23,33 +23,30 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   final items =
       List<String>.generate(20, (items) => "Reorderable Listview $items");
+  final _scrollController = ScrollController();
 
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: ReorderableListView(
-        onReorder: (int oldIndex, int newIndex) {
-          setState(
-            () {
-              if (newIndex > oldIndex) {
-                newIndex -= 1;
-              }
-              var item = items.removeAt(oldIndex);
-              items.insert(newIndex, item);
-            },
+      child: GridView.builder(
+        controller: _scrollController,
+        itemCount: items.length,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount:
+              MediaQuery.of(context).size.width < 600 ? 2 : 3,
+        ),
+        itemBuilder: (context, index) {
+          return Card(
+            color: Colors.blue,
+            child: Container(
+              alignment: Alignment.center,
+              child: Text(
+                items[index],
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
           );
         },
-        header: Text(
-          'Header',
-          style: TextStyle(color: Colors.blue, fontSize: 30),
-        ),
-        children: <Widget>[
-          for (final item in items)
-            ListTile(
-              key: ValueKey(item),
-              title: Text(item),
-            ),
-        ],
       ),
     );
   }
