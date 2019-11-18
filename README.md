@@ -47,7 +47,6 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 - [ListView]():
 - [ListView Builder]():
 - [Reorderable ListView]():
-- [GridView]():
 - [GridView Builder]():
 - [Form]():
 - [Dark Theme]():
