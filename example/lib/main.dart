@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:date_format/date_format.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,45 +22,35 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final _timeOfDayController = TextEditingController();
-
-  Future _selectTime() async {
-    TimeOfDay timeOfDay = await showTimePicker(
-      context: context,
-      initialTime:
-          TimeOfDay(hour: DateTime.now().hour, minute: DateTime.now().minute),
-      builder: (context, child) {
-        return Theme(
-          data: ThemeData.light(),
-          child: child,
-        );
-      },
-    );
-
-    if (timeOfDay != null) {
-      setState(
-        () {
-          _timeOfDayController.text = timeOfDay.format(context);
-        },
-      );
-    }
-  }
+  WebViewController _controller;
+  final String _flutter = 'https://flutter.dev/';
+  final String _dart = 'https://dart.dev/';
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Center(
-        child: TextField(
-          controller: _timeOfDayController,
-          onTap: () {
-            _selectTime();
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
+        child: WebView(
+          initialUrl: _flutter,
+          javascriptMode: JavascriptMode.unrestricted,
+          onWebViewCreated: (webViewController) {
+            _controller = webViewController;
           },
-          decoration: InputDecoration(
-            labelText: "TimePicker",
-            suffixIcon: Icon(Icons.timer),
-            border: OutlineInputBorder(),
-          ),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () async {
+          String currentUrl = await _controller.currentUrl();
+
+          print(currentUrl.compareTo(_flutter));
+          if (currentUrl.compareTo(_flutter) == 0) {
+            _controller.loadUrl(_dart);
+          } else {
+            _controller.loadUrl(_flutter);
+          }
+        },
+        child: Icon(Icons.web_asset),
       ),
     );
   }
