@@ -58,19 +58,19 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 - [Bloc](https://github.com/ThiagoEvoa/flutter_examples/tree/bloc):
 - [Bloc + rxDart](https://github.com/ThiagoEvoa/flutter_examples/tree/bloc_rxdart):
 
-### Firebase
-<!-- [Auth]():
+<!--### Firebase
+- [Auth]():
 - [Store]():
 - [Storage]():
 
 ### Database
-<!-- [SqfLite]():
+- [SqfLite]():
 
 ### API
-<!-- [HTTP]():
+- [HTTP]():
 
 ### Diversos
-<!-- [ImagePicker]():
+- [ImagePicker]():
 - [Internationalization]():
 - [SharedPreferences]():
 - [BarCode e QRCode]():
