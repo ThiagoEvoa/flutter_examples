@@ -21,32 +21,36 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final items =
-      List<String>.generate(20, (items) => "Reorderable Listview $items");
-  final _scrollController = ScrollController();
+  final _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: GridView.builder(
-        controller: _scrollController,
-        itemCount: items.length,
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount:
-              MediaQuery.of(context).size.width < 600 ? 2 : 3,
-        ),
-        itemBuilder: (context, index) {
-          return Card(
-            color: Colors.blue,
-            child: Container(
-              alignment: Alignment.center,
-              child: Text(
-                items[index],
-                style: TextStyle(color: Colors.white),
+      child: Center(
+        child: Form(
+          key: _formKey,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              TextFormField(
+                validator: (value) {
+                  if (value.isEmpty) return 'Required Field';
+                  return null;
+                },
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'TextFormField',
+                ),
               ),
-            ),
-          );
-        },
+              RaisedButton(
+                onPressed: () {
+                  if (_formKey.currentState.validate()) return null;
+                },
+                child: Text('Validate'),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
