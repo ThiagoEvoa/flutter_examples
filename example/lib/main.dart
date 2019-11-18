@@ -1,7 +1,4 @@
-import 'package:bloc/bloc.dart';
-import 'package:example/bloc_delegate.dart';
 import 'package:example/counter_bloc.dart';
-import 'package:example/counter_event_enum.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -14,7 +11,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: HomeController(child: MyHomePage(title: 'Flutter Demo Home Page')),
     );
   }
 }
@@ -28,48 +25,50 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final counterBloc = CounterBloc();
+  int _counter = 0;
 
   @override
   void dispose() {
-    counterBloc.close();
+    HomeController.of(context).dispose();
     super.dispose();
+  }
+
+  void _incrementCounter(BuildContext context) {
+    HomeController.of(context).input.add(++_counter);
   }
 
   @override
   Widget build(BuildContext context) {
-    BlocSupervisor.delegate = SimpleBlocDelegate();
-
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            StreamBuilder(
-              stream: counterBloc,
-              builder: (context, snapshot) {
-                return Text(
+    return StreamBuilder(
+      stream: HomeController.of(context).output,
+      builder: (context, snapshot) {
+        return Scaffold(
+          appBar: AppBar(
+            title: Text(widget.title),
+          ),
+          body: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  'You have pushed the button this many times:',
+                ),
+                Text(
                   '${snapshot.data}',
                   style: Theme.of(context).textTheme.display1,
-                );
-              },
+                ),
+              ],
             ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          counterBloc.add(CounterEvent.INCREMENT);
-        },
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ),
+          ),
+          floatingActionButton: FloatingActionButton(
+            onPressed: () {
+              _incrementCounter(context);
+            },
+            tooltip: 'Increment',
+            child: Icon(Icons.add),
+          ),
+        );
+      },
     );
   }
 }

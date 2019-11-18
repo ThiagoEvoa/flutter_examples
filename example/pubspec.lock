@@ -8,13 +8,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.3.0"
-  bloc:
-    dependency: "direct main"
-    description:
-      name: bloc
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.0.0"
   boolean_selector:
     dependency: transitive
     description:
@@ -89,7 +82,7 @@ packages:
     source: hosted
     version: "2.0.5"
   rxdart:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: rxdart
       url: "https://pub.dartlang.org"
