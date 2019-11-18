@@ -6,7 +6,7 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 
 ### Widgets
 
-- [Text]():
+- [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text):
 - [RichText]():
 - [SelectableText]():
 - [TextField]():
