@@ -22,14 +22,13 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final _dateTimeController = TextEditingController();
+  final _timeOfDayController = TextEditingController();
 
-  Future _selectDate() async {
-    DateTime dateTime = await showDatePicker(
+  Future _selectTime() async {
+    TimeOfDay timeOfDay = await showTimePicker(
       context: context,
-      initialDate: DateTime.now(),
-      firstDate: DateTime(DateTime.now().year),
-      lastDate: DateTime(DateTime.now().year + 100),
+      initialTime:
+          TimeOfDay(hour: DateTime.now().hour, minute: DateTime.now().minute),
       builder: (context, child) {
         return Theme(
           data: ThemeData.light(),
@@ -38,11 +37,10 @@ class _MyHomePageState extends State<MyHomePage> {
       },
     );
 
-    if (dateTime != null) {
+    if (timeOfDay != null) {
       setState(
         () {
-          _dateTimeController.text =
-              formatDate(dateTime, [dd, "/", mm, "/", yyyy]);
+          _timeOfDayController.text = timeOfDay.format(context);
         },
       );
     }
@@ -53,13 +51,13 @@ class _MyHomePageState extends State<MyHomePage> {
     return Material(
       child: Center(
         child: TextField(
-          controller: _dateTimeController,
+          controller: _timeOfDayController,
           onTap: () {
-            _selectDate();
+            _selectTime();
           },
           decoration: InputDecoration(
-            labelText: "DatePicker",
-            suffixIcon: Icon(Icons.calendar_today),
+            labelText: "TimePicker",
+            suffixIcon: Icon(Icons.timer),
             border: OutlineInputBorder(),
           ),
         ),
