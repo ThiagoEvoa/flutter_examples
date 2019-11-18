@@ -1,25 +1,20 @@
-import 'package:example/counter_provider.dart';
+import 'package:bloc/bloc.dart';
+import 'package:example/bloc_delegate.dart';
+import 'package:example/counter_bloc.dart';
+import 'package:example/counter_event_enum.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider<CounterProvider>.value(
-          value: CounterProvider(0),
-        ),
-      ],
-      child: MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: MyHomePage(title: 'Flutter Demo Home Page'),
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
       ),
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
@@ -33,37 +28,48 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  final counterBloc = CounterBloc();
+
+  @override
+  void dispose() {
+    counterBloc.close();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Consumer<CounterProvider>(
-      builder: (context, snapshot, widget) {
-        return Scaffold(
-          appBar: AppBar(
-            title: Text(this.widget.title),
-          ),
-          body: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text(
-                  'You have pushed the button this many times:',
-                ),
-                Text(
-                  '${snapshot.getCounter}',
-                  style: Theme.of(context).textTheme.display1,
-                ),
-              ],
+    BlocSupervisor.delegate = SimpleBlocDelegate();
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'You have pushed the button this many times:',
             ),
-          ),
-          floatingActionButton: FloatingActionButton(
-            onPressed: () {
-              snapshot.incrementCounter();
-            },
-            tooltip: 'Increment',
-            child: Icon(Icons.add),
-          ),
-        );
-      },
+            StreamBuilder(
+              stream: counterBloc,
+              builder: (context, snapshot) {
+                return Text(
+                  '${snapshot.data}',
+                  style: Theme.of(context).textTheme.display1,
+                );
+              },
+            ),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          counterBloc.add(CounterEvent.INCREMENT);
+        },
+        tooltip: 'Increment',
+        child: Icon(Icons.add),
+      ),
     );
   }
 }
