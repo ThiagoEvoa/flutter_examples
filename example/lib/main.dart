@@ -21,53 +21,76 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final _globalKey = GlobalKey<ScaffoldState>();
+  int _currentStep = 0;
+  StepState _stepState = StepState.editing;
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      key: _globalKey,
-      appBar: AppBar(),
-      body: Center(
-        child: Builder(
-          builder: (context) => RaisedButton(
-            onPressed: () {
-              Scaffold.of(context).showSnackBar(
-                SnackBar(
-                  action: SnackBarAction(
-                    onPressed: () {},
-                    label: 'ok',
-                    textColor: Colors.white,
-                  ),
-                  content: Text("Snackbar"),
-                  backgroundColor: Colors.blue,
-                  duration: Duration(seconds: 3),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(50),
-                  ),
-                ),
-              );
-            },
-            child: Text("Button"),
-          ),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          _globalKey.currentState.showSnackBar(
-            SnackBar(
-              action: SnackBarAction(
-                onPressed: () {},
-                label: 'ok',
-                textColor: Colors.white,
+    return Material(
+      child: Stepper(
+        currentStep: _currentStep,
+        controlsBuilder: (BuildContext context,
+            {VoidCallback onStepContinue, VoidCallback onStepCancel}) {
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.only(bottom: 20),
+                child: Text("Content"),
               ),
-              content: Text("Snackbar with global key"),
-              backgroundColor: Colors.blue,
-              duration: Duration(seconds: 3),
-            ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.only(right: 5),
+                    child: RaisedButton(
+                      color: Theme.of(context).primaryColor,
+                      textColor: Colors.white,
+                      onPressed: onStepContinue,
+                      child: Text("Continue"),
+                    ),
+                  ),
+                  RaisedButton(
+                    onPressed: onStepCancel,
+                    child: Text("Cancel"),
+                  ),
+                ],
+              ),
+            ],
           );
         },
-        child: Icon(Icons.add),
+        onStepContinue: () {
+          setState(() {
+            _currentStep++;
+          });
+        },
+        onStepCancel: () {
+          setState(() {
+            _currentStep--;
+          });
+        },
+        onStepTapped: (position) {
+          setState(() {
+            _currentStep = position;
+          });
+        },
+        steps: <Step>[
+          Step(
+            state: _currentStep == 0 ? _stepState : StepState.indexed,
+            content: Text("Title Step 1"),
+            title: Text("Step 1"),
+          ),
+          Step(
+            state: _currentStep == 1 ? _stepState : StepState.indexed,
+            content: Text("Title Step 2"),
+            title: Text("Step 2"),
+          ),
+          Step(
+            state: _currentStep == 2 ? _stepState : StepState.indexed,
+            content: Text("Title Step 3"),
+            title: Text("Step 3"),
+          ),
+        ],
       ),
     );
   }
