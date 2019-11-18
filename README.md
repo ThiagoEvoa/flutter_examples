@@ -7,57 +7,56 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 ### Widgets
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text):
-- [RichText]():
-- [SelectableText]():
-- [TextField]():
-- [RaiseButton]():
-- [RaiseButton]():
-- [FlatButton]():
-- [Icon]():
-- [IconButton]():
-- [Animated Icon]():
-- [Image Asset]():
-- [Image NetWork]():
-- [InkWell]():
-- [Container]():
-- [Animated Container]():
-- [AlertDialog]():
-- [GeneralDialog]():
-- [Slider]():
-- [Switch]():
-- [Tooltip]():
-- [Gradient]():
-- [Column]():
-- [Row]():
-- [Wrap]():
-- [Stack]():
-- [Material]():
-- [Scaffold]():
-- [Tabbar]():
-- [Bottom Navigation]():
-- [Drawer]():
-- [Popup Menu Button]():
-- [SnackBar]():
-- [Stepper]():
-- [Draggable]():
-- [Flare]():
-- [DataPicker]():
-- [TimePicker]():
-- [WebView]():
-- [ListView]():
-- [ListView Builder]():
-- [Reorderable ListView]():
-- [GridView Builder]():
-- [Form]():
-- [Dark Theme]():
-- [Navigation]():
-- [Hero]():
+- [RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text):
+- [SelectableText](https://github.com/ThiagoEvoa/flutter_examples/tree/selectable_text):
+- [TextField](https://github.com/ThiagoEvoa/flutter_examples/tree/textfield):
+- [RaiseButton](https://github.com/ThiagoEvoa/flutter_examples/tree/raisedbutton):
+- [FlatButton](https://github.com/ThiagoEvoa/flutter_examples/tree/flatbutton):
+- [Icon](https://github.com/ThiagoEvoa/flutter_examples/tree/icon):
+- [IconButton](https://github.com/ThiagoEvoa/flutter_examples/tree/iconbutton):
+- [Animated Icon](https://github.com/ThiagoEvoa/flutter_examples/tree/animatedicon):
+- [Image NetWork](https://github.com/ThiagoEvoa/flutter_examples/tree/image_network):
+- [Image Asset](https://github.com/ThiagoEvoa/flutter_examples/tree/image_asset):
+- [InkWell](https://github.com/ThiagoEvoa/flutter_examples/tree/inkwell):
+- [Container](https://github.com/ThiagoEvoa/flutter_examples/tree/container):
+- [Animated Container](https://github.com/ThiagoEvoa/flutter_examples/tree/animatedcontainer):
+- [AlertDialog](https://github.com/ThiagoEvoa/flutter_examples/tree/alertdialog):
+- [GeneralDialog](https://github.com/ThiagoEvoa/flutter_examples/tree/generaldialog):
+- [Slider](https://github.com/ThiagoEvoa/flutter_examples/tree/slider):
+- [Switch](https://github.com/ThiagoEvoa/flutter_examples/tree/switch):
+- [Tooltip](https://github.com/ThiagoEvoa/flutter_examples/tree/tooltip):
+- [Gradient](https://github.com/ThiagoEvoa/flutter_examples/tree/gradient):
+- [Column](https://github.com/ThiagoEvoa/flutter_examples/tree/column):
+- [Row](https://github.com/ThiagoEvoa/flutter_examples/tree/row):
+- [Wrap](https://github.com/ThiagoEvoa/flutter_examples/tree/wrap):
+- [Stack](https://github.com/ThiagoEvoa/flutter_examples/tree/stack):
+- [Material](https://github.com/ThiagoEvoa/flutter_examples/tree/material):
+- [Scaffold](https://github.com/ThiagoEvoa/flutter_examples/tree/scaffold):
+- [Tabbar](https://github.com/ThiagoEvoa/flutter_examples/tree/tabbar):
+- [Bottom Navigation](https://github.com/ThiagoEvoa/flutter_examples/tree/bottomnavigationbar):
+- [Drawer](https://github.com/ThiagoEvoa/flutter_examples/tree/drawer):
+- [Popup Menu Button](https://github.com/ThiagoEvoa/flutter_examples/tree/popupmenubutton):
+- [SnackBar](https://github.com/ThiagoEvoa/flutter_examples/tree/snackbar):
+- [Stepper](https://github.com/ThiagoEvoa/flutter_examples/tree/stepper):
+- [Draggable](https://github.com/ThiagoEvoa/flutter_examples/tree/draggable):
+- [Flare](https://github.com/ThiagoEvoa/flutter_examples/tree/flare):
+- [DataPicker](https://github.com/ThiagoEvoa/flutter_examples/tree/datepicker):
+- [TimePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/timepicker):
+- [WebView](https://github.com/ThiagoEvoa/flutter_examples/tree/webview):
+- [ListView](https://github.com/ThiagoEvoa/flutter_examples/tree/listview):
+- [ListView Builder](https://github.com/ThiagoEvoa/flutter_examples/tree/listview_builder):
+- [Reorderable ListView](https://github.com/ThiagoEvoa/flutter_examples/tree/reorderablelistview):
+- [GridView Builder](https://github.com/ThiagoEvoa/flutter_examples/tree/gridview_builder):
+- [Form](https://github.com/ThiagoEvoa/flutter_examples/tree/form):
+- [Dark Theme](https://github.com/ThiagoEvoa/flutter_examples/tree/darktheme):
+- [Navigation](https://github.com/ThiagoEvoa/flutter_examples/tree/navigation):
+- [Hero](https://github.com/ThiagoEvoa/flutter_examples/tree/hero):
 
 ### Management State
-- [SetState]():
-- [Provider]():
-- [Bloc]():
-- [Bloc + rxDart]():
+- [SetState](https://github.com/ThiagoEvoa/flutter_examples/tree/setstate):
+- [Provider](https://github.com/ThiagoEvoa/flutter_examples/tree/provider):
+- [Bloc](https://github.com/ThiagoEvoa/flutter_examples/tree/bloc):
+- [Bloc + rxDart](https://github.com/ThiagoEvoa/flutter_examples/tree/bloc_rxdart):
 
 ### Firebase
 - [Auth]():
