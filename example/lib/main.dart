@@ -21,76 +21,71 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _currentStep = 0;
-  StepState _stepState = StepState.editing;
+  bool accept = false;
 
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: Stepper(
-        currentStep: _currentStep,
-        controlsBuilder: (BuildContext context,
-            {VoidCallback onStepContinue, VoidCallback onStepCancel}) {
-          return Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.only(bottom: 20),
-                child: Text("Content"),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.only(bottom: 100),
+              child: Row(
                 children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.only(right: 5),
-                    child: RaisedButton(
-                      color: Theme.of(context).primaryColor,
-                      textColor: Colors.white,
-                      onPressed: onStepContinue,
-                      child: Text("Continue"),
+                  Expanded(
+                    flex: 1,
+                    child: Draggable(
+                      feedback: FlutterLogo(
+                        size: 80,
+                      ),
+                      childWhenDragging: Container(),
+                      child: FlutterLogo(
+                        size: 80,
+                      ),
+                      data: "flutter",
                     ),
                   ),
-                  RaisedButton(
-                    onPressed: onStepCancel,
-                    child: Text("Cancel"),
+                  Expanded(
+                    flex: 1,
+                    child: Draggable(
+                      feedback: Icon(
+                        Icons.android,
+                        size: 80,
+                      ),
+                      childWhenDragging: Container(),
+                      child: Icon(
+                        Icons.android,
+                        size: 80,
+                      ),
+                      data: "android",
+                    ),
                   ),
                 ],
               ),
-            ],
-          );
-        },
-        onStepContinue: () {
-          setState(() {
-            _currentStep++;
-          });
-        },
-        onStepCancel: () {
-          setState(() {
-            _currentStep--;
-          });
-        },
-        onStepTapped: (position) {
-          setState(() {
-            _currentStep = position;
-          });
-        },
-        steps: <Step>[
-          Step(
-            state: _currentStep == 0 ? _stepState : StepState.indexed,
-            content: Text("Title Step 1"),
-            title: Text("Step 1"),
-          ),
-          Step(
-            state: _currentStep == 1 ? _stepState : StepState.indexed,
-            content: Text("Title Step 2"),
-            title: Text("Step 2"),
-          ),
-          Step(
-            state: _currentStep == 2 ? _stepState : StepState.indexed,
-            content: Text("Title Step 3"),
-            title: Text("Step 3"),
-          ),
-        ],
+            ),
+            Container(
+              height: 100,
+              width: 100,
+              decoration: BoxDecoration(
+                border: Border.all(color: Theme.of(context).primaryColor),
+              ),
+              child: DragTarget(
+                builder: (context, List<String> candidateData, rejectedData) {
+                  return accept ? FlutterLogo(size: 80) : Container();
+                },
+                onWillAccept: (data) {
+                  if (data == "flutter") return true;
+                  return false;
+                },
+                onAccept: (data) {
+                  accept = true;
+                },
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
