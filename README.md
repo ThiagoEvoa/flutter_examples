@@ -59,7 +59,7 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 - [Bloc + rxDart](https://github.com/ThiagoEvoa/flutter_examples/tree/bloc_rxdart):
 
 ### Firebase
--- [Auth]():
+<!-- [Auth]():->>
 - [Store]():
 - [Storage]():
 
