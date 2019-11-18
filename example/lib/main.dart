@@ -10,6 +10,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
       home: MyHomePage(),
     );
   }
@@ -21,37 +24,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Center(
-        child: Form(
-          key: _formKey,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              TextFormField(
-                validator: (value) {
-                  if (value.isEmpty) return 'Required Field';
-                  return null;
-                },
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'TextFormField',
-                ),
-              ),
-              RaisedButton(
-                onPressed: () {
-                  if (_formKey.currentState.validate()) return null;
-                },
-                child: Text('Validate'),
-              ),
-            ],
-          ),
-        ),
-      ),
+    return Scaffold(
+      appBar: AppBar(),
     );
   }
 }
