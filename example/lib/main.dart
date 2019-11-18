@@ -21,18 +21,35 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final items = List<String>.generate(20, (items) => "ListView Builder $items");
+  final items =
+      List<String>.generate(20, (items) => "Reorderable Listview $items");
 
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: ListView.builder(
-        itemCount: items.length,
-        itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(items[index]),
+      child: ReorderableListView(
+        onReorder: (int oldIndex, int newIndex) {
+          setState(
+            () {
+              if (newIndex > oldIndex) {
+                newIndex -= 1;
+              }
+              var item = items.removeAt(oldIndex);
+              items.insert(newIndex, item);
+            },
           );
         },
+        header: Text(
+          'Header',
+          style: TextStyle(color: Colors.blue, fontSize: 30),
+        ),
+        children: <Widget>[
+          for (final item in items)
+            ListTile(
+              key: ValueKey(item),
+              title: Text(item),
+            ),
+        ],
       ),
     );
   }
