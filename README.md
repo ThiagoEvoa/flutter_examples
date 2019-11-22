@@ -61,13 +61,13 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 ### Database
 - [SqfLite](https://github.com/ThiagoEvoa/flutter_examples/tree/sqflite):
 
+### API
+- [HTTP]():
+
 <!--### Firebase
 - [Auth]():
 - [Store]():
 - [Storage]():
-
-### API
-- [HTTP]():
 
 ### Diversos
 - [ImagePicker]():
