@@ -39,7 +39,6 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 - [SnackBar](https://github.com/ThiagoEvoa/flutter_examples/tree/snackbar):
 - [Stepper](https://github.com/ThiagoEvoa/flutter_examples/tree/stepper):
 - [Draggable](https://github.com/ThiagoEvoa/flutter_examples/tree/draggable):
-- [Flare](https://github.com/ThiagoEvoa/flutter_examples/tree/flare):
 - [DataPicker](https://github.com/ThiagoEvoa/flutter_examples/tree/datepicker):
 - [TimePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/timepicker):
 - [WebView](https://github.com/ThiagoEvoa/flutter_examples/tree/webview):
@@ -78,3 +77,4 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 - [Google Maps]():
 - [Biometric]():
 - [PackageInfo]():
+- [Flare](https://github.com/ThiagoEvoa/flutter_examples/tree/flare):
