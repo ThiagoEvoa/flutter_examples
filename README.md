@@ -75,6 +75,6 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 - [BarCode e QRCode](https://github.com/ThiagoEvoa/flutter_examples/tree/barcode_qrcode):
 - [Geolocator](https://github.com/ThiagoEvoa/flutter_examples/tree/geolocator):
 - [Google Maps](https://github.com/ThiagoEvoa/flutter_examples/tree/googlemaps):
-- [Biometric]():
+- [Biometric](https://github.com/ThiagoEvoa/flutter_examples/tree/biometric):
 - [PackageInfo]():
 - [Flare](https://github.com/ThiagoEvoa/flutter_examples/tree/flare):
