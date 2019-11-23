@@ -63,7 +63,7 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 ### API
 - [HTTP](https://github.com/ThiagoEvoa/flutter_examples/tree/http):
 
-<!--### Firebase
+### Firebase
 - [Auth]():
 - [Store]():
 - [Storage]():
