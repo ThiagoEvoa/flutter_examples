@@ -1,4 +1,6 @@
+import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,38 +26,47 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
+  String _barCode = "";
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
+    Future _scan() async {
+      try {
+        String barCode = await BarcodeScanner.scan();
+        setState(() {
+          this._barCode = barCode;
+        });
+      } on PlatformException catch (e) {
+        if (e.code == BarcodeScanner.CameraAccessDenied) {
+          setState(() {
+            this._barCode = 'The user did not grant the camera permission!';
+          });
+        } else {
+          setState(() => this._barCode = 'Unknown error: $e');
+        }
+      } on FormatException {
+        setState(() => this._barCode =
+            'null (User returned using the "back"-button before scanning anything. Result)');
+      } catch (e) {
+        setState(() => this._barCode = 'Unknown error: $e');
+      }
+    }
+
+    return Material(
+      child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+            IconButton(
+              onPressed: _scan,
+              icon: Icon(Icons.camera),
             ),
             Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
+              this._barCode,
+              textAlign: TextAlign.center,
             ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
       ),
     );
   }
