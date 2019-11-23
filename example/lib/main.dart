@@ -1,4 +1,10 @@
+import 'dart:io';
+
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:example/firebase_storage_service.dart';
+import 'package:example/firebase_store_service.dart';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,38 +30,89 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  final _key = GlobalKey<ScaffoldState>();
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
+  Future _getImageFromCamera() async {
+    var image = await ImagePicker.pickImage(source: ImageSource.camera);
+    _save(image);
+  }
+
+  Future _getImageFromGallery() async {
+    var image = await ImagePicker.pickImage(source: ImageSource.gallery);
+    _save(image);
+  }
+
+  _save(File image) {
+    if (image != null) {
+      FirebaseStorageService().upload(image: image).then((result) {
+        _showSnackBar('Yeah! We made it!');
+      }).catchError((error) {
+        _showSnackBar('Ops! something went wron!');
+      });
+    }
+  }
+
+  _delete(String name, String id) {
+    FirebaseStorageService().delete(name: name, id: id).then((result) {
+      _showSnackBar('Yeah! We made it!');
+    }).catchError((error) {
+      _showSnackBar('Ops! something went wron!');
     });
+  }
+
+  _showSnackBar(String message) {
+    _key.currentState.showSnackBar(SnackBar(
+      content: Text(message),
+    ));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _key,
       appBar: AppBar(
-        title: Text(widget.title),
+        actions: <Widget>[
+          IconButton(
+            onPressed: _getImageFromCamera,
+            icon: Icon(Icons.camera),
+          )
+        ],
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ],
-        ),
+      body: StreamBuilder<QuerySnapshot>(
+        stream: FirebaseStoreService().retrieve(),
+        builder: (context, snapshot) {
+          if (snapshot.hasError) {
+            return Center(child: Text(snapshot.error));
+          } else {
+            switch (snapshot.connectionState) {
+              case ConnectionState.waiting:
+                {
+                  return Center(
+                    child: CircularProgressIndicator(),
+                  );
+                }
+              default:
+                {
+                  return ListView(
+                    children: snapshot.data.documents.map((document) {
+                      return ListTile(
+                        onLongPress: () {
+                          _delete(document.data['name'], document.documentID);
+                        },
+                        title: Card(
+                          child: Image.network(document.data['url']),
+                        ),
+                      );
+                    }).toList(),
+                  );
+                }
+            }
+          }
+        },
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
+        onPressed: _getImageFromGallery,
+        child: Icon(Icons.image),
       ),
     );
   }
