@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:local_auth/local_auth.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,38 +26,73 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  final auth = LocalAuthentication();
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
+  Future<bool> _canCheckBiometric() async {
+    return await auth.canCheckBiometrics;
+  }
+
+  Future<List<BiometricType>> _getAvailableBiometrics() async {
+    final list = await auth.getAvailableBiometrics();
+    return list;
+  }
+
+  _authenticate() async {
+    try {
+      return await auth.authenticateWithBiometrics(
+        localizedReason: 'authenticate to access',
+        useErrorDialogs: true,
+        stickyAuth: true,
+      );
+    } on PlatformException catch (e) {
+      print(e);
+    }
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
+    return Material(
+      child: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+            Expanded(
+              flex: 1,
+              child: FutureBuilder(
+                future: _canCheckBiometric(),
+                builder: (context, snapshot) {
+                  return Text(
+                      'Can check Biometric: ${snapshot.data.toString()}');
+                },
+              ),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
+            Expanded(
+              flex: 2,
+              child: Padding(
+                padding: const EdgeInsets.all(8),
+                child: FutureBuilder(
+                  future: _getAvailableBiometrics(),
+                  builder: (context, snapshot) {
+                    if (snapshot.hasData) {
+                      return ListView.builder(
+                        itemCount: snapshot.data.length,
+                        itemBuilder: (context, index) {
+                          return Text(snapshot.data[index].toString());
+                        },
+                      );
+                    } else {
+                      return Text('Nothing here');
+                    }
+                  },
+                ),
+              ),
+            ),
+            RaisedButton(
+              onPressed: _authenticate,
+              child: Text('Authenticate'),
             ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
       ),
     );
   }
