@@ -1,3 +1,6 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:example/firebase_store_service.dart';
+import 'package:example/second_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -24,37 +27,65 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
+  _openSecondPage({DocumentSnapshot document}) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => SecondPage(document: document),
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ],
-        ),
+      appBar: AppBar(),
+      body: StreamBuilder<QuerySnapshot>(
+        stream: FirebaseStoreService().retrieve(),
+        builder: (context, snapshot) {
+          if (snapshot.hasError) {
+            return Center(
+              child: Text(snapshot.error),
+            );
+          } else {
+            switch (snapshot.connectionState) {
+              case ConnectionState.waiting:
+                {
+                  return Center(
+                    child: CircularProgressIndicator(),
+                  );
+                }
+              default:
+                {
+                  return ListView(
+                    children: snapshot.data.documents.map(
+                      (document) {
+                        return ListTile(
+                          onTap: () {
+                            _openSecondPage(document: document);
+                          },
+                          title: Text(
+                            document['email'],
+                          ),
+                          trailing: IconButton(
+                            onPressed: () {
+                              FirebaseStoreService()
+                                  .delete(document.documentID);
+                            },
+                            icon: Icon(Icons.delete),
+                          ),
+                        );
+                      },
+                    ).toList(),
+                  );
+                }
+            }
+          }
+        },
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
+        onPressed: () {
+          _openSecondPage();
+        },
         child: Icon(Icons.add),
       ),
     );
