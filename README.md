@@ -72,7 +72,7 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 - [ImagePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/imagepicker):
 - [Internationalization](https://github.com/ThiagoEvoa/flutter_examples/tree/internationalization):
 - [SharedPreferences](https://github.com/ThiagoEvoa/flutter_examples/tree/sharedpreferences):
-- [BarCode e QRCode]():
+- [BarCode e QRCode](https://github.com/ThiagoEvoa/flutter_examples/tree/barcode_qrcode):
 - [Geolocator]():
 - [Google Maps]():
 - [Biometric]():
