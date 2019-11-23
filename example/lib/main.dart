@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,38 +25,62 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  SharedPreferences prefs;
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
+  @override
+  void initState() {
+    _getSharedPreferences();
+    super.initState();
+  }
+
+  _getSharedPreferences() async {
+    prefs = await SharedPreferences.getInstance();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
+    final textFieldController = TextEditingController(
+        text: prefs.getString("text") == null ? '' : prefs.getString("text"));
+
+    return Material(
+      child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextField(
+                controller: textFieldController,
+                decoration: InputDecoration(
+                  labelText: 'Type something',
+                  border: OutlineInputBorder(),
+                ),
+              ),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
+            Wrap(
+              crossAxisAlignment: WrapCrossAlignment.center,
+              spacing: 10,
+              children: <Widget>[
+                RaisedButton(
+                  onPressed: () {
+                    setState(() {
+                      prefs.setString("text", textFieldController.text);
+                    });
+                  },
+                  child: Text("Save"),
+                ),
+                RaisedButton(
+                  onPressed: () {
+                    setState(() {
+                      prefs.setString("text", null);
+                    });
+                  },
+                  child: Text("Erase"),
+                ),
+              ],
             ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
       ),
     );
   }
