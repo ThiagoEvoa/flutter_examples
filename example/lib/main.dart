@@ -1,3 +1,6 @@
+import 'package:example/detail.dart';
+import 'package:example/post.dart';
+import 'package:example/post_service.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -10,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(),
     );
   }
 }
@@ -24,37 +27,67 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  String _message;
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
+  _openDetail({Post post}) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) =>
+            Detail(id: post?.id, title: post?.title, body: post?.body),
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text('List'),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ],
-        ),
+      body: FutureBuilder(
+        future: PostService.fetch(context),
+        builder: (context, snapshot) {
+          if (snapshot.data != null) {
+            return ListView.builder(
+              itemCount: snapshot.data.length,
+              itemBuilder: (context, index) {
+                return Card(
+                  elevation: 5,
+                  child: ListTile(
+                    onTap: () {
+                      _openDetail(post: snapshot.data[index]);
+                    },
+                    leading: Text(snapshot.data[index].id.toString()),
+                    title: Text(snapshot.data[index].title),
+                    subtitle: Text(snapshot.data[index].body),
+                    trailing: IconButton(
+                      onPressed: () async {
+                        _message = await PostService.delete(
+                            snapshot.data[index], context);
+
+                        Scaffold.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text(_message),
+                            duration: Duration(seconds: 5),
+                          ),
+                        );
+                      },
+                      icon: Icon(Icons.delete),
+                    ),
+                  ),
+                );
+              },
+            );
+          } else {
+            return Center(
+              child: Text('No content =/'),
+            );
+          }
+        },
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
+        onPressed: _openDetail,
+        tooltip: 'Add Post',
         child: Icon(Icons.add),
       ),
     );
