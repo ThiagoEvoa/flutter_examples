@@ -69,7 +69,7 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 - [Storage]():
 
 ### Diversos
-- [ImagePicker]():
+- [ImagePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/imagepicker):
 - [Internationalization]():
 - [SharedPreferences]():
 - [BarCode e QRCode]():
