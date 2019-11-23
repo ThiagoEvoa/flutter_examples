@@ -1,4 +1,7 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,38 +27,72 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  File _image;
 
-  void _incrementCounter() {
+  Future _getImageFromCamera() async {
+    var image = await ImagePicker.pickImage(source: ImageSource.camera);
+
     setState(() {
-      _counter++;
+      _image = image;
+    });
+  }
+
+  Future _getImageFromGallery() async {
+    var image = await ImagePicker.pickImage(source: ImageSource.gallery);
+
+    setState(() {
+      _image = image;
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+    return Material(
+      child: Column(
+        children: <Widget>[
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.only(top: 50),
+              child: Center(
+                child: Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: _image == null
+                      ? Text(
+                          "Pick an image",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(fontSize: 30),
+                        )
+                      : Image.file(_image),
+                ),
+              ),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 30),
+            child: Row(
+              children: <Widget>[
+                Expanded(
+                  child: InkWell(
+                    onTap: _getImageFromCamera,
+                    child: Icon(
+                      Icons.camera_alt,
+                      size: 100,
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: InkWell(
+                    onTap: _getImageFromGallery,
+                    child: Icon(
+                      Icons.image,
+                      size: 100,
+                    ),
+                  ),
+                ),
+              ],
             ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
+          )
+        ],
       ),
     );
   }
