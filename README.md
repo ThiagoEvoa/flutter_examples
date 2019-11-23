@@ -65,7 +65,7 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 
 ### Firebase
 - [Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/firebaseauth):
-- [Store]():
+- [Store](https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestore):
 - [Storage]():
 
 ### Diversos
