@@ -76,5 +76,5 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 - [Geolocator](https://github.com/ThiagoEvoa/flutter_examples/tree/geolocator):
 - [Google Maps](https://github.com/ThiagoEvoa/flutter_examples/tree/googlemaps):
 - [Biometric](https://github.com/ThiagoEvoa/flutter_examples/tree/biometric):
-- [PackageInfo]():
+- [PackageInfo](https://github.com/ThiagoEvoa/flutter_examples/tree/packageinfo):
 - [Flare](https://github.com/ThiagoEvoa/flutter_examples/tree/flare):
