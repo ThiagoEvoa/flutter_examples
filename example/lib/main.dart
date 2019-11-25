@@ -35,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'Wrap example',
             ),
             Text(
-              'A alternative between Column and row',
+              'A alternative between Column and Row',
             ),
           ],
         ),
