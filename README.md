@@ -32,7 +32,7 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 - [Stack](https://github.com/ThiagoEvoa/flutter_examples/tree/stack):
 - [Material](https://github.com/ThiagoEvoa/flutter_examples/tree/material):
 - [Scaffold](https://github.com/ThiagoEvoa/flutter_examples/tree/scaffold):
-- [Tabbar](https://github.com/ThiagoEvoa/flutter_examples/tree/tabbar):
+- [TabBar](https://github.com/ThiagoEvoa/flutter_examples/tree/tabbar):
 - [Bottom Navigation](https://github.com/ThiagoEvoa/flutter_examples/tree/bottomnavigationbar):
 - [Drawer](https://github.com/ThiagoEvoa/flutter_examples/tree/drawer):
 - [Popup Menu Button](https://github.com/ThiagoEvoa/flutter_examples/tree/popupmenubutton):
