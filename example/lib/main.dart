@@ -37,6 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
       body: Container(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: Colors.blue,
