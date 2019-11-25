@@ -95,7 +95,9 @@ class _DetailState extends State<Detail> {
 
     return Scaffold(
       key: _globalKey,
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text('Detail'),
+      ),
       body: _form == null ? _createForm() : _form,
     );
   }
