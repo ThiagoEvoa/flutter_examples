@@ -52,12 +52,12 @@ class _MyHomePageState extends State<MyHomePage> {
       child: Center(
         child: TextField(
           controller: _timeOfDayController,
-          onTap: () {
-            _selectTime();
-          },
           decoration: InputDecoration(
             labelText: "TimePicker",
-            suffixIcon: Icon(Icons.timer),
+            suffixIcon: IconButton(
+              onPressed: _selectTime,
+              icon: Icon(Icons.timer),
+            ),
             border: OutlineInputBorder(),
           ),
         ),
