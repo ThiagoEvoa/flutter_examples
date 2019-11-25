@@ -54,12 +54,12 @@ class _MyHomePageState extends State<MyHomePage> {
       child: Center(
         child: TextField(
           controller: _dateTimeController,
-          onTap: () {
-            _selectDate();
-          },
           decoration: InputDecoration(
             labelText: "DatePicker",
-            suffixIcon: Icon(Icons.calendar_today),
+            suffixIcon: IconButton(
+              onPressed: _selectDate,
+              icon: Icon(Icons.calendar_today),
+            ),
             border: OutlineInputBorder(),
           ),
         ),
