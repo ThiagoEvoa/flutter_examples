@@ -25,63 +25,72 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  SharedPreferences prefs;
-
-  @override
-  void initState() {
-    _getSharedPreferences();
-    super.initState();
-  }
-
-  _getSharedPreferences() async {
-    prefs = await SharedPreferences.getInstance();
-  }
-
   @override
   Widget build(BuildContext context) {
-    final textFieldController = TextEditingController(
-        text: prefs.getString("text") == null ? '' : prefs.getString("text"));
+    final textFieldController = TextEditingController();
 
-    return Material(
-      child: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: TextField(
-                controller: textFieldController,
-                decoration: InputDecoration(
-                  labelText: 'Type something',
-                  border: OutlineInputBorder(),
-                ),
+    Future<SharedPreferences> _getSharedPreferences() async {
+      return await SharedPreferences.getInstance();
+    }
+
+    return FutureBuilder<SharedPreferences>(
+      future: _getSharedPreferences(),
+      builder: (context, snapshot) {
+        if (snapshot.data != null) {
+          return Material(
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: TextField(
+                      controller: textFieldController,
+                      decoration: InputDecoration(
+                        labelText: 'Type something',
+                        border: OutlineInputBorder(),
+                      ),
+                    ),
+                  ),
+                  Wrap(
+                    crossAxisAlignment: WrapCrossAlignment.center,
+                    spacing: 10,
+                    children: <Widget>[
+                      RaisedButton(
+                        onPressed: () {
+                          setState(() {
+                            snapshot.data
+                                .setString("text", textFieldController.text);
+                          });
+                        },
+                        child: Text("Save"),
+                      ),
+                      RaisedButton(
+                        onPressed: () {
+                          setState(() {
+                            snapshot.data.setString("text", null);
+                          });
+                        },
+                        child: Text("Erase"),
+                      ),
+                    ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20),
+                    child: Text(
+                      snapshot.data.getString("text") == null
+                          ? ''
+                          : snapshot.data.getString("text"),
+                    ),
+                  ),
+                ],
               ),
             ),
-            Wrap(
-              crossAxisAlignment: WrapCrossAlignment.center,
-              spacing: 10,
-              children: <Widget>[
-                RaisedButton(
-                  onPressed: () {
-                    setState(() {
-                      prefs.setString("text", textFieldController.text);
-                    });
-                  },
-                  child: Text("Save"),
-                ),
-                RaisedButton(
-                  onPressed: () {
-                    setState(() {
-                      prefs.setString("text", null);
-                    });
-                  },
-                  child: Text("Erase"),
-                ),
-              ],
-            ),
-          ],
-        ),
-      ),
+          );
+        } else {
+          return CircularProgressIndicator();
+        }
+      },
     );
   }
 }
