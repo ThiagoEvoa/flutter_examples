@@ -4,5 +4,25 @@
 </p>
 
 ```dart
+class _MyHomePageState extends State<MyHomePage> {
+  bool value = false;
 
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(
+        child: Switch(
+          value: value,
+          activeColor: Colors.blue,
+          activeTrackColor: Colors.blue[100],
+          onChanged: (value) {
+            setState(() {
+              this.value = value;
+            });
+          },
+        ),
+      ),
+    );
+  }
+}
 ```
