@@ -5,6 +5,10 @@
 
 ### Dependencies
 ```dart
+dependencies:
+  flutter:
+    sdk: flutter
+  date_format: ^1.0.8
 ```
 
 ```dart
