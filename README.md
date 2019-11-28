@@ -3,6 +3,14 @@
 <img src="https://docs.google.com/uc?id=1oG9XALak13YizFDEVAcPZIZ0vh156iWJ" height="649" width="300">
 </p>
 
+### Dependencies
+```dart
+dependencies:
+  flutter:
+    sdk: flutter
+  webview_flutter: ^0.3.15+1
+```
+
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   WebViewController _controller;
