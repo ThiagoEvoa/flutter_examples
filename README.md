@@ -4,5 +4,20 @@
 </p>
 
 ```dart
-
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(
+        child: IconButton(
+          onPressed: () {},
+          color: Colors.blue,
+          iconSize: 100,
+          tooltip: 'IconButton',
+          icon: Icon(Icons.android),
+        ),
+      ),
+    );
+  }
+}
 ```
