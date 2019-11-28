@@ -4,5 +4,25 @@
 </p>
 
 ```dart
-
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'Row example ',
+            ),
+            Text(
+              'Aligning widgets beside another',
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
 ```
