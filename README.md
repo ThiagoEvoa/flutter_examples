@@ -4,5 +4,19 @@
 </p>
 
 ```dart
-
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(
+        child: Icon(
+          Icons.android,
+          color: Colors.blue,
+          size: 100,
+          semanticLabel: 'Android icon',
+        ),
+      ),
+    );
+  }
+}
 ```
