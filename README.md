@@ -3,6 +3,14 @@
 <img src="https://docs.google.com/uc?id=11Fe1FuWs_kkvI67-cADDphJHkEQGcBBg" height="649" width="300">
 </p>
 
+### Dependeces
+```dart
+dependencies:
+  flutter:
+    sdk: flutter
+  date_format: ^1.0.8
+```
+
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   final _dateTimeController = TextEditingController();
