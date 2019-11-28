@@ -4,5 +4,14 @@
 </p>
 
 ```dart
-
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(
+        child: Image.asset('images/flutter.png'),
+      ),
+    );
+  }
+}
 ```
