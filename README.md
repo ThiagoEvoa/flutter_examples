@@ -11,6 +11,14 @@ dependencies:
   webview_flutter: ^0.3.15+1
 ```
 
+### Configuration
+
+#### iOS Info.plist
+```dart
+	<key>io.flutter.embedded_views_preview</key>
+	<string>YES</string>
+```
+
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   WebViewController _controller;
