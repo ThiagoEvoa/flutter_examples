@@ -4,5 +4,13 @@
 </p>
 
 ```dart
-
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Tooltip(
+      message: 'I long clicked on screen to show a Tooltip',
+      child: Material(),
+    );
+  }
+}
 ```
