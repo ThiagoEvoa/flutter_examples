@@ -15,8 +15,8 @@ dependencies:
 
 #### iOS Info.plist
 ```dart
-	<key>io.flutter.embedded_views_preview</key>
-	<string>YES</string>
+<key>io.flutter.embedded_views_preview</key>
+<string>YES</string>
 ```
 
 ```dart
