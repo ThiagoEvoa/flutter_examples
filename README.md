@@ -4,5 +4,21 @@
 </p>
 
 ```dart
-
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(
+        child: Text(
+          "Text Widget",
+          style: TextStyle(
+            color: Colors.blue,
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+    );
+  }
+}
 ```
