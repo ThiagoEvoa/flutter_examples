@@ -11,6 +11,7 @@ dependencies:
   barcode_scan: ^1.0.0
   path_provider: ^1.4.4
 ```
+
 ### Configuration
 
 #### iOS Info.plist
