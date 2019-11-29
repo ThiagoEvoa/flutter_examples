@@ -87,4 +87,5 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 - [Google Maps](https://github.com/ThiagoEvoa/flutter_examples/tree/googlemaps):
 - [Biometric](https://github.com/ThiagoEvoa/flutter_examples/tree/biometric):
 - [PackageInfo](https://github.com/ThiagoEvoa/flutter_examples/tree/packageinfo):
+- [FlipCard]:
 - [Flare]:
