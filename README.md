@@ -28,7 +28,7 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 - [Radio](https://github.com/ThiagoEvoa/flutter_examples/tree/radio):
 - [CircularProgressIndicator](https://github.com/ThiagoEvoa/flutter_examples/tree/circularprogressindicator):
 - [LinearProgressIndicator](https://github.com/ThiagoEvoa/flutter_examples/tree/linearprogressindicator):
-- [ExpansionPanel]:
+- [ExpansionPanel](https://github.com/ThiagoEvoa/flutter_examples/tree/expansionpanel):
 - [Tooltip](https://github.com/ThiagoEvoa/flutter_examples/tree/tooltip):
 - [Gradient](https://github.com/ThiagoEvoa/flutter_examples/tree/gradient):
 - [Column](https://github.com/ThiagoEvoa/flutter_examples/tree/column):
