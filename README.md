@@ -11,6 +11,18 @@ dependencies:
   image_picker: ^0.6.2+1
 ```
 
+### Configuration
+
+#### iOS Info.plist
+```dart
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app is requiring access to your gallery</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This app is requiring access to your gallery</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This app is requiring access to your microphone</string>
+```
+
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   File _image;
