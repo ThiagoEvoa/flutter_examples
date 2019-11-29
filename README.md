@@ -24,7 +24,7 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 - [GeneralDialog](https://github.com/ThiagoEvoa/flutter_examples/tree/generaldialog):
 - [Slider](https://github.com/ThiagoEvoa/flutter_examples/tree/slider):
 - [Switch](https://github.com/ThiagoEvoa/flutter_examples/tree/switch):
-- [CheckBox]:
+- [CheckBox](https://github.com/ThiagoEvoa/flutter_examples/tree/checkbox):
 - [Radio]:
 - [CircularProgressIndicator]:
 - [LinearProgressIndicator]:
