@@ -5,6 +5,7 @@
 
 ### Dependencies
 <p>On the root of the project, you should create the folder <b>flare</b>, and add the file <b>.flr</b></p>
+
 ```dart
 dependencies:
   flutter:
