@@ -49,7 +49,7 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 - [WebView](https://github.com/ThiagoEvoa/flutter_examples/tree/webview):
 - [ListView](https://github.com/ThiagoEvoa/flutter_examples/tree/listview):
 - [ListView Builder](https://github.com/ThiagoEvoa/flutter_examples/tree/listview_builder):
-- [Dismissible]:
+- [Dismissible](https://github.com/ThiagoEvoa/flutter_examples/tree/dismissible):
 - [RefreshIndicator]:
 - [Reorderable ListView](https://github.com/ThiagoEvoa/flutter_examples/tree/reorderablelistview):
 - [GridView Builder](https://github.com/ThiagoEvoa/flutter_examples/tree/gridview_builder):
