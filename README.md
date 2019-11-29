@@ -88,4 +88,4 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 - [Biometric](https://github.com/ThiagoEvoa/flutter_examples/tree/biometric):
 - [PackageInfo](https://github.com/ThiagoEvoa/flutter_examples/tree/packageinfo):
 - [FlipCard](https://github.com/ThiagoEvoa/flutter_examples/tree/flipcard):
-- [Flare]:
+- [Flare](https://github.com/ThiagoEvoa/flutter_examples/blob/flare/README.md):
