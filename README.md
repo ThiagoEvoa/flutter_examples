@@ -56,7 +56,7 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 - [Form](https://github.com/ThiagoEvoa/flutter_examples/tree/form):
 - [Dark Theme](https://github.com/ThiagoEvoa/flutter_examples/tree/darktheme):
 - [Navigation](https://github.com/ThiagoEvoa/flutter_examples/tree/navigation):
-- [FadeTransition]:
+- [FadeTransition](https://github.com/ThiagoEvoa/flutter_examples/tree/fadetransition):
 - [Hero](https://github.com/ThiagoEvoa/flutter_examples/tree/hero):
 - [DraggableScrollableSheet](https://github.com/ThiagoEvoa/flutter_examples/tree/draggablescrollablesheet):
 
