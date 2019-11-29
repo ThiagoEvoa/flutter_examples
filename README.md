@@ -16,5 +16,22 @@ assets:
    - lang/pt.json
 ```
 
-### Lang 
-<p>In the root of the project, you should create a folder with the json files for each language you want</p>
+### Configuration 
+<p>In the root of the project, you should create a folder with the name <b>lang</b>, with the json files for each language you want</p>
+
+### en.json 
+```dart
+{
+    "title":"English version",
+    "phrase":"You have switched the version to english"
+}
+```
+
+### pt.json 
+```dart
+{
+    "title":"Versão português",
+    "phrase":"Você mudou a versão para português"
+}
+```
+
