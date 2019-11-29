@@ -1,28 +1,80 @@
-# RefreshIndicator
+# FlipCard
 <p align="center">
-<img src="https://docs.google.com/uc?id=1i1yPqW58aLQQ9Xk-CKqgJIetOvSyzTfn" height="649" width="300">
+<img src="https://docs.google.com/uc?id=1C9VroEZjtk2s5noyFGvtBA0pa3HZaH0C" height="649" width="300">
 </p>
 
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
-  final items = List<String>.generate(20, (index) => "ListView Builder $index");
-
-  Future<void> _myFunction() async {
-    await Future.delayed(Duration(seconds: 3));
-  }
+  GlobalKey<FlipCardState> _cardKey = GlobalKey<FlipCardState>();
 
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: RefreshIndicator(
-        onRefresh: _myFunction,
-        child: ListView.builder(
-          itemCount: items.length,
-          itemBuilder: (context, index) {
-            return ListTile(
-              title: Text(items[index]),
-            );
-          },
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.only(bottom: 20),
+              child: FlipCard(
+                direction: FlipDirection.VERTICAL,
+                front: Container(
+                  height: 200,
+                  width: 400,
+                  color: Colors.blue,
+                  alignment: Alignment.center,
+                  child: Text(
+                    'Front Card',
+                    style: TextStyle(color: Colors.white, fontSize: 30),
+                  ),
+                ),
+                back: Container(
+                  height: 200,
+                  width: 400,
+                  color: Colors.blue,
+                  alignment: Alignment.center,
+                  child: Text(
+                    'Front Card',
+                    style: TextStyle(color: Colors.white, fontSize: 30),
+                  ),
+                ),
+              ),
+            ),
+            FlipCard(
+              key: _cardKey,
+              flipOnTouch: false,
+              direction: FlipDirection.HORIZONTAL,
+              front: Container(
+                height: 200,
+                width: 400,
+                color: Colors.blue,
+                alignment: Alignment.center,
+                child: Text(
+                  'Front Card',
+                  style: TextStyle(color: Colors.white, fontSize: 30),
+                ),
+              ),
+              back: Container(
+                height: 200,
+                width: 400,
+                color: Colors.blue,
+                alignment: Alignment.center,
+                child: Text(
+                  'Front Card',
+                  style: TextStyle(color: Colors.white, fontSize: 30),
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 20),
+              child: RaisedButton(
+                onPressed: () {
+                  _cardKey.currentState.toggleCard();
+                },
+                child: Text('Flip'),
+              ),
+            ),
+          ],
         ),
       ),
     );
