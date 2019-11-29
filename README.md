@@ -1,6 +1,6 @@
-# CircularProgressIndicator
+# LinearProgressIndicator
 <p align="center">
-<img src="https://docs.google.com/uc?id=1ifK2aRER3qRR5yu68eRbpxUqiI8_Yy9L" height="649" width="300">
+<img src="https://docs.google.com/uc?id=1mExNt_3aSenvVJqpLIa_pfUYI7hRK7jC" height="649" width="300">
 </p>
 
 ```dart
@@ -10,13 +10,11 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Center(
-        child: CircularProgressIndicator(
-          backgroundColor: Colors.blue[900],
-          strokeWidth: 3,
-          valueColor: _animationColor,
-        ),
+    return Scaffold(
+      appBar: AppBar(),
+      body: LinearProgressIndicator(
+        backgroundColor: Colors.blue[900],
+        valueColor: _animationColor,
       ),
     );
   }

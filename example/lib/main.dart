@@ -29,13 +29,11 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Center(
-        child: CircularProgressIndicator(
-          backgroundColor: Colors.blue[900],
-          strokeWidth: 3,
-          valueColor: _animationColor,
-        ),
+    return Scaffold(
+      appBar: AppBar(),
+      body: LinearProgressIndicator(
+        backgroundColor: Colors.blue[900],
+        valueColor: _animationColor,
       ),
     );
   }
