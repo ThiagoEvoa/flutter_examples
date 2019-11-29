@@ -3,6 +3,14 @@
 <img src="https://docs.google.com/uc?id=1C9VroEZjtk2s5noyFGvtBA0pa3HZaH0C" height="649" width="300">
 </p>
 
+### Dependencies
+```dart
+dependencies:
+  flutter:
+    sdk: flutter
+  flip_card: ^0.4.4
+```
+
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   GlobalKey<FlipCardState> _cardKey = GlobalKey<FlipCardState>();
