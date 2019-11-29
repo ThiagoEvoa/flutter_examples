@@ -3,6 +3,12 @@
 <img src="https://docs.google.com/uc?id=1UUyIN7TFH5M8nLF1TKzNSUuQUbed8BoI" height="649" width="300">
 </p>
 
+### Dependencies
 ```dart
-
+dependencies:
+  flutter:
+    sdk: flutter
+  google_maps_flutter: ^0.5.21+12
 ```
+
+
