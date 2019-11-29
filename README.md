@@ -3,6 +3,14 @@
 <img src="https://docs.google.com/uc?id=1T3bnJwFf6QfN_FNwiJb3-tFtYZpemrgD" height="649" width="300">
 </p>
 
+### Dependencies
+```dart
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^3.1.0+1
+```
+
 ```dart
 void main() => runApp(MyApp());
 
