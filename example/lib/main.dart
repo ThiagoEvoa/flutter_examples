@@ -1,3 +1,4 @@
+import 'package:example/sex_enum.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -24,21 +25,43 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  bool _isChecked = false;
+  SexEnum _sexEnum = SexEnum.male;
 
   @override
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-        child: Checkbox(
-          value: _isChecked,
-          onChanged: (value) {
-            setState(() {
-              _isChecked = value;
-            });
-          },
-          activeColor: Colors.blue,
-          checkColor: Colors.white,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Text('Sex:'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text('male'),
+                Radio(
+                  value: SexEnum.male,
+                  groupValue: _sexEnum,
+                  onChanged: (value) {
+                    setState(() {
+                      _sexEnum = value;
+                    });
+                  },
+                ),
+                Text('female'),
+                Radio(
+                  value: SexEnum.female,
+                  groupValue: _sexEnum,
+                  onChanged: (value) {
+                    setState(() {
+                      _sexEnum = value;
+                    });
+                  },
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     );
