@@ -34,7 +34,7 @@ dependencies:
 ```
 
 #### Android Manifest.xml
-<p>Under "<application" put this meta-data</p>
+<p>Under "\"<application"\" put this meta-data</p>
 
 ```dart
 <meta-data android:name="com.google.android.geo.API_KEY" android:value="YOUR KEY HERE"/>
