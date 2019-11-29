@@ -26,7 +26,7 @@ Nesse repositório contém exemplos de como implementar várias coisas no Flutte
 - [Switch](https://github.com/ThiagoEvoa/flutter_examples/tree/switch):
 - [CheckBox](https://github.com/ThiagoEvoa/flutter_examples/tree/checkbox):
 - [Radio](https://github.com/ThiagoEvoa/flutter_examples/tree/radio):
-- [CircularProgressIndicator]:
+- [CircularProgressIndicator](https://github.com/ThiagoEvoa/flutter_examples/tree/circularprogressindicator):
 - [LinearProgressIndicator]:
 - [ExpansionPanel]:
 - [Tooltip](https://github.com/ThiagoEvoa/flutter_examples/tree/tooltip):
