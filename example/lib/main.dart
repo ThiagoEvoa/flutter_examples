@@ -24,21 +24,17 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  bool _isChecked = false;
+  Animation<Color> _animationColor =
+      AlwaysStoppedAnimation<Color>(Colors.blue[50]);
 
   @override
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-        child: Checkbox(
-          value: _isChecked,
-          onChanged: (value) {
-            setState(() {
-              _isChecked = value;
-            });
-          },
-          activeColor: Colors.blue,
-          checkColor: Colors.white,
+        child: CircularProgressIndicator(
+          backgroundColor: Colors.blue[900],
+          strokeWidth: 3,
+          valueColor: _animationColor,
         ),
       ),
     );
