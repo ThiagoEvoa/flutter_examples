@@ -21,7 +21,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final items = List<String>.generate(20, (items) => "ListView Builder $items");
+  final items = List<String>.generate(20, (index) => "ListView Builder $index");
 
   @override
   Widget build(BuildContext context) {
