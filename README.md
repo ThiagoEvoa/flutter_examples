@@ -15,12 +15,12 @@ dependencies:
 
 #### iOS Info.plist
 ```dart
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>This app is requiring access to your gallery</string>
-	<key>NSCameraUsageDescription</key>
-	<string>This app is requiring access to your gallery</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>This app is requiring access to your microphone</string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>This app is requiring access to your gallery</string>
+<key>NSCameraUsageDescription</key>
+<string>This app is requiring access to your gallery</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>This app is requiring access to your microphone</string>
 ```
 
 ```dart
