@@ -4,6 +4,8 @@
 </p>
 
 ### Dependencies
+
+#### Pubspec.yaml
 ```dart
 dependencies:
   flutter:
@@ -29,6 +31,7 @@ dependencies:
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 ```
 
+### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   final Geolocator geolocator = Geolocator()..forceAndroidLocationManager;
