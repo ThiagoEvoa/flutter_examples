@@ -4,6 +4,8 @@
 </p>-->
 
 ### Dependencies
+
+#### Pubspec.yaml
 ```dart
 dependencies:
   flutter:
@@ -35,6 +37,7 @@ assets:
 }
 ```
 
+### Main
 ```dart
 import 'package:flutter_localizations/flutter_localizations.dart';
 
