@@ -4,6 +4,8 @@
 </p>
 
 ### Dependencies
+
+#### Pubspec.yaml
 ```dart
 dependencies:
   flutter:
@@ -23,6 +25,7 @@ dependencies:
 <string>This app is requiring access to your microphone</string>
 ```
 
+### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   File _image;
