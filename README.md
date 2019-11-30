@@ -4,13 +4,15 @@
 </p>
 
 ### Dependencies
-<p>On the root of the project, you should create the folder <b>images</b>, and add the image inside</p>
+<p>On the root of the project, you need to create the folder <b>images</b>, and add the image inside</p>
 
+#### Pubspec.yaml
 ```dart
 assets:
  - images/flutter.png
 ```
 
+### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   @override
