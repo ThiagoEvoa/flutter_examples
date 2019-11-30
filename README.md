@@ -79,7 +79,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 - [Store](https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestore):
 - [Storage](https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestorage):
 
-### Diversos
+### Others
 - [ImagePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/imagepicker):
 - [Internationalization](https://github.com/ThiagoEvoa/flutter_examples/tree/internationalization):
 - [SharedPreferences](https://github.com/ThiagoEvoa/flutter_examples/tree/sharedpreferences):
