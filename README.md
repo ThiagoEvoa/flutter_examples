@@ -19,7 +19,7 @@ assets:
 ```
 
 ### Configuration 
-<p>In the root of the project, you should create a folder with the name <b>lang</b>, with the <b>json</b> files for each language you want</p>
+<p>In the root of the project, you need  to create a folder with the name <b>lang</b>, with the <b>json</b> files for each language you want</p>
 
 ### en.json 
 ```dart
