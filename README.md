@@ -4,6 +4,8 @@
 </p>-->
 
 ### Dependencies
+
+#### Pubspec.yaml
 ```dart
 dependencies:
   flutter:
@@ -11,6 +13,7 @@ dependencies:
   package_info: ^0.4.0+10
 ```
 
+### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   Future<PackageInfo> _getPackageInfo() async {
