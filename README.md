@@ -1,7 +1,7 @@
 # DraggableScrollableSheet
-<!--<p align="center">
+<p align="center">
 <img src="https://docs.google.com/uc?id=1qhlsSIaHwx0hwjLTjCzXAJJE-USAGEqg" height="649" width="300">
-</p>-->
+</p>
 
 ### Main
 ```dart
