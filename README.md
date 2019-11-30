@@ -4,6 +4,8 @@
 </p>
 
 ### Dependencies
+
+#### Pubspec.yaml
 ```dart
 dependencies:
   flutter:
@@ -11,6 +13,7 @@ dependencies:
   flip_card: ^0.4.4
 ```
 
+### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   GlobalKey<FlipCardState> _cardKey = GlobalKey<FlipCardState>();
