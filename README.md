@@ -4,6 +4,8 @@
 </p>
 
 ### Dependencies
+
+#### Pubspec.yaml
 ```dart
 dependencies:
   flutter:
@@ -11,6 +13,7 @@ dependencies:
   bloc: ^2.0.0
 ```
 
+### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   final counterBloc = CounterBloc();
