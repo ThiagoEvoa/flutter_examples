@@ -4,6 +4,8 @@
 </p>
 
 ### Dependencies
+
+#### Pubspec.yaml
 ```dart
 dependencies:
   flutter:
@@ -11,6 +13,7 @@ dependencies:
   sqflite: ^1.1.7+2
 ```
 
+### Main
 ```dart
 class MyHomePage extends StatefulWidget {
   @override
