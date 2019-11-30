@@ -4,8 +4,9 @@
 </p>
 
 ### Dependencies
-<p>On the root of the project, you should create the folder <b>flare</b>, and add the file <b>.flr</b></p>
+<p>On the root of the project, you need to create the folder <b>flare</b>, and add the file <b>.flr</b></p>
 
+#### Pubspec.yaml
 ```dart
 dependencies:
   flutter:
@@ -16,6 +17,7 @@ assets:
  - flare/Teddy.flr
 ```
 
+### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   @override
