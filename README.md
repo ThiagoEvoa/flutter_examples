@@ -4,6 +4,8 @@
 </p>
 
 ### Dependencies
+
+#### Pubspec.yaml
 ```dart
 dependencies:
   flutter:
@@ -11,6 +13,7 @@ dependencies:
   rxdart: ^0.22.6
 ```
 
+### Main
 ```dart
 class MyApp extends StatelessWidget {
   @override
