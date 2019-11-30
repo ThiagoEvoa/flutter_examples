@@ -4,6 +4,8 @@
 </p>-->
 
 ### Dependencies
+
+#### Pubspec.yaml
 ```dart
 dependencies:
   flutter:
@@ -24,6 +26,7 @@ dependencies:
 <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
 ```
 
+### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   final auth = LocalAuthentication();
