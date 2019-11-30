@@ -4,6 +4,8 @@
 </p>
 
 ### Dependencies
+
+#### Pubspec.yaml
 ```dart
 dependencies:
   flutter:
@@ -13,6 +15,7 @@ dependencies:
   firebase_auth: ^0.15.0+1
 ```
 
+### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   String _result = '';
