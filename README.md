@@ -4,6 +4,8 @@
 </p>
 
 ### Dependencies
+
+#### Pubspec.yaml
 ```dart
 dependencies:
   flutter:
@@ -13,6 +15,7 @@ dependencies:
   cloud_firestore: ^0.12.10+2
 ```
 
+### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   _openSecondPage({DocumentSnapshot document}) {
