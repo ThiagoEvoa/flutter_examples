@@ -11,6 +11,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Material(
       child: Center(
         child: Stack(
+          alignment: Alignment.topLeft,
           children: <Widget>[
             Container(
               height: 200,
