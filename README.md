@@ -4,6 +4,8 @@
 </p>
 
 ### Dependencies
+
+#### Pubspec.yaml
 ```dart
 dependencies:
   flutter:
@@ -15,6 +17,7 @@ dependencies:
   image_picker: ^0.6.2+1
 ```
 
+### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   final _key = GlobalKey<ScaffoldState>();
