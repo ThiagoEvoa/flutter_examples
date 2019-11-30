@@ -1,4 +1,4 @@
-# Exemplos de Flutter
+# Flutter Examples
 
 This repository contains examples of how to implement things in Flutter. If you didn't find what you expect, please let me know and I'll try to do the example for you. 
 
