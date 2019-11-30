@@ -3,7 +3,7 @@
 <img src="https://docs.google.com/uc?id=199dKuI7GPoySPqynTXvdruaV-hFcPBPd" height="649" width="300">
 </p>
 
-### Dependencies
+#### Dependencies
 ```dart
 dependencies:
   flutter:
@@ -11,6 +11,7 @@ dependencies:
   date_format: ^1.0.8
 ```
 
+### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   final _timeOfDayController = TextEditingController();
