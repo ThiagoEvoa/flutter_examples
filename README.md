@@ -4,6 +4,8 @@
 </p>
 
 ### Dependencies
+
+#### Pubspec.yaml
 ```dart
 dependencies:
   flutter:
@@ -11,6 +13,7 @@ dependencies:
   shared_preferences: ^0.5.4+5
 ```
 
+### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   @override
