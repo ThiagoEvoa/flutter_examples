@@ -4,6 +4,8 @@
 </p>
 
 ### Dependencies
+
+#### Pubspec.yaml
 ```dart
 dependencies:
   flutter:
@@ -40,6 +42,7 @@ dependencies:
 <meta-data android:name="com.google.android.geo.API_KEY" android:value="YOUR KEY HERE"/>
 ```
 
+### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   Completer<GoogleMapController> _controller = Completer();
