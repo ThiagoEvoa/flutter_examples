@@ -4,6 +4,8 @@
 </p>
 
 ### Dependencier
+
+#### Pubspec.yaml
 ```dart
 dependencies:
   flutter:
@@ -11,6 +13,7 @@ dependencies:
   http: ^0.12.0+2
 ```
 
+### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   String _message;
