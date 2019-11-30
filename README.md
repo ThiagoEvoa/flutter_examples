@@ -4,6 +4,8 @@
 </p>
 
 ### Dependencies
+
+#### Pubspec.yaml
 ```dart
 dependencies:
   flutter:
@@ -11,6 +13,7 @@ dependencies:
   provider: ^3.1.0+1
 ```
 
+### Main
 ```dart
 void main() => runApp(MyApp());
 
