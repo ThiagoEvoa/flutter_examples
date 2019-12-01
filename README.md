@@ -103,10 +103,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ### DetailPage
 ```dart
-import 'package:example/person.dart';
-import 'package:example/person_dao.dart';
-import 'package:flutter/material.dart';
-
 class DetailPage extends StatefulWidget {
   Person person;
 
