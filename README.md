@@ -59,6 +59,10 @@ This repository contains examples of how to implement things in Flutter. If you 
 - [FadeTransition](https://github.com/ThiagoEvoa/flutter_examples/tree/fadetransition):
 - [Hero](https://github.com/ThiagoEvoa/flutter_examples/tree/hero):
 - [DraggableScrollableSheet](https://github.com/ThiagoEvoa/flutter_examples/tree/draggablescrollablesheet):
+- [SafeArea]
+- [LayoutBuilder]
+- [AnimatedBuilder]
+- [ColorFiltered]
 
 
 ### Management State
