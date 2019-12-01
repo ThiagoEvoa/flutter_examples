@@ -1,16 +1,11 @@
+import 'package:example/db_helper.dart';
 import 'package:example/detail_page.dart';
 import 'package:example/person.dart';
 import 'package:example/person_dao.dart';
 import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
-import 'package:path_provider/path_provider.dart' as path_provider;
 
 void main() async {
-  final appDocumentDir = await path_provider.getApplicationDocumentsDirectory();
-  Hive.init(appDocumentDir.path);
-  await Hive.openBox('person');
-  Hive.registerAdapter(PersonDao(), 0);
-
+  await DBHelper.init();
   runApp(MyApp());
 }
 
@@ -42,13 +37,6 @@ class _MyHomePageState extends State<MyHomePage> {
         builder: (context) => DetailPage(index: index, person: person),
       ),
     );
-  }
-
-  @override
-  void dispose() {
-    Hive.box('person').compact();
-    Hive.close();
-    super.dispose();
   }
 
   @override
