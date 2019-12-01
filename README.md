@@ -4,6 +4,8 @@
 </p>
 
 ### Dependencies
+
+#### Pubspec.yaml
 ```dart
 dependencies:
   flutter:
@@ -11,6 +13,7 @@ dependencies:
   sqflite: ^1.1.7+2
 ```
 
+### Main
 ```dart
 class MyHomePage extends StatefulWidget {
   @override
@@ -100,6 +103,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ### DetailPage
 ```dart
+import 'package:example/person.dart';
+import 'package:example/person_dao.dart';
+import 'package:flutter/material.dart';
+
 class DetailPage extends StatefulWidget {
   Person person;
 
@@ -133,11 +140,12 @@ class _DetailPageState extends State<DetailPage> {
           RaisedButton(
             onPressed: () {
               if (widget.person == null) {
-                widget.person = Person(name: _controller.text);
+                final person = Person(name: _controller.text);
+                PersonDao().insert(person: person);
               } else {
                 widget.person.name = _controller.text;
+                PersonDao().update(person: widget.person);
               }
-              PersonDao().insert(person: widget.person);
               Navigator.of(context).pop();
             },
             child: Text('Save'),
@@ -146,7 +154,8 @@ class _DetailPageState extends State<DetailPage> {
       ),
     );
   }
-} 
+}
+ 
 ```
 
 ### DBHelper
@@ -207,7 +216,7 @@ class PersonDao {
         conflictAlgorithm: ConflictAlgorithm.replace);
   }
 
-  Future<void> update(Person person) async {
+  Future<void> update({Person person}) async {
     Database db = await DBHelper().database;
 
     await db.update('person', person.toJson(),
