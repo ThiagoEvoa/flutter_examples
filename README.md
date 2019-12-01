@@ -69,7 +69,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 ### Database
 - [SqfLite](https://github.com/ThiagoEvoa/flutter_examples/tree/sqflite):
-- [Hive](https://github.com/ThiagoEvoa/flutter_examples/blob/hive):
+- [Hive](https://github.com/ThiagoEvoa/flutter_examples/tree/hive):
 
 ### API
 - [HTTP](https://github.com/ThiagoEvoa/flutter_examples/tree/http):
