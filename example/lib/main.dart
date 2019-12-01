@@ -1,6 +1,18 @@
+import 'package:example/detail_page.dart';
+import 'package:example/person.dart';
+import 'package:example/person_dao.dart';
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
+import 'package:path_provider/path_provider.dart' as path_provider;
 
-void main() => runApp(MyApp());
+void main() async {
+  final appDocumentDir = await path_provider.getApplicationDocumentsDirectory();
+  Hive.init(appDocumentDir.path);
+  await Hive.openBox('person');
+  Hive.registerAdapter(PersonDao(), 0);
+
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
@@ -24,37 +36,78 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  _openPage({int index, Person person}) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => DetailPage(index: index, person: person),
+      ),
+    );
+  }
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
+  @override
+  void dispose() {
+    Hive.box('person').compact();
+    Hive.close();
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
+    final list = PersonDao().get();
+
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(''),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+      body: list.length <= 0
+          ? Center(
+              child: Text('No content =/'),
+            )
+          : ListView.builder(
+              itemCount: list.length,
+              itemBuilder: (context, index) {
+                return InkWell(
+                  onTap: () {
+                    _openPage(index: index, person: list.getAt(index));
+                  },
+                  child: Card(
+                    elevation: 5,
+                    child: Dismissible(
+                      key: Key(index.toString()),
+                      direction: DismissDirection.endToStart,
+                      onDismissed: (direction) {
+                        setState(() {
+                          PersonDao().delete(index);
+                          list.deleteAt(index);
+                        });
+                      },
+                      background: Container(
+                        alignment: Alignment.centerRight,
+                        decoration: BoxDecoration(
+                          color: Colors.red,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(3),
+                          ),
+                        ),
+                        child: Icon(
+                          Icons.delete,
+                          color: Colors.white,
+                        ),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(16),
+                        child: Text(list.getAt(index).name),
+                      ),
+                    ),
+                  ),
+                );
+              },
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ],
-        ),
-      ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
+        onPressed: () {
+          _openPage();
+        },
+        tooltip: 'Add new person',
         child: Icon(Icons.add),
       ),
     );
