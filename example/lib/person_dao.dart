@@ -20,7 +20,7 @@ class PersonDao {
         conflictAlgorithm: ConflictAlgorithm.replace);
   }
 
-  Future<void> update(Person person) async {
+  Future<void> update({Person person}) async {
     Database db = await DBHelper().database;
 
     await db.update('person', person.toJson(),

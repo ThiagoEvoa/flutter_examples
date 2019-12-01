@@ -35,11 +35,12 @@ class _DetailPageState extends State<DetailPage> {
           RaisedButton(
             onPressed: () {
               if (widget.person == null) {
-                widget.person = Person(name: _controller.text);
+                final person = Person(name: _controller.text);
+                PersonDao().insert(person: person);
               } else {
                 widget.person.name = _controller.text;
+                PersonDao().update(person: widget.person);
               }
-              PersonDao().insert(person: widget.person);
               Navigator.of(context).pop();
             },
             child: Text('Save'),
