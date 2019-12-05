@@ -1,42 +1,42 @@
-# LayoutBuilder
+# AnimatedBuilder
 <p align="center">
-<img src="https://docs.google.com/uc?id=1DQ3Kg7U6f1grH56ZllUPmjpzSP7bBN-v" height="649" width="300">
+<img src="https://docs.google.com/uc?id=1HklWnVlRL-nHQHS7-f9HlU4UHCCGxFWY" height="649" width="300">
 </p>
 
 ### Main
 ```dart
-class _MyHomePageState extends State<MyHomePage> {
-  final items =
-      List<String>.generate(20, (items) => "Reorderable Listview $items");
-  final _scrollController = ScrollController();
+class _MyHomePageState extends State<MyHomePage>
+    with SingleTickerProviderStateMixin {
+  AnimationController _controller;
+
+  @override
+  void initState() {
+    _controller = AnimationController(
+      vsync: this,
+      duration: Duration(seconds: 3),
+    );
+    _controller.repeat();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
+    final _animation = Tween(begin: 0.0, end: 2.0 * pi).animate(_controller);
+
     return Material(
-      child: LayoutBuilder(
-        builder: (context, boxConstraints) {
-          return Material(
-            child: GridView.builder(
-              controller: _scrollController,
-              itemCount: items.length,
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: boxConstraints.maxWidth < 600 ? 2 : 3,
-              ),
-              itemBuilder: (context, index) {
-                return Card(
-                  color: Colors.blue,
-                  child: Container(
-                    alignment: Alignment.center,
-                    child: Text(
-                      items[index],
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                );
-              },
-            ),
+      child: AnimatedBuilder(
+        animation: _animation,
+        builder: (context, widget) {
+          return Transform.rotate(
+            angle: _animation.value,
+            child: widget,
           );
         },
+        child: LayoutBuilder(
+          builder: (context, boxConstraints) {
+            return Material(child: FlutterLogo());
+          },
+        ),
       ),
     );
   }
