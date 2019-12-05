@@ -60,7 +60,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 - [Hero](https://github.com/ThiagoEvoa/flutter_examples/tree/hero)
 - [DraggableScrollableSheet](https://github.com/ThiagoEvoa/flutter_examples/tree/draggablescrollablesheet)
 - [SafeArea](https://github.com/ThiagoEvoa/flutter_examples/tree/safearea)
-- [LayoutBuilder]
+- [LayoutBuilder](https://github.com/ThiagoEvoa/flutter_examples/tree/layoutbuilder)
 - [AnimatedBuilder]
 - [ColorFiltered]
 
