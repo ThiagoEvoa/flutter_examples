@@ -77,7 +77,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 ### API
 - [HTTP](https://github.com/ThiagoEvoa/flutter_examples/tree/http)
-- [Dio]
+- [Dio](https://github.com/ThiagoEvoa/flutter_examples/tree/dio)
 
 ### Firebase
 - [Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/firebaseauth)
