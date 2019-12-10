@@ -95,3 +95,4 @@ This repository contains examples of how to implement things in Flutter. If you 
 - [PackageInfo](https://github.com/ThiagoEvoa/flutter_examples/tree/packageinfo)
 - [FlipCard](https://github.com/ThiagoEvoa/flutter_examples/tree/flipcard)
 - [Flare](https://github.com/ThiagoEvoa/flutter_examples/blob/flare/README.md)
+- [Bluetooth]
