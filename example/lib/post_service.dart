@@ -3,7 +3,7 @@ import 'dart:convert';
 
 import 'package:example/post.dart';
 import 'package:flutter/widgets.dart';
-import 'package:http/http.dart' as http;
+import 'package:dio/dio.dart';
 
 class PostService {
   static final _url = 'https://jsonplaceholder.typicode.com/posts';
@@ -14,12 +14,12 @@ class PostService {
   }
 
   static fetch(BuildContext context) async {
-    final response = await http.get(_url);
+    final response = await Dio().get(_url);
 
     switch (response.statusCode) {
       case 200:
         {
-          List<Post> list = Post.convertPostsToList(response.body);
+          List<Post> list = Post.convertPostsToList(response.data);
           return list;
         }
       default:
@@ -29,10 +29,10 @@ class PostService {
 
   static save(Post post, BuildContext context) async {
     final response = post.id != null
-        ? await http.put('$_url/${post.id}',
-            headers: _createHeader(), body: jsonEncode(post))
-        : await http.post(_url,
-            headers: _createHeader(), body: jsonEncode(post));
+        ? await Dio().put('$_url/${post.id}',
+            data: jsonEncode(post), options: Options(headers: _createHeader()))
+        : await Dio().post(_url,
+            data: jsonEncode(post), options: Options(headers: _createHeader()));
 
     switch (response.statusCode) {
       case 200:
@@ -48,7 +48,7 @@ class PostService {
 
   static delete(Post post, BuildContext context) async {
     final response =
-        await http.delete('$_url/${post.id}', headers: _createHeader());
+        await Dio().delete('$_url/${post.id}', options: Options(headers: _createHeader()));
 
     switch (response.statusCode) {
       case 200:

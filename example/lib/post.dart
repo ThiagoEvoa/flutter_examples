@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 class Post {
   int id;
   String title;
@@ -20,9 +18,8 @@ class Post {
     return {'id': id, 'title': title, 'body': body, 'userId': userId};
   }
 
-  static List<Post> convertPostsToList(String postsJson) {
-    var jsonObject =
-        (json.decode(postsJson) as List).cast<Map<String, dynamic>>();
-    return jsonObject.map((value) => Post.fromJson(value)).toList();
+  static List<Post> convertPostsToList(dynamic postsJson) {
+    List<dynamic> posts = postsJson.map((value) => Post.fromJson(value)).toList();
+    return posts.cast<Post>();
   }
 }

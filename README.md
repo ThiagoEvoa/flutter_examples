@@ -1,16 +1,19 @@
-# HTTP
+# DIO
 <p align="center">
 <img src="https://docs.google.com/uc?id=1oJD6HB-tyQ41PwEov2HxEBK6xFWfY1aE" height="649" width="300">
 </p>
 
 ### Dependencier
+
+#### Pubspec.yaml
 ```dart
 dependencies:
   flutter:
     sdk: flutter
-  http: ^0.12.0+2
+  dio: ^3.0.7
 ```
 
+### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   String _message;
@@ -187,7 +190,7 @@ class _DetailState extends State<Detail> {
 
 ### PostService
 ```dart
-import 'package:http/http.dart' as http;
+import 'package:dio/dio.dart';
 
 class PostService {
   static final _url = 'https://jsonplaceholder.typicode.com/posts';
@@ -198,12 +201,12 @@ class PostService {
   }
 
   static fetch(BuildContext context) async {
-    final response = await http.get(_url);
+    final response = await Dio().get(_url);
 
     switch (response.statusCode) {
       case 200:
         {
-          List<Post> list = Post.convertPostsToList(response.body);
+          List<Post> list = Post.convertPostsToList(response.data);
           return list;
         }
       default:
@@ -213,10 +216,10 @@ class PostService {
 
   static save(Post post, BuildContext context) async {
     final response = post.id != null
-        ? await http.put('$_url/${post.id}',
-            headers: _createHeader(), body: jsonEncode(post))
-        : await http.post(_url,
-            headers: _createHeader(), body: jsonEncode(post));
+        ? await Dio().put('$_url/${post.id}',
+            data: jsonEncode(post), options: Options(headers: _createHeader()))
+        : await Dio().post(_url,
+            data: jsonEncode(post), options: Options(headers: _createHeader()));
 
     switch (response.statusCode) {
       case 200:
@@ -232,7 +235,7 @@ class PostService {
 
   static delete(Post post, BuildContext context) async {
     final response =
-        await http.delete('$_url/${post.id}', headers: _createHeader());
+        await Dio().delete('$_url/${post.id}', options: Options(headers: _createHeader()));
 
     switch (response.statusCode) {
       case 200:
@@ -269,10 +272,9 @@ class Post {
     return {'id': id, 'title': title, 'body': body, 'userId': userId};
   }
 
-  static List<Post> convertPostsToList(String postsJson) {
-    var jsonObject =
-        (json.decode(postsJson) as List).cast<Map<String, dynamic>>();
-    return jsonObject.map((value) => Post.fromJson(value)).toList();
+  static List<Post> convertPostsToList(dynamic postsJson) {
+    List<dynamic> posts = postsJson.map((value) => Post.fromJson(value)).toList();
+    return posts.cast<Post>();
   }
 }
 ```
