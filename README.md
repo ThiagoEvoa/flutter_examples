@@ -63,7 +63,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 - [LayoutBuilder](https://github.com/ThiagoEvoa/flutter_examples/tree/layoutbuilder)
 - [AnimatedBuilder](https://github.com/ThiagoEvoa/flutter_examples/tree/animatedbuilder)
 - [ColorFiltered](https://github.com/ThiagoEvoa/flutter_examples/tree/colorfiltered)
-
+- [Table]
 
 ### Management State
 - [SetState](https://github.com/ThiagoEvoa/flutter_examples/tree/setstate)
