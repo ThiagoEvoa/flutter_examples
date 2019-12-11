@@ -24,38 +24,44 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+    Widget _smallWidget() {
+      return Container(width: 50, height: 50, color: Colors.blueAccent);
+    }
+
+    Widget _mediumWidget() {
+      return Container(width: 150, height: 150, color: Colors.yellow);
+    }
+
+    Widget _bigWidget() {
+      return Container(width: 250, height: 250, color: Colors.blueGrey);
+    }
+
+    return Material(
+      child: Center(
+        child: Table(
+          defaultVerticalAlignment: TableCellVerticalAlignment.bottom,
+          defaultColumnWidth: FractionColumnWidth(.3),
+          columnWidths: {0: FractionColumnWidth(.4)},
+          border: TableBorder.all(width: 3, color: Colors.grey[50]),
+          children: [
+            TableRow(
+              children: [
+                _smallWidget(),
+                _mediumWidget(),
+                _bigWidget(),
+              ],
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
+            TableRow(
+              children: [
+                _bigWidget(),
+                _mediumWidget(),
+                _smallWidget(),
+              ],
             ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
       ),
     );
   }
