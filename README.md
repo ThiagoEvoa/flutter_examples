@@ -65,7 +65,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 - [ColorFiltered](https://github.com/ThiagoEvoa/flutter_examples/tree/colorfiltered)
 - [Table](https://github.com/ThiagoEvoa/flutter_examples/tree/table)
 - [ClipRRect](https://github.com/ThiagoEvoa/flutter_examples/tree/cliprrect)
-- [ClipOval]()
+- [ClipOval](https://github.com/ThiagoEvoa/flutter_examples/tree/clipoval)
 - [ClipPath]()
 
 ### Management State
