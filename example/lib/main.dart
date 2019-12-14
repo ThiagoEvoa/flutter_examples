@@ -29,6 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
   double _angle = 0;
   double _scale = 1;
   Offset _offset = Offset(0, 0);
+  double _skew = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -82,6 +83,20 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
+                Expanded(
+                  flex: 1,
+                  child: Padding(
+                    padding: const EdgeInsets.all(20),
+                    child: Transform(
+                      transform: Matrix4.skewX(_skew),
+                      child: Container(
+                        width: 50,
+                        height: 50,
+                        color: Colors.yellow
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
             Padding(
@@ -108,13 +123,24 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: Text('Scale'),
                     ),
                   ),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 10),
+                    child: RaisedButton(
+                      onPressed: () {
+                        setState(() {
+                          _offset = Offset(50, 50);
+                        });
+                      },
+                      child: Text('Translate'),
+                    ),
+                  ),
                   RaisedButton(
                     onPressed: () {
                       setState(() {
-                        _offset = Offset(50, 50);
+                        _skew += 0.1;
                       });
                     },
-                    child: Text('Translate'),
+                    child: Text('Skew'),
                   ),
                 ],
               ),
@@ -125,6 +151,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   _angle = 0;
                   _scale = 1;
                   _offset = Offset(0, 0);
+                  _skew = 0;
                 });
               },
               child: Text('Reset'),
