@@ -1,6 +1,6 @@
 # FlipWidget
 <p align="center">
-<img src="https://docs.google.com/uc?id=1T3bnJwFf6QfN_FNwiJb3-tFtYZpemrgD" height="649" width="300">
+<img src="https://docs.google.com/uc?id=13U1aOXGKpU7i5ehcO8YtPAbUgKIoklrJ" height="649" width="300">
 </p>
 
 ### Main
