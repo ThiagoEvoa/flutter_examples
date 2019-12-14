@@ -1,51 +1,6 @@
-# FlipWidget
-<p align="center">
-<img src="https://docs.google.com/uc?id=1T3bnJwFf6QfN_FNwiJb3-tFtYZpemrgD" height="649" width="300">
-</p>
-
-### Main
-```dart
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Material(
-      child: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            FlipWidget(
-              flipOrientation: FlipEnum.HORIZONTAL,
-              frontChild: Text(
-                'Front',
-                style: TextStyle(color: Colors.white, fontSize: 30),
-              ),
-              backChild: Text(
-                'Back',
-                style: TextStyle(color: Colors.white, fontSize: 30),
-              ),
-            ),
-            FlipWidget(
-              flipOrientation: FlipEnum.VERTICAL,
-              frontChild: Text(
-                'Front',
-                style: TextStyle(color: Colors.white, fontSize: 30),
-              ),
-              backChild: Text(
-                'Back',
-                style: TextStyle(color: Colors.white, fontSize: 30),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-```
-
-### FlipWidget
-```dart
 import 'dart:math';
+
+import 'package:flutter/material.dart';
 
 class FlipWidget extends StatefulWidget {
   final frontChild;
@@ -128,4 +83,3 @@ class _FlipWidgetState extends State<FlipWidget>
 }
 
 enum FlipEnum { HORIZONTAL, VERTICAL }
-```
