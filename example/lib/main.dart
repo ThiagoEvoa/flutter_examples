@@ -24,19 +24,12 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
+  
   @override
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-        child: ClipOval(
+        child: ClipPath(
           clipBehavior: Clip.hardEdge,
           child: Container(
             width: 300,
