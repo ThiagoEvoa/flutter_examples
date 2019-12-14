@@ -64,7 +64,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 - [AnimatedBuilder](https://github.com/ThiagoEvoa/flutter_examples/tree/animatedbuilder)
 - [ColorFiltered](https://github.com/ThiagoEvoa/flutter_examples/tree/colorfiltered)
 - [Table](https://github.com/ThiagoEvoa/flutter_examples/tree/table)
-- [ClipRRect]()
+- [ClipRRect](https://github.com/ThiagoEvoa/flutter_examples/tree/cliprrect)
 - [ClipOval]()
 - [ClipPath]()
 
