@@ -98,5 +98,6 @@ This repository contains examples of how to implement things in Flutter. If you 
 - [Biometric](https://github.com/ThiagoEvoa/flutter_examples/tree/biometric)
 - [PackageInfo](https://github.com/ThiagoEvoa/flutter_examples/tree/packageinfo)
 - [FlipCard](https://github.com/ThiagoEvoa/flutter_examples/tree/flipcard)
+- [FlipWidget](https://github.com/ThiagoEvoa/flutter_examples/tree/flipwidget)
 - [Flare](https://github.com/ThiagoEvoa/flutter_examples/blob/flare/README.md)
 - [Bluetooth]
