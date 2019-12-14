@@ -36,8 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(15),
+        child: ClipOval(
           clipBehavior: Clip.hardEdge,
           child: Container(
             width: 300,
