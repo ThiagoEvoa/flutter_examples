@@ -66,7 +66,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 - [Table](https://github.com/ThiagoEvoa/flutter_examples/tree/table)
 - [ClipRRect](https://github.com/ThiagoEvoa/flutter_examples/tree/cliprrect)
 - [ClipOval](https://github.com/ThiagoEvoa/flutter_examples/tree/clipoval)
-- [ClipPath]()
+- [ClipPath](https://github.com/ThiagoEvoa/flutter_examples/tree/clippath)
 
 ### Management State
 - [SetState](https://github.com/ThiagoEvoa/flutter_examples/tree/setstate)
