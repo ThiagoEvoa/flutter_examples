@@ -1,43 +1,122 @@
-# SetState
+# BottomAppBar
 <p align="center">
 <img src="https://docs.google.com/uc?id=1T3bnJwFf6QfN_FNwiJb3-tFtYZpemrgD" height="649" width="300">
 </p>
 
 ### Main
 ```dart
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+  final String title;
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  int _selectedItem = 0;
+  List<Widget> pages = [Page1(), Page2()];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
+      appBar: AppBar(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
+            pages[_selectedItem],
           ],
         ),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
+        onPressed: () {},
         child: Icon(Icons.add),
+        elevation: 5,
+        backgroundColor: Colors.pink,
+      ),
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.blue,
+        shape: CircularNotchedRectangle(),
+        child: Container(
+          height: 50,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Expanded(
+                child: BottomTabItem(
+                  onPressed: () {
+                    setState(() {
+                      _selectedItem = 0;
+                    });
+                  },
+                  icon: Icons.home,
+                  title: 'Page1',
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 9),
+                  child: BottomTabItem(
+                    title: 'Add',
+                  ),
+                ),
+              ),
+              Expanded(
+                child: BottomTabItem(
+                  onPressed: () {
+                    setState(() {
+                      _selectedItem = 1;
+                    });
+                  },
+                  icon: Icons.home,
+                  title: 'Page2',
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+```
+
+### BottomTabItem
+```dart
+class BottomTabItem extends StatefulWidget {
+  final IconData icon;
+  final String title;
+  final Function onPressed;
+
+  BottomTabItem({this.icon, this.title, this.onPressed});
+
+  @override
+  _BottomTabItemState createState() => _BottomTabItemState();
+}
+
+class _BottomTabItemState extends State<BottomTabItem> {
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: () {
+        widget.onPressed();
+      },
+      child: Column(
+        children: <Widget>[
+          Icon(
+            widget.icon,
+            color: Colors.white,
+          ),
+          Text(
+            widget.title,
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          )
+        ],
       ),
     );
   }
