@@ -39,6 +39,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 - [Scaffold](https://github.com/ThiagoEvoa/flutter_examples/tree/scaffold)
 - [TabBar](https://github.com/ThiagoEvoa/flutter_examples/tree/tabbar)
 - [Bottom Navigation](https://github.com/ThiagoEvoa/flutter_examples/tree/bottomnavigationbar)
+- [BottomAppBar](https://github.com/ThiagoEvoa/flutter_examples/tree/bottomappbar)
 - [Drawer](https://github.com/ThiagoEvoa/flutter_examples/tree/drawer)
 - [Popup Menu Button](https://github.com/ThiagoEvoa/flutter_examples/tree/popupmenubutton)
 - [SnackBar](https://github.com/ThiagoEvoa/flutter_examples/tree/snackbar)
