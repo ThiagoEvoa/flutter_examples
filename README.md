@@ -102,3 +102,4 @@ This repository contains examples of how to implement things in Flutter. If you 
 - [FlipWidget](https://github.com/ThiagoEvoa/flutter_examples/tree/flipwidget)
 - [Flare](https://github.com/ThiagoEvoa/flutter_examples/blob/flare/README.md)
 - [Bluetooth]
+- [Local Notification]
