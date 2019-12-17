@@ -86,11 +86,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
+    return Material(
+      child: Center(
         child: RaisedButton(
           onPressed: _showNotificationWithDefaultSound,
           child: Text('Show Notification'),
