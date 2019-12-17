@@ -3,6 +3,25 @@
 <img src="https://docs.google.com/uc?id=1U_IAezur1MC-WpbdUEEnZaycWAjqd0ZV" height="649" width="300">
 </p>
 
+### Dependencies
+
+#### Pubspec.yaml
+```dart
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_local_notifications: ^0.8.4+3
+```
+
+### Configuration
+
+#### Android Manifest.xml
+```dart
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.VIBRATE" />
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+```
+
 ### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
