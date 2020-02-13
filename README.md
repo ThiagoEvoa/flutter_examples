@@ -6,24 +6,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 <table style="width:100%">
   <tr>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
-  <tr>
-    <td>John</td>
-    <td>Doe</td>
-    <td>80</td>
+    <td>- [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)</td>
   </tr>
 </table>
 
