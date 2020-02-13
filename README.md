@@ -104,3 +104,4 @@ This repository contains examples of how to implement things in Flutter. If you 
 - [Flare](https://github.com/ThiagoEvoa/flutter_examples/blob/flare/README.md)
 - [Bluetooth]
 - [Local Notification](https://github.com/ThiagoEvoa/flutter_examples/tree/localnotification)
+- [Google Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/google_auth)
