@@ -6,7 +6,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 <table style="width:100%">
   <tr>
-    <td>- [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)</td>
+    <td><a href="https://github.com/ThiagoEvoa/flutter_examples/tree/text">Text</a></td>
   </tr>
 </table>
 
