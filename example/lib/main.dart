@@ -1,4 +1,6 @@
+import 'package:example/google_sign.dart';
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,13 +26,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
+  GoogleSignService _googleSignService = GoogleSignService();
+  GoogleSignInAccount _googleSignInAccount;
 
   @override
   Widget build(BuildContext context) {
@@ -42,20 +39,48 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+            RaisedButton(
+              onPressed: () {
+                _googleSignService.handleSignIn().then((value) {
+                  setState(() {
+                    _googleSignInAccount = value;
+                  });
+                });
+              },
+              color: Colors.blue,
+              child: Container(
+                width: 190,
+                height: 50,
+                child: Row(
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.only(right: 10),
+                      child: Image.asset(
+                        'images/google_icon.png',
+                        width: 30,
+                        height: 30,
+                      ),
+                    ),
+                    Text(
+                      'Sign with Google',
+                      style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey[50]),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
+            Padding(
+              padding: const EdgeInsets.all(20),
+              child: _googleSignInAccount == null
+                  ? Container()
+                  : Image.network(_googleSignInAccount.photoUrl),
             ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
       ),
     );
   }
