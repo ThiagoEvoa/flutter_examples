@@ -11,7 +11,7 @@ This repository contains examples of how to implement things in Flutter. If you 
         <a href="https://github.com/ThiagoEvoa/flutter_examples/tree/text">Text</a>
       </p>  
       <p align="center">
-        <img src="https://docs.google.com/uc?id=1fDWdaHU9UmvL05_2ZbaTygZSM-KGrYHz" height="216" width="100">
+        <img src="https://docs.google.com/uc?id=1fDWdaHU9UmvL05_2ZbaTygZSM-KGrYHz" height="316" width="200">
       </p>
     </td>
   </tr>
