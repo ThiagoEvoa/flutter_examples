@@ -4,7 +4,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 ## Branches
 
-<table style="width:100%" cellspacing="10">
+<table cellspacing="10">
   <tr>
     <td>
       <p align="center">
