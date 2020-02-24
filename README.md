@@ -6,7 +6,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 <table style="width:100%">
   <tr>
-    <td align="center">
+    <td>
       <p align="center">
         <a href="https://github.com/ThiagoEvoa/flutter_examples/tree/text">Text</a>
       </p>  
@@ -14,7 +14,7 @@ This repository contains examples of how to implement things in Flutter. If you 
         <img src="https://docs.google.com/uc?id=1fDWdaHU9UmvL05_2ZbaTygZSM-KGrYHz" height="316" width="200">
       </p>
     </td>
-    <div></div>
+    <div width="30px"></div>
     <td>
       <p align="center">
         <a href="https://github.com/ThiagoEvoa/flutter_examples/tree/text">Text</a>
