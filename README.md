@@ -103,6 +103,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 - [FlipCard](https://github.com/ThiagoEvoa/flutter_examples/tree/flipcard)
 - [FlipWidget](https://github.com/ThiagoEvoa/flutter_examples/tree/flipwidget)
 - [Flare](https://github.com/ThiagoEvoa/flutter_examples/blob/flare/README.md)
-- [Bluetooth]
 - [Local Notification](https://github.com/ThiagoEvoa/flutter_examples/tree/localnotification)
 - [Google Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/google_auth)
+- [Bluetooth]
+- [Channel]
