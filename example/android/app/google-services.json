@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "210058316449",
+    "firebase_url": "https://testemessaging-af73b.firebaseio.com",
+    "project_id": "testemessaging-af73b",
+    "storage_bucket": "testemessaging-af73b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210058316449:android:020918ec6cf7efaa1dfee0",
+        "android_client_info": {
+          "package_name": "com.example.example"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210058316449-n8cte7a5vnercnb4u9bm4kv1c3jqoas4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPEzJ2b05PCdRbyWycsiLb4K7MzYFKg50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210058316449-n8cte7a5vnercnb4u9bm4kv1c3jqoas4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
