@@ -89,7 +89,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 - [Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/firebaseauth)
 - [Store](https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestore)
 - [Storage](https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestorage)
-- [Messaging]
+- [Messaging](https://github.com/ThiagoEvoa/flutter_examples/tree/firebase_messaging)
 
 ### Others
 - [ImagePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/imagepicker)
