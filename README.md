@@ -106,4 +106,8 @@ This repository contains examples of how to implement things in Flutter. If you 
 - [Local Notification](https://github.com/ThiagoEvoa/flutter_examples/tree/localnotification)
 - [Google Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/google_auth)
 - [Channel](https://github.com/ThiagoEvoa/flutter_examples/tree/channel)
-- [Bluetooth]
+<!-- [Bluetooth]
+https://pub.dev/packages/connectivity
+https://pub.dev/packages/device_info
+https://pub.dev/packages/share
+https://pub.dev/packages/video_player
