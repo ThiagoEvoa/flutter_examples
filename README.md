@@ -107,7 +107,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 - [Google Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/google_auth)
 - [Channel](https://github.com/ThiagoEvoa/flutter_examples/tree/channel)
 - [Connectivity](https://github.com/ThiagoEvoa/flutter_examples/tree/connectivity)
+- [Device Info](https://github.com/ThiagoEvoa/flutter_examples/tree/device_info)
 <!-- [Bluetooth]
-https://pub.dev/packages/device_info
 https://pub.dev/packages/share
 https://pub.dev/packages/video_player
