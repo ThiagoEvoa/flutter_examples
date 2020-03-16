@@ -1,17 +1,51 @@
-# SetState
-<p align="center">
+# Connectivity
+<!-- <p align="center">
 <img src="https://docs.google.com/uc?id=1T3bnJwFf6QfN_FNwiJb3-tFtYZpemrgD" height="649" width="300">
-</p>
+</p> -->
+
+### Dependencies
+
+#### Pubspec.yaml
+```dart
+dependencies:
+  flutter:
+    sdk: flutter
+  connectivity: ^0.4.8+2
+```
 
 ### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  Connectivity _connectivity = Connectivity();
+  ConnectivityResult _connectivityResult;
+  ConnectivityResult _connectivitySubscriptionResult;
+  StreamSubscription<ConnectivityResult> _connectivitySubscription;
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
+  _checkConnectivity() async {
+    _connectivityResult = await _connectivity.checkConnectivity();
+    setState(() {});
+  }
+
+  _checkConnectivitySubscription() {
+    _connectivitySubscription =
+        _connectivity.onConnectivityChanged.listen((result) {
+      setState(() {
+        _connectivitySubscriptionResult = result;
+      });
     });
+  }
+
+  @override
+  void initState() {
+    _checkConnectivity();
+    _checkConnectivitySubscription();
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _connectivitySubscription.cancel();
+    super.dispose();
   }
 
   @override
@@ -25,19 +59,17 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'You have pushed the button this many times:',
+              'Connectivity Subscription: ${_connectivitySubscriptionResult.toString()}',
             ),
             Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
+              'Check Connectivity: ${_connectivityResult.toString()}',
+            ),
+            RaisedButton(
+              onPressed: _checkConnectivity,
+              child: Text('Check Connectivity'),
             ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
       ),
     );
   }
