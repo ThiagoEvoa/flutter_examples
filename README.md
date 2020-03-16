@@ -2,6 +2,16 @@
 <p align="center">
 <!-- <img src="https://docs.google.com/uc?id=1T3bnJwFf6QfN_FNwiJb3-tFtYZpemrgD" height="649" width="300">
 </p> -->
+  
+### Dependencies
+
+#### Pubspec.yaml
+```dart
+dependencies:
+  flutter:
+    sdk: flutter
+  video_player: ^0.10.8+1
+```
 
 ### Main
 ```dart
