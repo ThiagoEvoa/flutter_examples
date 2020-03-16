@@ -108,6 +108,8 @@ This repository contains examples of how to implement things in Flutter. If you 
 - [Channel](https://github.com/ThiagoEvoa/flutter_examples/tree/channel)
 - [Connectivity](https://github.com/ThiagoEvoa/flutter_examples/tree/connectivity)
 - [Device Info](https://github.com/ThiagoEvoa/flutter_examples/tree/device_info)
+- [Share](https://github.com/ThiagoEvoa/flutter_examples/tree/share)
+
 <!-- [Bluetooth]
 https://pub.dev/packages/share
 https://pub.dev/packages/video_player
