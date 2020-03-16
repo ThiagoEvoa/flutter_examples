@@ -1,3 +1,6 @@
+import 'dart:io';
+
+import 'package:device_info/device_info.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -24,38 +27,37 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  DeviceInfoPlugin _deviceInfoPlugin = DeviceInfoPlugin();
+  IosDeviceInfo _iosDeviceInfo;
+  AndroidDeviceInfo _androidDeviceInfo;
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
+  _getDeviceInfo() async {
+    if (Platform.isIOS) {
+      _iosDeviceInfo = await _deviceInfoPlugin.iosInfo;
+    } else {
+      _androidDeviceInfo = await _deviceInfoPlugin.androidInfo;
+    }
+    setState(() {});
+  }
+
+  @override
+  void initState() {
+    _getDeviceInfo();
+    super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
+    return Material(
+      child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
+            Text(_iosDeviceInfo != null
+                ? 'iOS info: ${_iosDeviceInfo.name}'
+                : 'Android info: ${_androidDeviceInfo.model}'),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
       ),
     );
   }
