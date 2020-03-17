@@ -1,17 +1,35 @@
-# SetState
+# Video Player
 <p align="center">
-<img src="https://docs.google.com/uc?id=1T3bnJwFf6QfN_FNwiJb3-tFtYZpemrgD" height="649" width="300">
-</p>
+<!-- <img src="https://docs.google.com/uc?id=1T3bnJwFf6QfN_FNwiJb3-tFtYZpemrgD" height="649" width="300">
+</p> -->
+  
+### Dependencies
+
+#### Pubspec.yaml
+```dart
+dependencies:
+  flutter:
+    sdk: flutter
+  audioplayers: ^0.14.0
+```
 
 ### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  AudioPlayer player;
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
+  _playMusic({@required String url}) async {
+    await player.play(url);
+  }
+
+  _stopMusic() async {
+    await player.stop();
+  }
+
+  @override
+  void initState() {
+    player = AudioPlayer(mode: PlayerMode.LOW_LATENCY);
+    super.initState();
   }
 
   @override
@@ -21,23 +39,29 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: Row(
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+            Expanded(
+              child: IconButton(
+                onPressed: () {
+                  _playMusic(
+                    url:
+                        'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3',
+                  );
+                },
+                icon: Icon(Icons.play_arrow),
+              ),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
+            Expanded(
+              child: IconButton(
+                onPressed: () {
+                  _stopMusic();
+                },
+                icon: Icon(Icons.stop),
+              ),
             ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
       ),
     );
   }
