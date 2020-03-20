@@ -8,7 +8,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 <table cellspacing="10%">
   <tr>
-    <th>Month</th>
+    <th>- [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)</th>
   </tr>
   <tr>
     <td>
@@ -16,17 +16,6 @@ This repository contains examples of how to implement things in Flutter. If you 
         <img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png" height="324.5" width="150">
       </p>
     </td>
-  </tr>
-    <tr>
-    <th>Month</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center">
-        <img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png" height="324.5" width="150">
-      </p>
-    </td>
-  </tr>
 </table>
 
 
