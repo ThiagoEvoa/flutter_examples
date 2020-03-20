@@ -1,6 +1,6 @@
 # Dismissible
 <p align="center">
-<img src="https://docs.google.com/uc?id=1BE6bFR7r3rLhwf8czHp0tm7aNjMP59O-" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/dismissible.gif" height="649" width="300">
 </p>
 
 ### Main
