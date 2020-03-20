@@ -1,6 +1,6 @@
 # FadeTransition
 <p align="center">
-<img src="https://docs.google.com/uc?id=1SIK8JsB2_b1nELhhh6UkRqXT4KNoUDH5" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/fadetransition.gif" height="649" width="300">
 </p>
 
 ### Main
