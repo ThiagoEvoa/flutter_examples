@@ -1,6 +1,6 @@
 # ClipRRect
 <p align="center">
-<img src="https://docs.google.com/uc?id=1Df3tSM3EYh8uL9PjNN-HKpVBkGAQZeCH" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/cliprrect.png" height="649" width="300">
 </p>
 
 ### Main
