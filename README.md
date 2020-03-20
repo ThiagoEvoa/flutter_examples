@@ -6,7 +6,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 ### Widgets
 
-<table cellspacing="10%">
+<table cellspacing="100%">
   <tr>
     <th><a href="https://github.com/ThiagoEvoa/flutter_examples/tree/text"> Text</a></th>
   </tr>
