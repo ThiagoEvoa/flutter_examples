@@ -1,6 +1,6 @@
 # FlipCard
 <p align="center">
-<img src="https://docs.google.com/uc?id=1C9VroEZjtk2s5noyFGvtBA0pa3HZaH0C" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flipcard.gif" height="649" width="300">
 </p>
 
 ### Dependencies
