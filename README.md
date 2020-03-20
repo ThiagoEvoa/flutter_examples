@@ -1,6 +1,6 @@
 # Radio
 <p align="center">
-<img src="https://docs.google.com/uc?id=11U2GlbGYWHun5jBcvIODi3KmGDR1XafG" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/radio.gif" height="649" width="300">
 </p>
 
 ### Main
