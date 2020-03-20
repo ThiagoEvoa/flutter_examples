@@ -1,6 +1,6 @@
 # Drawer
 <p align="center">
-<img src="https://docs.google.com/uc?id=1Evx1uhhYyQBSjWKlE70dFBbmYdHgje6D" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/drawer.gif" height="649" width="300">
 </p>
 
 ### Main
