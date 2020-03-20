@@ -6,6 +6,17 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 ### Widgets
 
+  <table cellspacing="10">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
+
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
 - [RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text)
 - [SelectableText](https://github.com/ThiagoEvoa/flutter_examples/tree/selectable_text)
