@@ -1,6 +1,6 @@
 # Checkbox
 <p align="center">
-<img src="https://docs.google.com/uc?id=1ED7ww77o8EFt5DA3c7xvClcNH6e113Qa" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/checkbox.gif" height="649" width="300">
 </p>
 
 ### Main
