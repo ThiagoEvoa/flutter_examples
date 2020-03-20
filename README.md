@@ -6,11 +6,14 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 ### Widgets
 
-<table cellspacing="100">
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</head>
+<body>
+<table cellspacing="10">
   <tr>
-    <th><a href="https://github.com/ThiagoEvoa/flutter_examples/tree/text"> Text</a></th>
-    <th><a href="https://github.com/ThiagoEvoa/flutter_examples/tree/text"> Text</a></th>
-    <th><a href="https://github.com/ThiagoEvoa/flutter_examples/tree/text"> Text</a></th>
     <th><a href="https://github.com/ThiagoEvoa/flutter_examples/tree/text"> Text</a></th>
     <th><a href="https://github.com/ThiagoEvoa/flutter_examples/tree/text"> Text</a></th>
     <th><a href="https://github.com/ThiagoEvoa/flutter_examples/tree/text"> Text</a></th>
@@ -30,24 +33,10 @@ This repository contains examples of how to implement things in Flutter. If you 
       <p align="center">
         <img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png" height="324.5" width="150">
       </p>
-    </td>  
-    <td>
-      <p align="center">
-        <img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png" height="324.5" width="150">
-      </p>
-    </td>  
-    <td>
-      <p align="center">
-        <img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png" height="324.5" width="150">
-      </p>
-    </td>  
-    <td>
-      <p align="center">
-        <img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png" height="324.5" width="150">
-      </p>
-    </td>      
+    </td>    
 </table>
-
+</body>
+</html>
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
 - [RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text)
