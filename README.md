@@ -1,6 +1,6 @@
 # SafeArea
 <p align="center">
-<img src="https://docs.google.com/uc?id=18BKZNSGKCGsGeXecZaFCdNXVPxOLxzA4" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/safearea.png" height="649" width="300">
 </p>
 
 ### Main
