@@ -1,6 +1,6 @@
 # Hero
 <p align="center">
-<img src="https://docs.google.com/uc?id=1zap8Z84mDgTq39dBWyHe54urEOtzRvW-" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/hero.gif" height="649" width="300">
 </p>
 
 ### Main
