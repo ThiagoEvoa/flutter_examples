@@ -1,6 +1,6 @@
 # AnimatedPositioned
 <p align="center">
-<img src="https://docs.google.com/uc?id=15UO3KCrHV2b7MGD6edGJhb40ydxORa8C" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/animatedpositioned.gif" height="649" width="300">
 </p>
 
 ### Main
