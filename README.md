@@ -1,6 +1,6 @@
 # Draggable
 <p align="center">
-<img src="https://docs.google.com/uc?id=1dyz6aXUBS3V3EHWE9CFQKW9Y53d1RJex" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/draggable.gif" height="649" width="300">
 </p>
 
 ### Main
