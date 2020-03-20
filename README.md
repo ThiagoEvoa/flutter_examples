@@ -9,17 +9,14 @@ This repository contains examples of how to implement things in Flutter. If you 
 <table cellspacing="10%">
   <tr>
     <th>Month</th>
-    <th>Savings</th>
   </tr>
   <tr>
-
+    <p align="center">
 <img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png" height="324.5" width="150">
-
-
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png" height="324.5" width="150">
-
+</p>
   </tr>
 </table>
+
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
 - [RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text)
