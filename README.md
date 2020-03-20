@@ -1,6 +1,6 @@
 # Google Maps
 <p align="center">
-<img src="https://docs.google.com/uc?id=1UUyIN7TFH5M8nLF1TKzNSUuQUbed8BoI" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/googlemaps.gif" height="649" width="300">
 </p>
 
 ### Dependencies
