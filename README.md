@@ -1,6 +1,6 @@
 # Switch
 <p align="center">
-<img src="https://docs.google.com/uc?id=1rztlXTjh3Es3JQBOMEGil8Bth7fCPllv" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/switch.gif" height="649" width="300">
 </p>
 
 ### Main
