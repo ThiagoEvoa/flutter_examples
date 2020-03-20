@@ -1,6 +1,6 @@
 # ColorFiltered
 <p align="center">
-<img src="https://docs.google.com/uc?id=1tbmTmcv9WQT4YhiidXFdO5LSW_9uB-L-" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/colorfiltered.png" height="649" width="300">
 </p>
 
 ### Main
