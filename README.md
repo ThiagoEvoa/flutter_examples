@@ -1,6 +1,6 @@
 # LayoutBuilder
 <p align="center">
-<img src="https://docs.google.com/uc?id=1DQ3Kg7U6f1grH56ZllUPmjpzSP7bBN-v" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/layoutbuilder.gif" height="649" width="300">
 </p>
 
 ### Main
