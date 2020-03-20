@@ -1,6 +1,6 @@
 # TimePicker
 <p align="center">
-<img src="https://docs.google.com/uc?id=199dKuI7GPoySPqynTXvdruaV-hFcPBPd" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/timepicker.gif" height="649" width="300">
 </p>
 
 ### Dependencies
