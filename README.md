@@ -1,6 +1,6 @@
 # ClipPath
 <p align="center">
-<img src="https://docs.google.com/uc?id=10kPH1BFtAPpIXZWCZOuJHUpytoGioMIU" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/clippath.png" height="649" width="300">
 </p>
 
 ### Main
