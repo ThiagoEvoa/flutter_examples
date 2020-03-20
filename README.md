@@ -8,7 +8,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 <table cellspacing="10%">
   <tr>
-    <th>- [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)</th>
+    <th><a href="https://github.com/ThiagoEvoa/flutter_examples/tree/text"> Text</a></th>
   </tr>
   <tr>
     <td>
