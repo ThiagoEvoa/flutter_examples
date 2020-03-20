@@ -12,8 +12,12 @@ This repository contains examples of how to implement things in Flutter. If you 
     <th>Savings</th>
   </tr>
   <tr>
-    <td>January</td>
-    <td>$100</td>
+<p align="center">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png" height="649" width="300">
+</p>
+<p align="center">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png" height="649" width="300">
+</p>
   </tr>
 </table>
 
