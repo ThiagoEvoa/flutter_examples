@@ -13,10 +13,10 @@ This repository contains examples of how to implement things in Flutter. If you 
   </tr>
   <tr>
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png" height="324.5" width="150">
 </p>
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png" height="324.5" width="150">
 </p>
   </tr>
 </table>
