@@ -1,6 +1,6 @@
 # RefreshIndicator
 <p align="center">
-<img src="https://docs.google.com/uc?id=1i1yPqW58aLQQ9Xk-CKqgJIetOvSyzTfn" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/refreshindicator.gif" height="649" width="300">
 </p>
 
 ### Main
