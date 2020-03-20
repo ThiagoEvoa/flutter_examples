@@ -1,7 +1,7 @@
 # Channel
 <p align="center">
-<img src="https://drive.google.com/open?id=1hyKPU-CoSXmn2WG7hU7RUosrP4asCYll" height="649" width="300">
-<img src="https://drive.google.com/open?id=1eVZQ1vQnt5iNYz3Eh-_EftUsgEk3RPpW" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/channel_android.png" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/channel_ios.png" height="649" width="300">
 </p>
 
 ### Android
