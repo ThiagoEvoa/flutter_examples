@@ -1,6 +1,6 @@
 # AnimatedBuilder
 <p align="center">
-<img src="https://docs.google.com/uc?id=1HklWnVlRL-nHQHS7-f9HlU4UHCCGxFWY" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/animatedbuilder.gif" height="649" width="300">
 </p>
 
 ### Main
