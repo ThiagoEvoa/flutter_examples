@@ -1,6 +1,6 @@
 # CircularProgressIndicator
 <p align="center">
-<img src="https://docs.google.com/uc?id=1ifK2aRER3qRR5yu68eRbpxUqiI8_Yy9L" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/circularprogressindicator.gif" height="649" width="300">
 </p>
 
 ### Main
