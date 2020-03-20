@@ -1,6 +1,6 @@
 # BottomAppBar
 <p align="center">
-<img src="https://docs.google.com/uc?id=1TOABRy1I48ek73yLdeB-tZAzR1l2R-Rh" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/bottomappbar.gif" height="649" width="300">
 </p>
 
 ### Main
