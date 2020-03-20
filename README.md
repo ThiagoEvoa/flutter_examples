@@ -1,6 +1,6 @@
 # AlertDialog
 <p align="center">
-<img src="https://docs.google.com/uc?id=1igKsAJhaGZvP_IWyAHusbx3rI0VBqefZ" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/alertdialog.gif" height="649" width="300">
 </p>
 
 ### Main
