@@ -1,6 +1,6 @@
 # SelectableText
 <p align="center">
-<img src="https://docs.google.com/uc?id=15wuK4fvGJoyWIoIZJ0epBifrfhmUrU1u" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/selectabletext.gif" height="649" width="300">
 </p>
 
 ### Main
