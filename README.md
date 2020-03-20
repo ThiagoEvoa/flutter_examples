@@ -6,7 +6,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 ### Widgets
 
-  <table cellspacing="10">
+  <table cellspacing="2">
   <tr>
     <th>Month</th>
     <th>Savings</th>
