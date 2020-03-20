@@ -1,6 +1,6 @@
 # SqfLite
 <p align="center">
-<img src="https://docs.google.com/uc?id=1b9uv4JwFgcHzDe9QVKjbdHH2uCHZ_7H3" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/sqflite.gif" height="649" width="300">
 </p>
 
 ### Dependencies
