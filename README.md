@@ -1,6 +1,6 @@
 # ExpansionPanel
 <p align="center">
-<img src="https://docs.google.com/uc?id=1s_5-wWhfbpWDq2FcdHLZoznJUdl8OiJ8" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/expansionpanel.gif" height="649" width="300">
 </p>
 
 ### Main
