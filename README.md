@@ -9,7 +9,6 @@ This repository contains examples of how to implement things in Flutter. If you 
 <!DOCTYPE html>
 <html>
 <head>
-<style>
 </head>
 <body>
 <table cellspacing="10">
