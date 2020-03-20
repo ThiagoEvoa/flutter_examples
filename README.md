@@ -1,6 +1,6 @@
 # Flare
 <p align="center">
-<img src="https://docs.google.com/uc?id=18gnZn8IBZS9noe_7LA0COiQ5yWPVqfBu" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flare.gif" height="649" width="300">
 </p>
 
 ### Dependencies
