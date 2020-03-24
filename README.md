@@ -48,6 +48,22 @@ This repository contains examples of how to implement things in Flutter. If you 
 --- | --- | ---
 ![inkwell_gif] | ![animatedcontainer_gif] | ![alertdialog_gif]
 
+[GeneralDialog] | [Slider] | [Switch]
+--- | --- | ---
+![generaldialog_gif] | ![slider_gif] | ![switch_gif]
+
+[Checkbox] | [Radio] | [CircularProgressIndicator]
+--- | --- | ---
+![checkbox_gif] | ![radio_gif] | ![circularprogressindicator_gif]
+
+[LinearProgressIndicator] | [ExpansionPanel] | [Tooltip]
+--- | --- | ---
+![linearprogressindicator_gif] | ![expansionpanel_gif] | ![tooltip_gif]
+
+[Tabbar] | [BottomNavigation] | [BottomAppBar]
+--- | --- | ---
+![tabbar_gif] | ![bottomnavigation_gif] | ![bottomappbar_gif]
+
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
 - [RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text)
