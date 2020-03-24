@@ -25,31 +25,23 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: ListView(
+      child: ListWheelScrollView(
+        itemExtent: 300,
         children: <Widget>[
-          ListTile(
-            leading: Icon(Icons.person),
-            title: Text("Listview"),
-            subtitle: Text("Simple Listview example"),
-            trailing: Icon(Icons.delete),
+          Container(
+            color: Colors.blue,
           ),
-          ListTile(
-            leading: Icon(Icons.person),
-            title: Text("Listview"),
-            subtitle: Text("Simple Listview example"),
-            trailing: Icon(Icons.delete),
+          Container(
+            color: Colors.blue,
           ),
-          ListTile(
-            leading: Icon(Icons.person),
-            title: Text("Listview"),
-            subtitle: Text("Simple Listview example"),
-            trailing: Icon(Icons.delete),
+          Container(
+            color: Colors.blue,
           ),
-          ListTile(
-            leading: Icon(Icons.person),
-            title: Text("Listview"),
-            subtitle: Text("Simple Listview example"),
-            trailing: Icon(Icons.delete),
+          Container(
+            color: Colors.blue,
+          ),
+          Container(
+            color: Colors.blue,
           ),
         ],
       ),
