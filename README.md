@@ -10,7 +10,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 [Text] | [RichText] | [icon]
 --- | --- | ---
-[![Text][text]]() | ![RichText][richtext] | ![Icon][icon]
+[![Text][text]][Text] | ![RichText][richtext] | ![Icon][icon]
 
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
