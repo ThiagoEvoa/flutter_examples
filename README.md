@@ -142,11 +142,11 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 [Text] | [RichText] | [SelectableText]
 :---: | :---: | :---:
-![Teste][text] | ![Teste][text] | ![Teste][text]
+![Text][text] | ![RichText][richtext] | ![SelectableText][selectabletext]
 
 [TextField] | [RaiseButton] | [FlatButton]
 :---: | :---: | :---:
-![Teste][text] | ![Teste][text] | ![Teste][text]
+![TextField][textfield] | ![RaiseButton][raisedbutton] | ![FlatButton][flatbutton]
 
 
 
