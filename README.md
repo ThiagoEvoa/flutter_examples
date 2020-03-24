@@ -116,7 +116,7 @@ ___
 # API
 
 <p align="center">
-<img src="https://docs.google.com/uc?id=1oJD6HB-tyQ41PwEov2HxEBK6xFWfY1aE" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/http.gif" height="649" width="300">
 </p>
 
 1. [HTTP](https://github.com/ThiagoEvoa/flutter_examples/tree/http)
