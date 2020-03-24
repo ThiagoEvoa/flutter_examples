@@ -29,7 +29,7 @@ ___
 --- | --- | ---
 ![table_png] | ![cliprrect_png] | ![clipoval_png]
 
-[ClipPath] | [SafeArea] | TODO
+[ClipPath] | [SafeArea] | 
 --- | --- | ---
 ![clippath_png] | ![safearea_png] | ![empty_png]
 
