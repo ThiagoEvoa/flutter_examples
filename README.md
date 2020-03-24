@@ -8,15 +8,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 :x:
 :white_check_mark:
 
-Widgets | Widgets | 
-:------------: | :------------: 
-[Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text) 
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png" height="324.5" width="150"> | [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text) 
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png" height="324.5" width="150">
-
-
-
-- [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
+- [:x: Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
 - [RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text)
 - [SelectableText](https://github.com/ThiagoEvoa/flutter_examples/tree/selectable_text)
 - [TextField](https://github.com/ThiagoEvoa/flutter_examples/tree/textfield)
