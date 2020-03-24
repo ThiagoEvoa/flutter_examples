@@ -8,8 +8,8 @@ This repository contains examples of how to implement things in Flutter. If you 
 :x:
 :white_check_mark:
 
-![Teste][text]
-[text]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png "Logo Title Text 2"
+![Teste][logo]
+[logo]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png "Logo Title Text 2"
 
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
