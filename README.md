@@ -161,27 +161,6 @@ ___
 --- | --- | ---
 ![empty_gif] | ![empty_gif] | ![empty_gif]
 
-1. [ImagePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/imagepicker)
-2. [Internationalization](https://github.com/ThiagoEvoa/flutter_examples/tree/internationalization)
-3. [SharedPreferences](https://github.com/ThiagoEvoa/flutter_examples/tree/sharedpreferences)
-4. [BarCode e QRCode](https://github.com/ThiagoEvoa/flutter_examples/tree/barcode_qrcode)
-5. [Geolocator](https://github.com/ThiagoEvoa/flutter_examples/tree/geolocator)
-6. [Google Maps](https://github.com/ThiagoEvoa/flutter_examples/tree/googlemaps)
-7. [Biometric](https://github.com/ThiagoEvoa/flutter_examples/tree/biometric)
-8. [PackageInfo](https://github.com/ThiagoEvoa/flutter_examples/tree/packageinfo)
-9. [FlipCard](https://github.com/ThiagoEvoa/flutter_examples/tree/flipcard)
-10. [FlipWidget](https://github.com/ThiagoEvoa/flutter_examples/tree/flipwidget)
-11. [Flare/Rive](https://github.com/ThiagoEvoa/flutter_examples/blob/flare/README.md)
-12. [Local Notification](https://github.com/ThiagoEvoa/flutter_examples/tree/localnotification)
-13. [Google Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/google_auth)
-14. [Channel](https://github.com/ThiagoEvoa/flutter_examples/tree/channel)
-15. [Connectivity](https://github.com/ThiagoEvoa/flutter_examples/tree/connectivity)
-16. [Device Info](https://github.com/ThiagoEvoa/flutter_examples/tree/device_info)
-17. [Share](https://github.com/ThiagoEvoa/flutter_examples/tree/share)
-18. [Video Player](https://github.com/ThiagoEvoa/flutter_examples/tree/video_player)
-19. [Audio Player](https://github.com/ThiagoEvoa/flutter_examples/tree/audio_player)
-20. [Bluetooth](https://github.com/ThiagoEvoa/flutter_examples/tree/bluetooth)
-
 
 
 <!-- PNG -->
