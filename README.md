@@ -64,7 +64,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 --- | --- | ---
 ![tabbar_gif] | ![bottomnavigation_gif] | ![bottomappbar_gif]
 
-[Drawer] | [PopUpMenuButton] | [SnackBar]
+[Drawer] | [Popup Menu Button] | [SnackBar]
 --- | --- | ---
 ![drawer_gif] | ![popupmenubutton_gif] | ![snackbar_gif]
 
