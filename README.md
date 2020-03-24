@@ -88,6 +88,10 @@ This repository contains examples of how to implement things in Flutter. If you 
 --- | --- | ---
 ![navigation_gif] | ![fadetransition_gif] | ![hero_gif]
 
+[DraggableScrollableSheet] | [LayoutBuilder] | [AnimatedBuilder]
+--- | --- | ---
+![draggablescrollablesheet_gif] | ![layoutbuilder_gif] | ![animatedbuilder_gif]
+
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
 - [RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text)
