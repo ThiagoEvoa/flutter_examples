@@ -44,6 +44,10 @@ This repository contains examples of how to implement things in Flutter. If you 
 --- | --- | ---
 ![flatbutton_gif] | ![iconbutton_gif] | ![animatedicon_gif]
 
+[InkWell] | [Animated Container] | [Alert Dialog]
+--- | --- | ---
+![inkwell_gif] | ![animatedcontainer_gif] | ![alertdialog_gif]
+
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
 - [RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text)
