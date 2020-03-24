@@ -128,11 +128,6 @@ ___
 --- | --- | --- | ---
 ![auth_gif] | ![store_gif] | ![storage_gif] | ![empty_gif]
 
-1. [Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/firebaseauth)
-2. [Store](https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestore)
-3. [Storage](https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestorage)
-4. [Messaging](https://github.com/ThiagoEvoa/flutter_examples/tree/firebase_messaging)
-
 # Others
 1. [ImagePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/imagepicker)
 2. [Internationalization](https://github.com/ThiagoEvoa/flutter_examples/tree/internationalization)
