@@ -15,6 +15,10 @@ This repository contains examples of how to implement things in Flutter. If you 
 :---: | :---: | :---:
 ![Teste][text] | ![Teste][text] | ![Teste][text]
 
+[Text] | Less | Pretty
+:---: | :---: | :---:
+![Teste][text] | ![Teste][text] | ![Teste][text]
+
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
 - [RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text)
