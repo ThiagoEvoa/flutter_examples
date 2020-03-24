@@ -68,6 +68,14 @@ This repository contains examples of how to implement things in Flutter. If you 
 --- | --- | ---
 ![drawer_gif] | ![popupmenubutton_gif] | ![snackbar_gif]
 
+[Stepper] | [Draggable] | [DatePicker]
+--- | --- | ---
+![stepper_gif] | ![draggable_gif] | ![datepicker_gif]
+
+[TimePicker] | [Webview] | [ListView]
+--- | --- | ---
+![timepicker_gif] | ![webview_gif] | ![listview_gif]
+
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
 - [RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text)
