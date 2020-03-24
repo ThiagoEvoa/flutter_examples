@@ -8,7 +8,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 :x:
 :white_check_mark:
 
-![Teste][logo]
+![Teste][text]
 
 [text]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png=250x250 "Text"
 
