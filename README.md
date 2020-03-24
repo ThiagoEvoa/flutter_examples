@@ -20,6 +20,10 @@ This repository contains examples of how to implement things in Flutter. If you 
 --- | --- | ---
 ![gradient_png] | ![column_png] | ![row_png]
 
+[Wrap] | [Stack] | [Material]
+--- | --- | ---
+![wrap_png] | ![stack_png] | ![material_png]
+
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
 - [RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text)
