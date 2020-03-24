@@ -40,7 +40,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 --- | --- | ---
 ![selectabletext_gif] | ![textfield_gif] | ![raisedbutton_gif]
 
-[FlatButton] | [IconButton] | [AnimatedIcon]
+[FlatButton] | [IconButton] | [Animated Icon]
 --- | --- | ---
 ![flatbutton_gif] | ![iconbutton_gif] | ![animatedicon_gif]
 
