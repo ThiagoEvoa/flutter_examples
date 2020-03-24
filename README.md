@@ -123,7 +123,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 
 <!-- PNG -->
-[text_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png "Text"
+[text_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png
 [richtext_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/richtext.png
 [icon_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/icon.png
 [image_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/image.png
