@@ -105,6 +105,11 @@ ___
 - [Bloc + rxDart](https://github.com/ThiagoEvoa/flutter_examples/tree/bloc_rxdart)
 
 # Database
+
+<p align="center">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/sqflite.gif" height="649" width="300">
+</p>
+
 - [SqfLite](https://github.com/ThiagoEvoa/flutter_examples/tree/sqflite)
 - [Hive](https://github.com/ThiagoEvoa/flutter_examples/tree/hive)
 
