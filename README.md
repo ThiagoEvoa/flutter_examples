@@ -137,25 +137,25 @@ ___
 --- | --- | ---
 ![channelandroid_png] | ![channelios_png] | ![empty_png]
 
-[Device Info] | TODO | TODO
+[Device Info] | [](#) | [](#)
 --- | --- | ---
 ![empty_png] | ![empty_png] | ![empty_png]
 
-[ImagePicker] | [Internationalization] | [SharedPreferences]
+[ImagePicker] | [Geolocator] | [SharedPreferences]
 --- | --- | ---
-![imagepicker_gif] | ![empty_gif] | ![sharedpreferences_gif]
+![imagepicker_gif] | ![geolocator_gif] | ![sharedpreferences_gif]
 
-[BarCode e QRCode] | [Geolocator] | [Google Maps]
+[FlipCard] | [Geolocator] | [Google Maps]
 --- | --- | ---
-![empty_gif] | ![geolocator_gif] | ![googlemaps_gif]
-
-[Biometric] | [PackageInfo] | [FlipCard]
---- | --- | ---
-![empty_gif] | ![empty_gif] | ![flipcard_gif]
+![flipcard_gif] | ![geolocator_gif] | ![googlemaps_gif]
 
 [FlipWidget] | [Flare/Rive] | [Local Notification]
 --- | --- | ---
 ![flipwidget_gif] | ![flare_gif] | ![localnotification_gif]
+
+[Biometric] | [PackageInfo] | [Internationalization]
+--- | --- | ---
+![empty_gif] | ![empty_gif] | ![empty_gif]
 
 [Google Auth] | [Connectivity] | [Share]
 --- | --- | ---
