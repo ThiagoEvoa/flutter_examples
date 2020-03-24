@@ -10,10 +10,9 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 Widgets | 
 ------------ | 
-<p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png" height="649" width="300">
-</p>
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
+
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
 - [RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text)
