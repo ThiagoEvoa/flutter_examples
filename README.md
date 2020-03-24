@@ -8,7 +8,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 :x:
 :white_check_mark:
 
-![Teste][text]{:height="50%" width="50%"}
+![Teste][text] {:height="50%" width="50%"}
 
 [text]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png "Text"
 
