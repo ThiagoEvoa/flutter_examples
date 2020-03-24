@@ -11,7 +11,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 [text]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png "Text"
 [text_link]: (https://github.com/ThiagoEvoa/flutter_examples/tree/text)
 
-![Teste][text-link] | Less | Pretty
+[Teste][text-link] | Less | Pretty
 :---: | :---: | :---:
 ![Teste][text] | ![Teste][text] | ![Teste][text]
 
