@@ -114,36 +114,41 @@ ___
 2. [Hive](https://github.com/ThiagoEvoa/flutter_examples/tree/hive)
 
 # API
-- [HTTP](https://github.com/ThiagoEvoa/flutter_examples/tree/http)
-- [Dio](https://github.com/ThiagoEvoa/flutter_examples/tree/dio)
+
+<p align="center">
+<img src="https://docs.google.com/uc?id=1oJD6HB-tyQ41PwEov2HxEBK6xFWfY1aE" height="649" width="300">
+</p>
+
+1. [HTTP](https://github.com/ThiagoEvoa/flutter_examples/tree/http)
+2. [Dio](https://github.com/ThiagoEvoa/flutter_examples/tree/dio)
 
 # Firebase
-- [Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/firebaseauth)
-- [Store](https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestore)
-- [Storage](https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestorage)
-- [Messaging](https://github.com/ThiagoEvoa/flutter_examples/tree/firebase_messaging)
+1. [Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/firebaseauth)
+2. [Store](https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestore)
+3. [Storage](https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestorage)
+4. [Messaging](https://github.com/ThiagoEvoa/flutter_examples/tree/firebase_messaging)
 
 # Others
-- [ImagePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/imagepicker)
-- [Internationalization](https://github.com/ThiagoEvoa/flutter_examples/tree/internationalization)
-- [SharedPreferences](https://github.com/ThiagoEvoa/flutter_examples/tree/sharedpreferences)
-- [BarCode e QRCode](https://github.com/ThiagoEvoa/flutter_examples/tree/barcode_qrcode)
-- [Geolocator](https://github.com/ThiagoEvoa/flutter_examples/tree/geolocator)
-- [Google Maps](https://github.com/ThiagoEvoa/flutter_examples/tree/googlemaps)
-- [Biometric](https://github.com/ThiagoEvoa/flutter_examples/tree/biometric)
-- [PackageInfo](https://github.com/ThiagoEvoa/flutter_examples/tree/packageinfo)
-- [FlipCard](https://github.com/ThiagoEvoa/flutter_examples/tree/flipcard)
-- [FlipWidget](https://github.com/ThiagoEvoa/flutter_examples/tree/flipwidget)
-- [Flare/Rive](https://github.com/ThiagoEvoa/flutter_examples/blob/flare/README.md)
-- [Local Notification](https://github.com/ThiagoEvoa/flutter_examples/tree/localnotification)
-- [Google Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/google_auth)
-- [Channel](https://github.com/ThiagoEvoa/flutter_examples/tree/channel)
-- [Connectivity](https://github.com/ThiagoEvoa/flutter_examples/tree/connectivity)
-- [Device Info](https://github.com/ThiagoEvoa/flutter_examples/tree/device_info)
-- [Share](https://github.com/ThiagoEvoa/flutter_examples/tree/share)
-- [Video Player](https://github.com/ThiagoEvoa/flutter_examples/tree/video_player)
-- [Audio Player](https://github.com/ThiagoEvoa/flutter_examples/tree/audio_player)
-- [Bluetooth](https://github.com/ThiagoEvoa/flutter_examples/tree/bluetooth)
+1. [ImagePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/imagepicker)
+2. [Internationalization](https://github.com/ThiagoEvoa/flutter_examples/tree/internationalization)
+3. [SharedPreferences](https://github.com/ThiagoEvoa/flutter_examples/tree/sharedpreferences)
+4. [BarCode e QRCode](https://github.com/ThiagoEvoa/flutter_examples/tree/barcode_qrcode)
+5. [Geolocator](https://github.com/ThiagoEvoa/flutter_examples/tree/geolocator)
+6. [Google Maps](https://github.com/ThiagoEvoa/flutter_examples/tree/googlemaps)
+7. [Biometric](https://github.com/ThiagoEvoa/flutter_examples/tree/biometric)
+8. [PackageInfo](https://github.com/ThiagoEvoa/flutter_examples/tree/packageinfo)
+9. [FlipCard](https://github.com/ThiagoEvoa/flutter_examples/tree/flipcard)
+10. [FlipWidget](https://github.com/ThiagoEvoa/flutter_examples/tree/flipwidget)
+11. [Flare/Rive](https://github.com/ThiagoEvoa/flutter_examples/blob/flare/README.md)
+12. [Local Notification](https://github.com/ThiagoEvoa/flutter_examples/tree/localnotification)
+13. [Google Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/google_auth)
+14. [Channel](https://github.com/ThiagoEvoa/flutter_examples/tree/channel)
+15. [Connectivity](https://github.com/ThiagoEvoa/flutter_examples/tree/connectivity)
+16. [Device Info](https://github.com/ThiagoEvoa/flutter_examples/tree/device_info)
+17. [Share](https://github.com/ThiagoEvoa/flutter_examples/tree/share)
+18. [Video Player](https://github.com/ThiagoEvoa/flutter_examples/tree/video_player)
+19. [Audio Player](https://github.com/ThiagoEvoa/flutter_examples/tree/audio_player)
+20. [Bluetooth](https://github.com/ThiagoEvoa/flutter_examples/tree/bluetooth)
 
 
 
