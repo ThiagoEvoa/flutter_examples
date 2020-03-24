@@ -11,9 +11,10 @@ This repository contains examples of how to implement things in Flutter. If you 
 [Text] | [RichText] | [Icon]
 --- | --- | ---
 ![text_png] | ![richtext_png] | ![icon_png]
-[Text] | [RichText] | [Icon]
+
+[Image NetWork] | [Image Asset] | [Container]
 --- | --- | ---
-![text_png] | ![richtext_png] | ![icon_png]
+![image_png] | ![image_png] | ![container_png]
 
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
