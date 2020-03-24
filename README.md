@@ -12,9 +12,9 @@ This repository contains examples of how to implement things in Flutter. If you 
 --- | --- |
 ![Text][text] | ![RichText][richtext]
 
-[SelectableText] | [RaisedButton] | [Flatbutton]
---- | --- | --- |
-![SelectableText][selectabletext] | ![RaisedButton][raisedbutton] | ![Flatbutton][flatbutton]
+[SelectableText] | [RaisedButton]
+--- | --- |
+![SelectableText][selectabletext] | ![RaisedButton][raisedbutton]
 
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
