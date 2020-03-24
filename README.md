@@ -10,7 +10,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 [Text] | [RichText] | [icon]
 --- | --- | ---
-![Text] | ![RichText][richtext] | ![Icon][icon]
+![text_png] | ![RichText][richtext] | ![Icon][icon]
 
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
@@ -123,25 +123,25 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 
 <!-- PNG -->
-[text]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png "Text"
-[richtext]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/richtext.png
-[icon]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/icon.png
-[image]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/image.png
-[container]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/container.png
-[gradient]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/gradient.png
-[column]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/column.png
-[row]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/row.png
-[wrap]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/wrap.png
-[stack]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/stack.png
-[material]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/material.png
-[scaffold]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/scaffold.png
-[darktheme]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/darktheme.png
-[colorfiltered]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/colorfiltered.png
-[table]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/table.png
-[cliprrect]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/cliprrect.png
-[clipoval]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/clipoval.png
-[clippath]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/clippath.png
-[safearea]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/safearea.png
+[text_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png "Text"
+[richtext_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/richtext.png
+[icon_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/icon.png
+[image_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/image.png
+[container_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/container.png
+[gradient_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/gradient.png
+[column_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/column.png
+[row_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/row.png
+[wrap_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/wrap.png
+[stack_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/stack.png
+[material_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/material.png
+[scaffold_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/scaffold.png
+[darktheme_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/darktheme.png
+[colorfiltered_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/colorfiltered.png
+[table_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/table.png
+[cliprrect_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/cliprrect.png
+[clipoval_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/clipoval.png
+[clippath_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/clippath.png
+[safearea_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/safearea.png
 
 <!-- GIF -->
 [selectabletext]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/selectabletext.gif
