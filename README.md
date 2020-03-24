@@ -126,7 +126,7 @@ ___
 
 [Auth] | [Store] | [Storage] | [Messaging]
 --- | --- | --- | ---
-![text_png] | ![richtext_png] | ![icon_png] | ![icon_png]
+![auth_gif] | ![store_gif] | ![storage_gif] | ![empty_gif]
 
 1. [Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/firebaseauth)
 2. [Store](https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestore)
@@ -226,6 +226,10 @@ ___
 [animatedpositioned_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/animatedpositioned.gif
 [empty_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/empty.gif
 
+[auth_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/firebaseauth.gif
+[store_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/firebasedatabase.gif
+[storage_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/firebasestorage.gif
+
 <!-- Links -->
 [Text]: https://github.com/ThiagoEvoa/flutter_examples/tree/text
 [RichText]: https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text
@@ -291,3 +295,8 @@ ___
 [ClipPath]: https://github.com/ThiagoEvoa/flutter_examples/tree/clippath
 [Transform]: https://github.com/ThiagoEvoa/flutter_examples/tree/transform
 [AnimatedPositioned]: https://github.com/ThiagoEvoa/flutter_examples/tree/animatedpositioned
+
+[Auth]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebaseauth
+[Store]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestore
+[Storage]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestorage
+[Messaging]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebase_messaging
