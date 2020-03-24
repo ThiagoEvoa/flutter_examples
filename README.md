@@ -9,9 +9,9 @@ This repository contains examples of how to implement things in Flutter. If you 
 :white_check_mark:
 
 [text]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png "Text"
-[text_link]: (https://github.com/ThiagoEvoa/flutter_examples/tree/text)
+[text_link]: https://github.com/ThiagoEvoa/flutter_examples/tree/text
 
- [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text) | Less | Pretty
+[text_link] | Less | Pretty
 :---: | :---: | :---:
 ![Teste][text] | ![Teste][text] | ![Teste][text]
 
