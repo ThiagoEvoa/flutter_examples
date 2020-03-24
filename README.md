@@ -10,7 +10,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 [Text] | [RichText]
 --- | --- |
-[Text][text] | ![RichText][richtext]
+![Text][text] | ![RichText][richtext]
 
 [SelectableText] | [RaisedButton]
 --- | --- |
