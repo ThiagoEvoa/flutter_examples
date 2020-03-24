@@ -5,13 +5,13 @@ This repository contains examples of how to implement things in Flutter. If you 
 ## Branches
 
 ### Widgets
-:x:
-:white_check_mark:
+<!-- :x:
+:white_check_mark: -->
 
 [text]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png "Text"
 [Text]: https://github.com/ThiagoEvoa/flutter_examples/tree/text
 
-[Text] | Less | Pretty
+[Text] :white_check_mark: | Less | Pretty
 :---: | :---: | :---:
 ![Teste][text] | ![Teste][text] | ![Teste][text]
 
