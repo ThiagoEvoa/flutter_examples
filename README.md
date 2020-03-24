@@ -8,10 +8,9 @@ This repository contains examples of how to implement things in Flutter. If you 
 :x:
 :white_check_mark:
 
-Widgets | Management State | Database | API | Firebase | Others
------------- | ------------- | ------------- | ------------- | ------------- | -------------
-[Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text) | 
-[RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text)
+Widgets | 
+------------ | 
+[Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
 - [RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text)
