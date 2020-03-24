@@ -60,7 +60,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 --- | --- | ---
 ![linearprogressindicator_gif] | ![expansionpanel_gif] | ![tooltip_gif]
 
-[Tabbar] | [BottomNavigation] | [BottomAppBar]
+[Tabbar] | [Bottom Navigation] | [BottomAppBar]
 --- | --- | ---
 ![tabbar_gif] | ![bottomnavigation_gif] | ![bottomappbar_gif]
 
