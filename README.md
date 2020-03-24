@@ -24,7 +24,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 --- | --- | ---
 ![wrap_png] | ![stack_png] | ![material_png]
 
-[Scaffold] | [DarkTheme] | [ColorFiltered]
+[Scaffold] | [Dark Theme] | [ColorFiltered]
 --- | --- | ---
 ![scaffold_png] | ![darktheme_png] | ![colorfiltered_png]
 
