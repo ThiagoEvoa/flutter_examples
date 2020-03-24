@@ -129,6 +129,38 @@ ___
 ![auth_gif] | ![store_gif] | ![storage_gif] | ![empty_gif]
 
 # Others
+[Channel] | [Channel] | [Device Info]
+--- | --- | ---
+![channelandroid_png] | ![channelios_png] | ![empty_png]
+
+[Device Info] | TODO | TODO
+--- | --- | ---
+![empty_png] | ![empty_png] | ![empty_png]
+
+[ImagePicker] | [Internationalization] | [SharedPreferences]
+--- | --- | ---
+![imagepicker_gif] | ![empty_gif] | ![sharedpreferences_gif]
+
+[BarCode e QRCode] | [Geolocator] | [Google Maps]
+--- | --- | ---
+![empty_gif] | ![geolocator_gif] | ![googlemaps_gif]
+
+[Biometric] | [PackageInfo] | [FlipCard]
+--- | --- | ---
+![empty_gif] | ![empty_gif] | ![flipcard_gif]
+
+[FlipWidget] | [Flare/Rive] | [Local Notification]
+--- | --- | ---
+![flipwidget_gif] | ![flare_gif] | ![localnotification_gif]
+
+[Google Auth] | [Connectivity] | [Share]
+--- | --- | ---
+![empty_gif] | ![empty_gif] | ![empty_gif]
+
+[Video Player] | [Audio Player] | [Bluetooth]
+--- | --- | ---
+![empty_gif] | ![empty_gif] | ![empty_gif]
+
 1. [ImagePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/imagepicker)
 2. [Internationalization](https://github.com/ThiagoEvoa/flutter_examples/tree/internationalization)
 3. [SharedPreferences](https://github.com/ThiagoEvoa/flutter_examples/tree/sharedpreferences)
@@ -173,6 +205,9 @@ ___
 [clippath_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/clippath.png
 [safearea_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/safearea.png
 [empty_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/empty.png
+
+[channelandroid_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/channel_android.png
+[channelios_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/channel_ios.png
 
 <!-- GIF -->
 [selectabletext_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/selectabletext.gif
@@ -224,6 +259,15 @@ ___
 [auth_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/firebaseauth.gif
 [store_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/firebasedatabase.gif
 [storage_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/firebasestorage.gif
+
+[imagepicker_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/imagepicker.gif
+[sharedpreferences_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/sharedpreferences.gif
+[geolocator_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/geolocator.gif
+[googlemaps_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/googlemaps.gif
+[flipcard_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flipcard.gif
+[flipwidget_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flipwidget.gif
+[flare_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flare.gif
+[localnotification_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/localnotification.gif
 
 <!-- Links -->
 [Text]: https://github.com/ThiagoEvoa/flutter_examples/tree/text
@@ -295,3 +339,24 @@ ___
 [Store]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestore
 [Storage]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestorage
 [Messaging]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebase_messaging
+
+[ImagePicker]: https://github.com/ThiagoEvoa/flutter_examples/tree/imagepicker
+[Internationalization]: https://github.com/ThiagoEvoa/flutter_examples/tree/internationalization
+[SharedPreferences]: https://github.com/ThiagoEvoa/flutter_examples/tree/sharedpreferences
+[BarCode e QRCode]: https://github.com/ThiagoEvoa/flutter_examples/tree/barcode_qrcode
+[Geolocator]: https://github.com/ThiagoEvoa/flutter_examples/tree/geolocator
+[Google Maps]: https://github.com/ThiagoEvoa/flutter_examples/tree/googlemaps
+[Biometric]: https://github.com/ThiagoEvoa/flutter_examples/tree/biometric
+[PackageInfo]: https://github.com/ThiagoEvoa/flutter_examples/tree/packageinfo
+[FlipCard]: https://github.com/ThiagoEvoa/flutter_examples/tree/flipcard
+[FlipWidget]: https://github.com/ThiagoEvoa/flutter_examples/tree/flipwidget
+[Flare/Rive]: https://github.com/ThiagoEvoa/flutter_examples/blob/flare/README.md
+[Local Notification]: https://github.com/ThiagoEvoa/flutter_examples/tree/localnotification
+[Google Auth]: https://github.com/ThiagoEvoa/flutter_examples/tree/google_auth
+[Channel]: https://github.com/ThiagoEvoa/flutter_examples/tree/channel
+[Connectivity]: https://github.com/ThiagoEvoa/flutter_examples/tree/connectivity
+[Device Info]: https://github.com/ThiagoEvoa/flutter_examples/tree/device_info
+[Share]: https://github.com/ThiagoEvoa/flutter_examples/tree/share
+[Video Player]: https://github.com/ThiagoEvoa/flutter_examples/tree/video_player
+[Audio Player]: https://github.com/ThiagoEvoa/flutter_examples/tree/audio_player
+[Bluetooth]: https://github.com/ThiagoEvoa/flutter_examples/tree/bluetooth
