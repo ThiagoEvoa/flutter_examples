@@ -32,9 +32,9 @@ This repository contains examples of how to implement things in Flutter. If you 
 --- | --- | ---
 ![table_png] | ![cliprrect_png] | ![clipoval_png]
 
-[ClipPath] | [SafeArea] | []
+[ClipPath] | [SafeArea] | TODO
 --- | --- | ---
-![clippath_png] | ![safearea_png] | ![]
+![clippath_png] | ![safearea_png] | ![empty_png]
 
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
@@ -166,6 +166,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 [clipoval_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/clipoval.png
 [clippath_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/clippath.png
 [safearea_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/safearea.png
+[empty_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/empty.png
 
 <!-- GIF -->
 [selectabletext]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/selectabletext.gif
