@@ -8,7 +8,10 @@ This repository contains examples of how to implement things in Flutter. If you 
 :x:
 :white_check_mark:
 
-- [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text) | - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
 - [RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text)
