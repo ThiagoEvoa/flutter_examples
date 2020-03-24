@@ -10,7 +10,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 ![Teste][logo]
 
-[text]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png =250x250 "Text"
+[text]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png=250x250 "Text"
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
 - [RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text)
