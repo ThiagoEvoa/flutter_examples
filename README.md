@@ -84,6 +84,10 @@ This repository contains examples of how to implement things in Flutter. If you 
 --- | --- | ---
 ![reorderablelistView_gif] | ![gridViewbuilder_gif] | ![form_gif]
 
+[Navigation] | [FadeTransition] | [Hero]
+--- | --- | ---
+![navigation_gif] | ![fadetransition_gif] | ![hero_gif]
+
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
 - [RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text)
