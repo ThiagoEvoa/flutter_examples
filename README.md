@@ -13,7 +13,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 [richtext]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/richtext.png
 [selectabletext]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/selectabletext.gif
 [textfield]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/textfield.gif
-[raisebutton]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/raisedbutton.gif
+[raisedbutton]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/raisedbutton.gif
 [flatbutton]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flatbutton.gif
 [icon]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/icon.png
 [iconbutton]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/iconbutton.gif
@@ -78,7 +78,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 [RichText]: https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text
 [SelectableText]: https://github.com/ThiagoEvoa/flutter_examples/tree/selectable_text
 [TextField]: https://github.com/ThiagoEvoa/flutter_examples/tree/textfield
-[RaiseButton]: https://github.com/ThiagoEvoa/flutter_examples/tree/raisedbutton
+[RaisedButton]: https://github.com/ThiagoEvoa/flutter_examples/tree/raisedbutton
 [FlatButton]: https://github.com/ThiagoEvoa/flutter_examples/tree/flatbutton
 [Icon]: https://github.com/ThiagoEvoa/flutter_examples/tree/icon
 [IconButton]: https://github.com/ThiagoEvoa/flutter_examples/tree/iconbutton
@@ -140,13 +140,13 @@ This repository contains examples of how to implement things in Flutter. If you 
 [AnimatedPositioned]: https://github.com/ThiagoEvoa/flutter_examples/tree/animatedpositioned
 
 
-[Text] | [RichText] | [SelectableText]
+[Text] | [RichText] |
 :---: | :---: | :---:
-![Text][text] | ![RichText][richtext] | ![SelectableText][selectabletext]
+![Text][text] | ![RichText][richtext] |
 
-[TextField] | [RaisedButton] | [FlatButton]
+[SelectableText] | [RaisedButton] |
 :---: | :---: | :---:
-![TextField][textfield] | ![RaisedButton][raisedbutton] | ![FlatButton][flatbutton]
+![SelectableText][selectabletext] | ![RaisedButton][raisedbutton] |
 
 
 
