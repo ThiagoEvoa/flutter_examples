@@ -92,7 +92,7 @@ ___
 [Transform] | [AnimatedPositioned] | [TODO]
 --- | --- | ---
 ![transform_gif] | ![animatedpositioned_gif] | ![empty_gif]
-
+___
 
 ### Management State
 - [SetState](https://github.com/ThiagoEvoa/flutter_examples/tree/setstate)
