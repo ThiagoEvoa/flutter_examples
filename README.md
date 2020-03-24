@@ -36,6 +36,10 @@ This repository contains examples of how to implement things in Flutter. If you 
 --- | --- | ---
 ![clippath_png] | ![safearea_png] | ![empty_png]
 
+[SelectableText] | [TextField] | [RaisedButton]
+--- | --- | ---
+![selectabletext_gif] | ![textfield_gif] | ![raisedbutton_gif]
+
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
 - [RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text)
@@ -169,50 +173,50 @@ This repository contains examples of how to implement things in Flutter. If you 
 [empty_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/empty.png
 
 <!-- GIF -->
-[selectabletext]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/selectabletext.gif
-[textfield]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/textfield.gif
-[raisedbutton]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/raisedbutton.gif
-[flatbutton]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flatbutton.gif
-[iconbutton]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/iconbutton.gif
-[animatedicon]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/animatedicon.gif
-[inkwell]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/inkwell.gif
-[animatedcontainer]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/animetedcontainer.gif
-[alertdialog]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/alertdialog.gif
-[generaldialog]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/generaldialog.gif
-[slider]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/slider.gif
-[switch]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/switch.gif
-[checkbox]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/checkbox.gif
-[radio]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/radio.gif
-[circularprogressindicator]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/circularprogressindicator.gif
-[linearprogressindicator]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/linearprogressindicator.gif
-[expansionpanel]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/expansionpanel.gif
-[tooltip]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/tooltip.gif
-[tabbar]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/tabbar.gif
-[bottomnavigation]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/bottomnavigationbar.gif
-[bottomappbar]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/bottomappbar.gif
-[drawer]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/drawer.gif
-[popupmenubutton]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/popupmenubutton.gif
-[snackbar]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/snackbar.gif
-[stepper]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/stepper.gif
-[draggable]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/draggable.gif
-[datepicker]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/datepicker.gif
-[timepicker]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/timepicker.gif
-[webview]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/webview.gif
-[listview]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/listview.gif
-[listViewbuilder]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/listviewbuilder.gif
-[dismissible]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/dismissible.gif
-[refreshindicator]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/refreshindicator.gif
-[reorderablelistView]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/reorderablelistview.gif
-[gridViewbuilder]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/gridviewbuilder.gif
-[form]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/form.gif
-[navigation]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/navigation.gif
-[fadetransition]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/fadetransition.gif
-[hero]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/hero.gif
-[draggablescrollablesheet]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/draggablescrollablesheet.gif
-[layoutbuilder]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/layoutbuilder.gif
-[animatedbuilder]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/animatedbuilder.gif
-[transform]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/transform.gif
-[animatedpositioned]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/animatedpositioned.gif
+[selectabletext_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/selectabletext.gif
+[textfield_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/textfield.gif
+[raisedbutton_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/raisedbutton.gif
+[flatbutton_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flatbutton.gif
+[iconbutton_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/iconbutton.gif
+[animatedicon_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/animatedicon.gif
+[inkwell_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/inkwell.gif
+[animatedcontainer_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/animetedcontainer.gif
+[alertdialog_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/alertdialog.gif
+[generaldialog_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/generaldialog.gif
+[slider_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/slider.gif
+[switch_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/switch.gif
+[checkbox_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/checkbox.gif
+[radio_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/radio.gif
+[circularprogressindicator_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/circularprogressindicator.gif
+[linearprogressindicator_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/linearprogressindicator.gif
+[expansionpanel_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/expansionpanel.gif
+[tooltip_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/tooltip.gif
+[tabbar_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/tabbar.gif
+[bottomnavigation_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/bottomnavigationbar.gif
+[bottomappbar_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/bottomappbar.gif
+[drawer_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/drawer.gif
+[popupmenubutton_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/popupmenubutton.gif
+[snackbar_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/snackbar.gif
+[stepper_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/stepper.gif
+[draggable_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/draggable.gif
+[datepicker_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/datepicker.gif
+[timepicker_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/timepicker.gif
+[webview_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/webview.gif
+[listview_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/listview.gif
+[listViewbuilder_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/listviewbuilder.gif
+[dismissible_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/dismissible.gif
+[refreshindicator_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/refreshindicator.gif
+[reorderablelistView_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/reorderablelistview.gif
+[gridViewbuilder_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/gridviewbuilder.gif
+[form_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/form.gif
+[navigation_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/navigation.gif
+[fadetransition_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/fadetransition.gif
+[hero_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/hero.gif
+[draggablescrollablesheet_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/draggablescrollablesheet.gif
+[layoutbuilder_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/layoutbuilder.gif
+[animatedbuilder_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/animatedbuilder.gif
+[transform_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/transform.gif
+[animatedpositioned_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/animatedpositioned.gif
 
 <!-- Links -->
 [Text]: https://github.com/ThiagoEvoa/flutter_examples/tree/text
