@@ -8,17 +8,9 @@ This repository contains examples of how to implement things in Flutter. If you 
 <!-- :x:
 :white_check_mark: -->
 
-[Text] | [RichText] 
---- | ---
-![Text][text] | ![RichText][richtext]
-
-[SelectableText] | [RaisedButton]
---- | --- |
-![SelectableText][selectabletext] | ![RaisedButton][raisedbutton]
-
-[SelectableText] | [SelectableText] | [SelectableText]
+[Text] | [RichText] | [icon]
 --- | --- | ---
-![SelectableText][selectabletext] | ![SelectableText][selectabletext] | ![SelectableText][selectabletext]
+![Text][text] | ![RichText][richtext] | ![Icon][icon]
 
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
@@ -130,19 +122,35 @@ This repository contains examples of how to implement things in Flutter. If you 
 
 
 
-<!-- Images -->
+<!-- PNG -->
 [text]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png "Text"
 [richtext]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/richtext.png
+[icon]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/icon.png
+[image]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/image.png
+[container]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/container.png
+[gradient]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/gradient.png
+[column]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/column.png
+[row]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/row.png
+[wrap]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/wrap.png
+[stack]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/stack.png
+[material]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/material.png
+[scaffold]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/scaffold.png
+[darktheme]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/darktheme.png
+[colorfiltered]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/colorfiltered.png
+[table]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/table.png
+[cliprrect]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/cliprrect.png
+[clipoval]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/clipoval.png
+[clippath]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/clippath.png
+[safearea]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/safearea.png
+
+<!-- GIF -->
 [selectabletext]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/selectabletext.gif
 [textfield]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/textfield.gif
 [raisedbutton]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/raisedbutton.gif
 [flatbutton]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flatbutton.gif
-[icon]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/icon.png
 [iconbutton]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/iconbutton.gif
 [animatedicon]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/animatedicon.gif
-[image]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/image.png
 [inkwell]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/inkwell.gif
-[container]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/container.png
 [animatedcontainer]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/animetedcontainer.gif
 [alertdialog]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/alertdialog.gif
 [generaldialog]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/generaldialog.gif
@@ -154,13 +162,6 @@ This repository contains examples of how to implement things in Flutter. If you 
 [linearprogressindicator]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/linearprogressindicator.gif
 [expansionpanel]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/expansionpanel.gif
 [tooltip]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/tooltip.gif
-[gradient]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/gradient.png
-[column]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/column.png
-[row]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/row.png
-[wrap]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/wrap.png
-[stack]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/stack.png
-[material]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/material.png
-[scaffold]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/scaffold.png
 [tabbar]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/tabbar.gif
 [bottomnavigation]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/bottomnavigationbar.gif
 [bottomappbar]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/bottomappbar.gif
@@ -179,19 +180,12 @@ This repository contains examples of how to implement things in Flutter. If you 
 [reorderablelistView]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/reorderablelistview.gif
 [gridViewbuilder]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/gridviewbuilder.gif
 [form]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/form.gif
-[darktheme]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/darktheme.png
 [navigation]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/navigation.gif
 [fadetransition]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/fadetransition.gif
 [hero]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/hero.gif
 [draggablescrollablesheet]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/draggablescrollablesheet.gif
-[safearea]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/safearea.png
 [layoutbuilder]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/layoutbuilder.gif
 [animatedbuilder]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/animatedbuilder.gif
-[colorfiltered]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/colorfiltered.png
-[table]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/table.png
-[cliprrect]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/cliprrect.png
-[clipoval]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/clipoval.png
-[clippath]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/clippath.png
 [transform]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/transform.gif
 [animatedpositioned]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/animatedpositioned.gif
 
