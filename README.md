@@ -140,9 +140,9 @@ This repository contains examples of how to implement things in Flutter. If you 
 [AnimatedPositioned]: https://github.com/ThiagoEvoa/flutter_examples/tree/animatedpositioned
 
 
-[Text] | [RichText] | [SelectableText] |
-:---: | :---: | :---: |
-![Text][text] | ![RichText][richtext] | ![SelectableText][selectabletext] |
+[Text] | [RichText] | [SelectableText]
+--- | --- | --- |
+![Text][text] | ![RichText][richtext] | ![SelectableText][selectabletext]
 
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
