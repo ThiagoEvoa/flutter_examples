@@ -5,8 +5,8 @@ This repository contains examples of how to implement things in Flutter. If you 
 ## Branches
 
 ### Widgets
-- [x] this is a complete item
-- [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
+
+:white_check_mark: - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
 - [RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text)
 - [SelectableText](https://github.com/ThiagoEvoa/flutter_examples/tree/selectable_text)
 - [TextField](https://github.com/ThiagoEvoa/flutter_examples/tree/textfield)
