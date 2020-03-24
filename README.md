@@ -11,7 +11,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 Widgets | 
 ------------ | 
 [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
-![Image of Yaktocat](https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png)
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png" height="324.5" width="150">
 
 
 
