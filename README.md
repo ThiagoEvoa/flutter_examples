@@ -44,7 +44,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 --- | --- | ---
 ![flatbutton_gif] | ![iconbutton_gif] | ![animatedicon_gif]
 
-[InkWell] | [Animated Container] | [Alert Dialog]
+[InkWell] | [Animated Container] | [AlertDialog]
 --- | --- | ---
 ![inkwell_gif] | ![animatedcontainer_gif] | ![alertdialog_gif]
 
