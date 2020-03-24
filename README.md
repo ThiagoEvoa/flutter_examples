@@ -94,6 +94,11 @@ ___
 ![transform_gif] | ![animatedpositioned_gif] | ![empty_gif]
 
 # Management State
+
+<p align="center">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/state.gif" height="649" width="300">
+</p>
+
 - [SetState](https://github.com/ThiagoEvoa/flutter_examples/tree/setstate)
 - [Provider](https://github.com/ThiagoEvoa/flutter_examples/tree/provider)
 - [Bloc](https://github.com/ThiagoEvoa/flutter_examples/tree/bloc)
