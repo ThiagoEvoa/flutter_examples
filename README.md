@@ -92,31 +92,26 @@ ___
 [Transform] | [AnimatedPositioned] | [TODO]
 --- | --- | ---
 ![transform_gif] | ![animatedpositioned_gif] | ![empty_gif]
-___
 
 # Management State
 - [SetState](https://github.com/ThiagoEvoa/flutter_examples/tree/setstate)
 - [Provider](https://github.com/ThiagoEvoa/flutter_examples/tree/provider)
 - [Bloc](https://github.com/ThiagoEvoa/flutter_examples/tree/bloc)
 - [Bloc + rxDart](https://github.com/ThiagoEvoa/flutter_examples/tree/bloc_rxdart)
-___
 
 # Database
 - [SqfLite](https://github.com/ThiagoEvoa/flutter_examples/tree/sqflite)
 - [Hive](https://github.com/ThiagoEvoa/flutter_examples/tree/hive)
-___
 
 # API
 - [HTTP](https://github.com/ThiagoEvoa/flutter_examples/tree/http)
 - [Dio](https://github.com/ThiagoEvoa/flutter_examples/tree/dio)
-___
 
 # Firebase
 - [Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/firebaseauth)
 - [Store](https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestore)
 - [Storage](https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestorage)
 - [Messaging](https://github.com/ThiagoEvoa/flutter_examples/tree/firebase_messaging)
-___
 
 # Others
 - [ImagePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/imagepicker)
