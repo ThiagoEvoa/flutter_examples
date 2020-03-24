@@ -8,9 +8,9 @@ This repository contains examples of how to implement things in Flutter. If you 
 <!-- :x:
 :white_check_mark: -->
 
-[Text] | [RichText] | [SelectableText] | [RaisedButton]
---- | --- | --- | --- 
-![Text][text] | ![RichText][richtext] | ![SelectableText][selectabletext] | ![RaisedButton][raisedbutton]
+[Text] | [RichText] 
+--- | ---
+![Text][text] | ![RichText][richtext]
 
 [SelectableText] | [RaisedButton]
 --- | --- |
