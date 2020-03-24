@@ -29,9 +29,9 @@ ___
 --- | --- | ---
 ![table_png] | ![cliprrect_png] | ![clipoval_png]
 
-[ClipPath] | [SafeArea] | [](#)
+[ClipPath] | [SafeArea] | [Placeholder]
 --- | --- | ---
-![clippath_png] | ![safearea_png] | ![empty_png]
+![clippath_png] | ![safearea_png] | ![placeholder_png]
 
 [SelectableText] | [TextField] | [RaisedButton]
 --- | --- | ---
@@ -188,6 +188,7 @@ ___
 [clippath_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/clippath.png
 [safearea_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/safearea.png
 [empty_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/empty.png
+[placeholder_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/placeholder.png
 
 [channelandroid_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/channel_android.png
 [channelios_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/channel_ios.png
@@ -317,6 +318,7 @@ ___
 [ClipPath]: https://github.com/ThiagoEvoa/flutter_examples/tree/clippath
 [Transform]: https://github.com/ThiagoEvoa/flutter_examples/tree/transform
 [AnimatedPositioned]: https://github.com/ThiagoEvoa/flutter_examples/tree/animatedpositioned
+[Placeholder]: https://github.com/ThiagoEvoa/flutter_examples/tree/placeholder
 
 [Auth]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebaseauth
 [Store]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestore
