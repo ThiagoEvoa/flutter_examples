@@ -8,7 +8,11 @@ This repository contains examples of how to implement things in Flutter. If you 
 :x:
 :white_check_mark:
 
-First Header 
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+First Header | Second Header
 ------------ | -------------
 Content from cell 1 | Content from cell 2
 Content in the first column | Content in the second column
