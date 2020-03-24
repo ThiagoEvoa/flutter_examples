@@ -144,9 +144,9 @@ This repository contains examples of how to implement things in Flutter. If you 
 :---: | :---: | :---:
 ![Text][text] | ![RichText][richtext] | ![SelectableText][selectabletext]
 
-[TextField] | [RaiseButton] | [FlatButton]
+[TextField] | [RaisedButton] | [FlatButton]
 :---: | :---: | :---:
-![TextField][textfield] | ![RaiseButton][raisedbutton] | ![FlatButton][flatbutton]
+![TextField][textfield] | ![RaisedButton][raisedbutton] | ![FlatButton][flatbutton]
 
 
 
