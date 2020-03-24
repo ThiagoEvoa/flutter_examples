@@ -99,10 +99,10 @@ ___
 <img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/state.gif" height="649" width="300">
 </p>
 
-- [SetState](https://github.com/ThiagoEvoa/flutter_examples/tree/setstate)
-- [Provider](https://github.com/ThiagoEvoa/flutter_examples/tree/provider)
-- [Bloc](https://github.com/ThiagoEvoa/flutter_examples/tree/bloc)
-- [Bloc + rxDart](https://github.com/ThiagoEvoa/flutter_examples/tree/bloc_rxdart)
+1. [SetState](https://github.com/ThiagoEvoa/flutter_examples/tree/setstate)
+2. [Provider](https://github.com/ThiagoEvoa/flutter_examples/tree/provider)
+3. [Bloc](https://github.com/ThiagoEvoa/flutter_examples/tree/bloc)
+4. [Bloc + rxDart](https://github.com/ThiagoEvoa/flutter_examples/tree/bloc_rxdart)
 
 # Database
 
@@ -110,8 +110,8 @@ ___
 <img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/sqflite.gif" height="649" width="300">
 </p>
 
-- [SqfLite](https://github.com/ThiagoEvoa/flutter_examples/tree/sqflite)
-- [Hive](https://github.com/ThiagoEvoa/flutter_examples/tree/hive)
+1. [SqfLite](https://github.com/ThiagoEvoa/flutter_examples/tree/sqflite)
+2. [Hive](https://github.com/ThiagoEvoa/flutter_examples/tree/hive)
 
 # API
 - [HTTP](https://github.com/ThiagoEvoa/flutter_examples/tree/http)
