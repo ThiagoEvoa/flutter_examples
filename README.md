@@ -8,7 +8,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 <!-- :x:
 :white_check_mark: -->
 
-[Text] | [RichText] | [icon]
+[Text] | [RichText] | [Icon]
 --- | --- | ---
 ![text_png] | ![richtext_png] | ![icon_png]
 
