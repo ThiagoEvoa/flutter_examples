@@ -32,9 +32,9 @@ This repository contains examples of how to implement things in Flutter. If you 
 --- | --- | ---
 ![table_png] | ![cliprrect_png] | ![clipoval_png]
 
-[ClipPath] | [SafeArea]
---- | ---
-![clippath_png] | ![safearea_png]
+[ClipPath] | [SafeArea] | []
+--- | --- | ---
+![clippath_png] | ![safearea_png] | ![]
 
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
