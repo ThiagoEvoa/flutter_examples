@@ -9,7 +9,7 @@ This repository contains examples of how to implement things in Flutter. If you 
 :white_check_mark:
 
 ![Teste][text]
-[text]:https://github.com/ThiagoEvoa/flutter_examples/tree/text
+[text]: https://github.com/ThiagoEvoa/flutter_examples/tree/text
 
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
