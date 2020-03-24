@@ -130,7 +130,7 @@ ___
 
 [Messaging] | [](#) | [](#)
 --- | --- | ---
-![empty_gif] | ![empty_png] | ![empty_png]
+![empty_gif] | ![empty_gif] | ![empty_gif]
 
 # Others
 [Channel] | [Channel] | [Device Info]
