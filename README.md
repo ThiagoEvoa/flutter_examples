@@ -40,6 +40,10 @@ This repository contains examples of how to implement things in Flutter. If you 
 --- | --- | ---
 ![selectabletext_gif] | ![textfield_gif] | ![raisedbutton_gif]
 
+[FlatButton] | [IconButton] | [AnimatedIcon]
+--- | --- | ---
+![flatbutton_gif] | ![iconbutton_gif] | ![animatedicon_gif]
+
 
 - [Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
 - [RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text)
