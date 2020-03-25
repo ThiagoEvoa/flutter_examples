@@ -16,6 +16,8 @@ dependencies:
 ### Configuration
 
 #### iOS Info.plist
+> Add those lines into the Info.plist 
+
 ```dart
 <key>NSPhotoLibraryUsageDescription</key>
 <string>This app is requiring access to your gallery</string>
