@@ -137,9 +137,9 @@ ___
 --- | --- | ---
 ![channelandroid_png] | ![channelios_png] | ![deviceinfoandroid_png]
 
-[Device Info] | [](#) | [](#)
+[Device Info] | PackageInfo | [](#)
 --- | --- | ---
-![deviceinfoios_png] | ![empty_png] | ![empty_png]
+![deviceinfoios_png] | ![packageinfo_png] | ![empty_png]
 
 [ImagePicker] | [Geolocator] | [SharedPreferences]
 --- | --- | ---
@@ -153,7 +153,7 @@ ___
 --- | --- | ---
 ![flipwidget_gif] | ![flare_gif] | ![localnotification_gif]
 
-[Biometric] | [PackageInfo] | [Internationalization]
+[Biometric] | [Bluetooth] | [Internationalization]
 --- | --- | ---
 ![empty_gif] | ![empty_gif] | ![empty_gif]
 
@@ -161,7 +161,7 @@ ___
 --- | --- | ---
 ![empty_gif] | ![empty_gif] | ![empty_gif]
 
-[Video Player] | [Audio Player] | [Bluetooth]
+[Video Player] | [Audio Player] | [](#)
 --- | --- | ---
 ![empty_gif] | ![empty_gif] | ![empty_gif]
 
@@ -190,6 +190,7 @@ ___
 [placeholder_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/placeholder.png
 [deviceinfoandroid_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/deviceinfoandroid.png
 [deviceinfoios_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/deviceinfoios.png
+[packageinfo_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/packageinfo.png
 [empty_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/empty.png
 
 [channelandroid_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/channel_android.png
