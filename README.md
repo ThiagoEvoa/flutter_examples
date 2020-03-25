@@ -163,7 +163,7 @@ ___
 
 [Video Player] | [SplashScreen] | [](#)
 --- | --- | ---
-![empty_gif] | ![empty_gif] | ![empty_gif]
+![empty_gif] | ![splashscreen_gif] | ![empty_gif]
 
 
 
