@@ -153,15 +153,15 @@ ___
 --- | --- | ---
 ![flipwidget_gif] | ![flare_gif] | ![localnotification_gif]
 
-[Connectivity] | [Share] | [Audio Player]
+[Connectivity] | [Share] | SplashScreen]
 --- | --- | ---
-![connectivity_gif] | ![share_gif] | ![empty_gif]
+![connectivity_gif] | ![share_gif] | ![splashscreen_gif]
 
 [Google Auth] | [Biometric] | [Bluetooth]
 --- | --- | ---
 ![empty_gif] | ![empty_gif] | ![empty_gif]
 
-[Video Player] | [SplashScreen] | [](#)
+[Video Player] | [Audio Player] | [](#)
 --- | --- | ---
 ![empty_gif] | ![empty_gif] | ![empty_gif]
 
