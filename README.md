@@ -4,7 +4,7 @@
 </p>
 
 ### Dependencies
-<p>On the root of the project, you need to create the folder <b>flare</b>, and add the file <b>.flr</b></p>
+> On the root of the project, you need to create the folder <b>flare</b>, and add the file <b>.flr</b>
 
 #### Pubspec.yaml
 ```dart
