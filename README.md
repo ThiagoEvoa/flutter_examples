@@ -161,9 +161,9 @@ ___
 --- | --- | ---
 ![empty_gif] | ![empty_gif] | ![empty_gif]
 
-[Video Player] | [SplashScreen] | [](#)
---- | --- | ---
-![empty_gif] | ![splashscreen_gif] | ![empty_gif]
+[Video Player] | [SplashScreen]
+--- | ---
+![empty_gif] | ![splashscreen_gif]
 
 
 
