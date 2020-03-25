@@ -245,6 +245,7 @@ ___
 [listwheelscrollview_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/listwheelscrollview.gif
 [share_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/share.gif
 [connectivity_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/connectivity.gif
+[splashscreen_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/splashscreen.gif
 [empty_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/empty.gif
 
 [auth_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/firebaseauth.gif
