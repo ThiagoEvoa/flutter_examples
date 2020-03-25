@@ -353,3 +353,8 @@ ___
 [Video Player]: https://github.com/ThiagoEvoa/flutter_examples/tree/video_player
 [Audio Player]: https://github.com/ThiagoEvoa/flutter_examples/tree/audio_player
 [Bluetooth]: https://github.com/ThiagoEvoa/flutter_examples/tree/bluetooth
+
+<!-- 
+xcrun simctl io booted recordVideo <filename>.<file extension>
+https://ezgif.com/video-to-gif
+-->  
