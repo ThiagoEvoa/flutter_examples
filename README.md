@@ -159,7 +159,7 @@ ___
 
 [Google Auth] | [Connectivity] | [Share]
 --- | --- | ---
-![empty_gif] | ![empty_gif] | ![empty_gif]
+![empty_gif] | ![empty_gif] | ![share_gif]
 
 [Video Player] | [](#) | [](#)
 --- | --- | ---
@@ -243,6 +243,7 @@ ___
 [transform_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/transform.gif
 [animatedpositioned_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/animatedpositioned.gif
 [listwheelscrollview_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/listwheelscrollview.gif
+[share_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/share.gif
 [empty_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/empty.gif
 
 [auth_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/firebaseauth.gif
