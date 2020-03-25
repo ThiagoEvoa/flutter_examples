@@ -16,6 +16,8 @@ dependencies:
 ### Configuration
 
 #### Android Manifest.xml
+> Add those lines into the Manifest.xml, to be able to ask for user permission
+
 ```dart
 <uses-permission android:name="android.permission.INTERNET"/>
 <uses-permission android:name="android.permission.VIBRATE" />
