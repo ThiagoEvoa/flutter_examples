@@ -135,11 +135,11 @@ ___
 # Others
 [Channel] | [Channel] | [Device Info]
 --- | --- | ---
-![channelandroid_png] | ![channelios_png] | ![empty_png]
+![channelandroid_png] | ![channelios_png] | ![deviceinfoandroid_png]
 
 [Device Info] | [](#) | [](#)
 --- | --- | ---
-![empty_png] | ![empty_png] | ![empty_png]
+![deviceinfoios_png] | ![empty_png] | ![empty_png]
 
 [ImagePicker] | [Geolocator] | [SharedPreferences]
 --- | --- | ---
@@ -187,8 +187,10 @@ ___
 [clipoval_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/clipoval.png
 [clippath_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/clippath.png
 [safearea_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/safearea.png
-[empty_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/empty.png
 [placeholder_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/placeholder.png
+[deviceinfoandroid_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/deviceinfoandroid.png
+[deviceinfoios_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/deviceinfoios.png
+[empty_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/empty.png
 
 [channelandroid_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/channel_android.png
 [channelios_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/channel_ios.png
