@@ -153,7 +153,7 @@ ___
 --- | --- | ---
 ![flipwidget_gif] | ![flare_gif] | ![localnotification_gif]
 
-[Connectivity] | [Share] | SplashScreen]
+[Connectivity] | [Share] | [SplashScreen]
 --- | --- | ---
 ![connectivity_gif] | ![share_gif] | ![splashscreen_gif]
 
