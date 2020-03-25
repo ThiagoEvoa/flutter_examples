@@ -161,7 +161,7 @@ ___
 --- | --- | ---
 ![empty_gif] | ![empty_gif] | ![empty_gif]
 
-[Video Player] | [](#) | [](#)
+[Video Player] | [SplashScreen] | [](#)
 --- | --- | ---
 ![empty_gif] | ![empty_gif] | ![empty_gif]
 
@@ -353,6 +353,8 @@ ___
 [Video Player]: https://github.com/ThiagoEvoa/flutter_examples/tree/video_player
 [Audio Player]: https://github.com/ThiagoEvoa/flutter_examples/tree/audio_player
 [Bluetooth]: https://github.com/ThiagoEvoa/flutter_examples/tree/bluetooth
+[SplashScreen]: https://github.com/ThiagoEvoa/flutter_examples/tree/splashscreen
+
 
 <!-- 
 xcrun simctl io booted recordVideo <filename>.<file extension>
