@@ -16,12 +16,16 @@ dependencies:
 ### Configuration
 
 #### iOS Info.plist
+> Add those lines into the Info.plist, to be able to ask for user permission
+
 ```dart
 <key>NSFaceIDUsageDescription</key>
 <string>The app need your permission to use biometric</string>
 ```
 
 #### Android Manifest.xml
+> Add those lines into the Manifest.xml, to be able to ask for user permission
+
 ```dart
 <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
 ```
