@@ -10,9 +10,7 @@
 dependencies:
   flutter:
     sdk: flutter
-  firebase_core: ^0.4.2
-  firebase_analytics: ^5.0.6
-  firebase_auth: ^0.15.0+1
+  google_sign_in: ^4.1.1
   
 ### Main
 ```dart
