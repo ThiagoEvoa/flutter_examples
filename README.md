@@ -1,7 +1,7 @@
 # Connectivity
-<!-- <p align="center">
-<img src="https://docs.google.com/uc?id=1T3bnJwFf6QfN_FNwiJb3-tFtYZpemrgD" height="649" width="300">
-</p> -->
+<p align="center">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/connectivity.gif" height="649" width="300">
+</p>
 
 ### Dependencies
 
@@ -51,9 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
+      appBar: AppBar(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
