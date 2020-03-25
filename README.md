@@ -16,7 +16,7 @@ dependencies:
 ### Configuration
 
 #### iOS Info.plist
-> Add those lines into the Info.plist 
+> Add those lines into the Info.plist, to be able to ask for user permission 
 
 ```dart
 <key>NSPhotoLibraryUsageDescription</key>
