@@ -16,11 +16,15 @@ dependencies:
 ### Configuration
 
 #### iOS Info.plist
+> Add those lines into the Info.plist, to be able to run map view embedded
+
 ```dart
 <key>io.flutter.embedded_views_preview</key>
 <true/>
 ```
 #### iOS AppDelegate.swift
+> Add those lines into the Info.plist, to inform the google api key
+
 ```dart
 @UIApplicationMain
 @objc class AppDelegate: FlutterAppDelegate {
@@ -36,7 +40,7 @@ dependencies:
 ```
 
 #### Android Manifest.xml
-<p>Inside <b>application</b> tag put this meta-data</p>
+> Add this line into the Manifest.xml, to inform the google api key
 
 ```dart
 <meta-data android:name="com.google.android.geo.API_KEY" android:value="YOUR KEY HERE"/>
