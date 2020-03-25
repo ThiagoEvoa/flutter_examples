@@ -3,6 +3,43 @@
 <img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/splashscreen.gif" height="649" width="300">
 </p>
 
+### Configuration
+
+#### iOS LaunchScreen.storyboard
+> On XCode change the backgroun color of the LaunchScreen.
+
+#### Android colors.xml
+> On Android Studio 
+
+#### Android colors.xml
+> On Android Studio create the colors.xml file in the values folder and add the color resource.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_blue">#008FFB</color>
+</resources>
+```
+
+#### Android launch_background.xml
+> On Android Studio alter the launch_background.xml file according to the color you created
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modify this file to customize your launch splash screen -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/color_blue" />
+
+    <!-- You can insert your own image assets here -->
+    <!-- <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@mipmap/launch_image" />
+    </item> -->
+</layer-list>
+
+```
+
 ### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
