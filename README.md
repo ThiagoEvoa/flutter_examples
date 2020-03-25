@@ -137,7 +137,7 @@ ___
 --- | --- | ---
 ![channelandroid_png] | ![channelios_png] | ![deviceinfoandroid_png]
 
-[Device Info] | PackageInfo | [](#)
+[Device Info] | [PackageInfo] | [](#)
 --- | --- | ---
 ![deviceinfoios_png] | ![packageinfo_png] | ![empty_png]
 
