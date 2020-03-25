@@ -3,6 +3,17 @@
 <img src="" height="649" width="300">
 </p> -->
 
+### Dependencies
+
+#### Pubspec.yaml
+```dart
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^0.4.2
+  firebase_analytics: ^5.0.6
+  firebase_auth: ^0.15.0+1
+  
 ### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
