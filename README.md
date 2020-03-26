@@ -2,17 +2,10 @@
 
 > This repository contains examples of how to implement things in Flutter. If you didn't find what you expect, please let me know and I'll try to do the example for you. 
 
-#### legend: 
->:weary: not implemented
-
->:neutral_face: implemented without preview
-
->:laughing: full implemented
-
 ___
 # Widgets
 
-[Text] :laughing: | [RichText] :laughing: | [Icon] :heavy_check_mark:
+[Text] | [RichText] | [Icon]
 --- | --- | ---
 ![text_png] | ![richtext_png] | ![icon_png]
 
