@@ -1,3 +1,6 @@
+import 'dart:io';
+
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -24,39 +27,25 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  File _file;
+  List<File> _files;
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
+  _getFile() async {
+    _file = await FilePicker.getFile();
+  }
+
+  _getMultipleFile() async {
+    _files = await FilePicker.getMultiFile();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
+    return Material(
+        child: Center(
+      child: IconButton(
+        onPressed: _getFile,
+        icon: Icon(Icons.folder),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ),
-    );
+    ));
   }
 }

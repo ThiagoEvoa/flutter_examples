@@ -1,45 +1,41 @@
-# SetState
+# FilePicker
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/state.gif" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/filepicker.gif" height="649" width="300">
 </p>
+
+### Dependencies
+
+#### Pubspec.yaml
+```dart
+dependencies:
+  flutter:
+    sdk: flutter
+  file_picker: ^1.5.0+2
+```
 
 ### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  File _file;
+  List<File> _files;
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
+  _getFile() async {
+    _file = await FilePicker.getFile();
+  }
+
+  _getMultipleFile() async {
+    _files = await FilePicker.getMultiFile();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
+    return Material(
+        child: Center(
+      child: IconButton(
+        onPressed: _getFile,
+        icon: Icon(Icons.folder),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ),
-    );
+    ));
   }
 }
 ```
