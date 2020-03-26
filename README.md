@@ -1,7 +1,7 @@
 # Firebase Messaging
-<p align="center">
+<!-- <p align="center">
 <img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/firebasemessaging.gif" height="649" width="300">
-</p>
+</p> -->
 
 ### Dependencies
 
