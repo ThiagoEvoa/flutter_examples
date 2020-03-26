@@ -12,7 +12,7 @@
 ___
 # Widgets
 
-[Text]:heavy_check_mark: | [RichText] | [Icon]
+[Text] [:heavy_check_mark:] | [RichText] | [Icon]
 --- | --- | ---
 ![text_png] | ![richtext_png] | ![icon_png]
 
