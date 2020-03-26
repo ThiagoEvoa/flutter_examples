@@ -161,9 +161,9 @@ ___
 --- | --- | ---
 ![empty_gif] | ![empty_gif] | ![empty_gif]
 
-[Video Player] | [Audio Player] | FilePicker <!--file_picker-->
+[Video Player] | [Audio Player] | [FilePicker]
 --- | --- | ---
-![empty_gif] | ![empty_gif] | ![empty_gif]
+![empty_gif] | ![empty_gif] | ![filepicker_gif]
 
 
 
@@ -246,6 +246,7 @@ ___
 [share_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/share.gif
 [connectivity_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/connectivity.gif
 [splashscreen_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/splashscreen.gif
+[filepicker_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/filepicker.gif
 [empty_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/todo.gif
 
 [auth_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/firebaseauth.gif
@@ -355,6 +356,7 @@ ___
 [Audio Player]: https://github.com/ThiagoEvoa/flutter_examples/tree/audio_player
 [Bluetooth]: https://github.com/ThiagoEvoa/flutter_examples/tree/bluetooth
 [SplashScreen]: https://github.com/ThiagoEvoa/flutter_examples/tree/splashscreen
+[FilePicker]: https://github.com/ThiagoEvoa/flutter_examples/tree/filepicker
 
 
 <!-- 
