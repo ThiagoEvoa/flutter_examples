@@ -124,42 +124,42 @@ Transform | AnimatedPositioned | ListWheelScrollView
 
 # Firebase
 
-[Auth] | [Store] | [Storage]
+Auth | Store | Storage
 --- | --- | ---
-![auth_gif] | ![store_gif] | ![storage_gif]
+[![auth_gif]][Auth] | [![store_gif]][Store] | [![storage_gif]][Storage]
 
-[Messaging] | [InAppMessage] <!--firebase_in_app_messaging--> | [RemoteConfig] <!--firebase_remote_config-->
+Messaging | InAppMessage <!--firebase_in_app_messaging--> | RemoteConfig <!--firebase_remote_config-->
 --- | --- | ---
-![empty_gif] | ![empty_gif] | ![empty_gif]
+[![empty_gif]][Messaging] | [![empty_gif]][InAppMessage] | [![empty_gif]][RemoteConfig]
 
 # Others
-[Channel] | [Channel] | [Device Info]
+Channel | Channel | DeviceInfo
 --- | --- | ---
-![channelandroid_png] | ![channelios_png] | ![deviceinfoandroid_png]
+[![channelandroid_png]][Channel] | [![channelios_png]][Channel] | [![deviceinfoandroid_png]][Device Info]
 
-[Device Info] | [PackageInfo] | [Internationalization]
+DeviceInfo | PackageInfo | Internationalization
 --- | --- | ---
-![deviceinfoios_png] | ![packageinfo_png] | ![internationalization_png]
+[![deviceinfoios_png]][Device Info] | [![packageinfo_png]][PackageInfo] | [![internationalization_png]][Internationalization]
 
-[ImagePicker] | [Geolocator] | [SharedPreferences]
+ImagePicker | Geolocator | SharedPreferences
 --- | --- | ---
-![imagepicker_gif] | ![geolocator_gif] | ![sharedpreferences_gif]
+[![imagepicker_gif]][ImagePicker] | [![geolocator_gif]][Geolocator] | [![sharedpreferences_gif]][SharedPreferences]
 
-[FlipCard] | [Geolocator] | [Google Maps]
+FlipCard | Geolocator | GoogleMaps
 --- | --- | ---
-![flipcard_gif] | ![geolocator_gif] | ![googlemaps_gif]
+[![flipcard_gif]][FlipCard] | [![geolocator_gif]][Geolocator] | [![googlemaps_gif]][Google Maps]
 
-[FlipWidget] | [Flare/Rive] | [Local Notification]
+FlipWidget | Flare/Rive | LocalNotification
 --- | --- | ---
-![flipwidget_gif] | ![flare_gif] | ![localnotification_gif]
+[![flipwidget_gif]][FlipWidget] | [![flare_gif]][Flare/Rive] | [![localnotification_gif]][Local Notification]
 
-[Connectivity] | [Share] | [SplashScreen]
+Connectivity | Share | SplashScreen
 --- | --- | ---
-![connectivity_gif] | ![share_gif] | ![splashscreen_gif]
+[![connectivity_gif]][Connectivity] | [![share_gif]][Share] | [![splashscreen_gif]][SplashScreen]
 
-[FilePicker] | [Biometric] | [Bluetooth]
+FilePicker | Biometric | Bluetooth
 --- | --- | ---
-![filepicker_gif] | ![empty_gif] | ![empty_gif]
+[![filepicker_gif]][FilePicker] | [![empty_gif]][] | [![empty_gif]][]
 
 [Video Player] | [Audio Player] | [Google Auth]
 --- | --- | ---
@@ -334,6 +334,7 @@ Transform | AnimatedPositioned | ListWheelScrollView
 [Store]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestore
 [Storage]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestorage
 [Messaging]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebase_messaging
+[RemoteConfig]: https://github.com/ThiagoEvoa/flutter_examples/tree/remote_config
 
 [ImagePicker]: https://github.com/ThiagoEvoa/flutter_examples/tree/imagepicker
 [Internationalization]: https://github.com/ThiagoEvoa/flutter_examples/tree/internationalization
