@@ -159,11 +159,11 @@ Connectivity | Share | SplashScreen
 
 FilePicker | Biometric | Bluetooth
 --- | --- | ---
-[![filepicker_gif]][FilePicker] | [![empty_gif]][] | [![empty_gif]][]
+[![filepicker_gif]][FilePicker] | [![empty_gif]][Biometric] | [![empty_gif]][Bluetooth]
 
-[Video Player] | [Audio Player] | [Google Auth]
+VideoPlayer | AudioPlayer | GoogleAuth
 --- | --- | ---
-![empty_gif] | ![empty_gif] | ![empty_gif]
+[![empty_gif]][Video Player] | [![empty_gif]][Audio Player] | [![empty_gif]][Google Auth]
 
 
 
