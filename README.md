@@ -3,13 +3,17 @@
 > This repository contains examples of how to implement things in Flutter. If you didn't find what you expect, please let me know and I'll try to do the example for you. 
 
 > legend: 
+
 > :heavy_multiplication_x: not implemented
+
 > :heavy_minus_sign: implemented without preview
-> :heavy_minus_sign: full implemented
+
+> :heavy_check_mark: full implemented
+
 ___
 # Widgets
 
-:heavy_minus_sign:[Text] | [RichText] | [Icon]
+:heavy_check_mark:[Text] | [RichText] | [Icon]
 --- | --- | ---
 ![text_png] | ![richtext_png] | ![icon_png]
 
