@@ -7,7 +7,7 @@ ___
 
 [Text] | [RichText] | [Icon]
 --- | --- | ---
-[![text_png]]() | ![richtext_png] | ![icon_png]
+[![text_png]][Text] | ![richtext_png] | ![icon_png]
 
 [Image NetWork] | [Image Asset] | [Container]
 --- | --- | ---
