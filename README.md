@@ -128,7 +128,7 @@ ___
 --- | --- | ---
 ![auth_gif] | ![store_gif] | ![storage_gif]
 
-[Messaging] | [](#) | [](#)
+[Messaging] | [InAppMessage] <!--firebase_in_app_messaging--> | [RemoteConfig] <!--firebase_remote_config-->
 --- | --- | ---
 ![empty_gif] | ![empty_gif] | ![empty_gif]
 
