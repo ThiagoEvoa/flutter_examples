@@ -161,7 +161,7 @@ ___
 --- | --- | ---
 ![empty_gif] | ![empty_gif] | ![empty_gif]
 
-[Video Player] | [Audio Player] | [](#)
+[Video Player] | [Audio Player] | FilePicker <!--file_picker-->
 --- | --- | ---
 ![empty_gif] | ![empty_gif] | ![empty_gif]
 
