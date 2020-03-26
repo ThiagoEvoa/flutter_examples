@@ -4,7 +4,9 @@
 
 ## legend: 
 >:heavy_multiplication_x: not implemented
+
 >:heavy_minus_sign: implemented without preview
+
 >:heavy_check_mark: full implemented
 
 ___
