@@ -7,12 +7,12 @@
 
 >:heavy_minus_sign: implemented without preview
 
->:heavy_check_mark: full implemented
+>[done]:heavy_check_mark: full implemented
 
 ___
 # Widgets
 
-:heavy_check_mark:[Text] | [RichText] | [Icon]
+[done] [Text] | [RichText] | [Icon]
 --- | --- | ---
 ![text_png] | ![richtext_png] | ![icon_png]
 
