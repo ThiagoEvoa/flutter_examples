@@ -7,7 +7,7 @@
 
 >:heavy_minus_sign: implemented without preview
 
->[done]:heavy_check_mark: full implemented
+>[done] :heavy_check_mark: full implemented
 
 ___
 # Widgets
