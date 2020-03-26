@@ -157,13 +157,13 @@ ___
 --- | --- | ---
 ![connectivity_gif] | ![share_gif] | ![splashscreen_gif]
 
-[Google Auth] | [Biometric] | [Bluetooth]
+[FilePicker] | [Biometric] | [Bluetooth]
+--- | --- | ---
+![filepicker_gif] | ![empty_gif] | ![empty_gif]
+
+[Video Player] | [Audio Player] | [Google Auth]
 --- | --- | ---
 ![empty_gif] | ![empty_gif] | ![empty_gif]
-
-[Video Player] | [Audio Player] | [FilePicker]
---- | --- | ---
-![empty_gif] | ![empty_gif] | ![filepicker_gif]
 
 
 
