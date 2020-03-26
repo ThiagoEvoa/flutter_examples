@@ -5,13 +5,13 @@
 ___
 # Widgets
 
-Text | [RichText] | [Icon]
+Text | RichText | Icon
 --- | --- | ---
-[![text_png]][Text] | ![richtext_png] | ![icon_png]
+[![text_png]][Text] | [![richtext_png]][RichText] | [![icon_png]][Icon]
 
-[Image NetWork] | [Image Asset] | [Container]
+Image NetWork | Image Asset | Container
 --- | --- | ---
-![image_png] | ![image_png] | ![container_png]
+[![image_png]][Image NetWork] | [![image_png]][Image Asset] | [![container_png]][Container]
 
 [Gradient] | [Column] | [Row]
 --- | --- | ---
