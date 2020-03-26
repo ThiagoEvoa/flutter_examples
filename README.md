@@ -7,7 +7,7 @@ ___
 
 [Text] | [RichText] | [Icon]
 --- | --- | ---
-![text_png] | ![richtext_png] | ![icon_png]
+![text_png](#) | ![richtext_png] | ![icon_png]
 
 [Image NetWork] | [Image Asset] | [Container]
 --- | --- | ---
@@ -168,7 +168,7 @@ ___
 
 
 <!-- PNG -->
-[text_png]: [![https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png]](#)
+[text_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/text.png
 [richtext_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/richtext.png
 [icon_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/icon.png
 [image_png]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/image.png
