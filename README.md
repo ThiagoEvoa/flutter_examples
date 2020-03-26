@@ -5,7 +5,7 @@
 ___
 # Widgets
 
-[Text] | [RichText] | [Icon]
+<p style="colot:green">Text</p> | [RichText] | [Icon]
 --- | --- | ---
 [![text_png]][Text] | ![richtext_png] | ![icon_png]
 
