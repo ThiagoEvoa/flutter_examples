@@ -334,7 +334,8 @@ FilePicker | Biometric | Bluetooth
 [Store]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestore
 [Storage]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestorage
 [Messaging]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebase_messaging
-[RemoteConfig]: https://github.com/ThiagoEvoa/flutter_examples/tree/remote_config
+[InAppMessage]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebase_inappmessage
+[RemoteConfig]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebase_remoteconfig
 
 [ImagePicker]: https://github.com/ThiagoEvoa/flutter_examples/tree/imagepicker
 [Internationalization]: https://github.com/ThiagoEvoa/flutter_examples/tree/internationalization
