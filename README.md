@@ -1,6 +1,6 @@
 # Google Auth
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/google_signin.gif" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/google_auth.gif" height="649" width="300">
 </p>
 
 ### Dependencies
