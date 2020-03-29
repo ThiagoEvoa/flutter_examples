@@ -157,13 +157,13 @@ Connectivity | Share | SplashScreen
 --- | --- | ---
 [![connectivity_gif]][Connectivity] | [![share_gif]][Share] | [![splashscreen_gif]][SplashScreen]
 
-FilePicker | Biometric | Bluetooth
+FilePicker | GoogleAuth | Bluetooth
 --- | --- | ---
-[![filepicker_gif]][FilePicker] | [![empty_gif]][Biometric] | [![empty_gif]][Bluetooth]
+[![filepicker_gif]][FilePicker] | [![googleauth_gif]][Google Auth] | [![empty_gif]][Bluetooth]
 
-VideoPlayer | AudioPlayer | GoogleAuth
+VideoPlayer | AudioPlayer | Biometric
 --- | --- | ---
-[![empty_gif]][Video Player] | [![empty_gif]][Audio Player] | [![googleauth_gif]][Google Auth]
+[![empty_gif]][Video Player] | [![empty_gif]][Audio Player] | [![empty_gif]][Biometric]
 
 
 
