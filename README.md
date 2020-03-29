@@ -11,6 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   google_sign_in: ^4.3.0
+```
 
 ### Configuration
 
