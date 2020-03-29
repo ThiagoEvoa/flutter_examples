@@ -20,16 +20,16 @@ dependencies:
 
 ```dart
 <key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>{PEOPLE_API_REVERSE_ID}</string>
-			</array>
-		</dict>
-	</array>
+<array>
+	<dict>
+		<key>CFBundleTypeRole</key>
+		<string>Editor</string>
+		<key>CFBundleURLSchemes</key>
+		<array>
+			<string>{PEOPLE_API_REVERSE_ID}</string>
+		</array>
+	</dict>
+</array>
 ```
 
 ### Main
