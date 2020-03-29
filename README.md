@@ -10,9 +10,9 @@
 dependencies:
   flutter:
     sdk: flutter
-  firebase_messaging: ^6.0.12
+  firebase_messaging: ^6.0.13
   http: ^0.12.0+4
-  firebase_core: ^0.4.4+2
+  firebase_core: ^0.4.4+3
   firebase_analytics: ^5.0.11
 ```
 
@@ -27,11 +27,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(),
+    return Material(
+      child: Center(),
     );
   }
 }
