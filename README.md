@@ -1,7 +1,7 @@
 # Google Auth
-<!-- <p align="center">
-<img src="" height="649" width="300">
-</p> -->
+<p align="center">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/google_signin.gif" height="649" width="300">
+</p>
 
 ### Dependencies
 
@@ -10,8 +10,27 @@
 dependencies:
   flutter:
     sdk: flutter
-  google_sign_in: ^4.1.1
-  
+  google_sign_in: ^4.3.0
+
+### Configuration
+
+#### iOS Info.plist
+> Add those lines into the Info.plist, to be able to ask for user permission 
+
+```dart
+<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>{PEOPLE_API_REVERSE_ID}</string>
+			</array>
+		</dict>
+	</array>
+```
+
 ### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
