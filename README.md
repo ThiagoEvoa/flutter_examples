@@ -53,6 +53,7 @@ class MainActivity: FlutterActivity(), PluginRegistry.PluginRegistrantCallback{
 }
 ```
 
+#### Android AndroidManifest.xml
 > Add those lines into the AndroidManifest.xml, to be able to receive notification
 
 ```dart
