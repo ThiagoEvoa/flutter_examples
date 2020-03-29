@@ -16,6 +16,52 @@ dependencies:
   firebase_analytics: ^5.0.11
 ```
 
+### Configuration
+
+#### iOS AppDelegate.swift
+> Add those lines into the Info.plist, to be able to receive notification
+
+```dart
+@UIApplicationMain
+@objc class AppDelegate: FlutterAppDelegate {
+  override func application(
+    _ application: UIApplication,
+    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+  ) -> Bool {
+    if #available(iOS 10.0, *) {
+      UNUserNotificationCenter.current().delegate = self as? UNUserNotificationCenterDelegate
+    }
+    GeneratedPluginRegistrant.register(with: self)
+    return super.application(application, didFinishLaunchingWithOptions: launchOptions)
+  }
+}
+```
+
+#### Android MainActivity.kt
+> Add those lines into the MainActivity.kt, to be able to receive notification
+
+```dart
+class MainActivity: FlutterActivity(), PluginRegistry.PluginRegistrantCallback{
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    GeneratedPluginRegistrant.registerWith(this)
+  }
+
+  override fun registerWith(registry: PluginRegistry){
+    GeneratedPluginRegistrant.registerWith(registry)
+  }
+}
+```
+
+> Add those lines into the AndroidManifest.xml, to be able to receive notification
+
+```dart
+<intent-filter>
+    <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+    <category android:name="android.intent.category.DEFAULT" />
+</intent-filter>
+```
+
 ### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
