@@ -261,7 +261,7 @@ VideoPlayer | AudioPlayer | GoogleAuth
 [flipwidget_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flipwidget.gif
 [flare_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flare.gif
 [localnotification_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/localnotification.gif
-[googleauth_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/google_auth.gif
+[googleauth_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/google_auth1.gif
 
 <!-- Links -->
 [Text]: https://github.com/ThiagoEvoa/flutter_examples/tree/text
