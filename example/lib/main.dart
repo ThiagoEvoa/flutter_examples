@@ -1,3 +1,4 @@
+import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -24,38 +25,40 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  RemoteConfig _remoteConfig;
+  Map<String, dynamic> _defaults;
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
+  Future<RemoteConfig> _getConfigs() async {
+    _remoteConfig = await RemoteConfig.instance;
+    await _remoteConfig.fetch(expiration: const Duration(hours: 5));
+    await _remoteConfig.activateFetched();
+    return _remoteConfig;
+  }
+
+  _setDefaults() async {
+    _defaults = <String, dynamic>{'test': 'My Config'};
+    await _remoteConfig.setDefaults(_defaults);
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
+    return Material(
+      child: FutureBuilder<RemoteConfig>(
+        future: _getConfigs(),
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            return Center(
+              child: Center(
+                child: Text(snapshot.data.getString('my_config')),
+              ),
+            );
+            ;
+          } else {
+            return Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+        },
       ),
     );
   }
