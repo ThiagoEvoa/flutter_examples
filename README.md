@@ -130,7 +130,7 @@ Auth | Store | Storage
 
 Messaging | InAppMessage | RemoteConfig
 --- | --- | ---
-[![empty_gif]][Messaging] | [![empty_gif]][InAppMessage] | [![empty_gif]][RemoteConfig]
+[![empty_gif]][Messaging] | [![empty_gif]][InAppMessage] | [![remoteconfig_gif]][RemoteConfig]
 
 # Others
 Channel | Channel | DeviceInfo
@@ -252,6 +252,7 @@ VideoPlayer | AudioPlayer | Biometric
 [auth_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/firebaseauth.gif
 [store_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/firebasedatabase.gif
 [storage_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/firebasestorage.gif
+[remoteconfig_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/firebaseremoteconfig.gif
 
 [imagepicker_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/imagepicker.gif
 [sharedpreferences_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/sharedpreferences.gif
