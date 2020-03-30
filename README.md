@@ -128,7 +128,7 @@ Auth | Store | Storage
 --- | --- | ---
 [![auth_gif]][Auth] | [![store_gif]][Store] | [![storage_gif]][Storage]
 
-Messaging | ~~InAppMessage~~ <!--firebase_in_app_messaging--> | ~~RemoteConfig~~ <!--firebase_remote_config-->
+Messaging | InAppMessage | ~~RemoteConfig~~ <!--firebase_remote_config-->
 --- | --- | ---
 [![empty_gif]][Messaging] | [![empty_gif]][InAppMessage] | [![empty_gif]][RemoteConfig]
 
