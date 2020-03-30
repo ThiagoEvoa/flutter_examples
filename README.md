@@ -128,9 +128,9 @@ Auth | Store | Storage
 --- | --- | ---
 [![auth_gif]][Auth] | [![store_gif]][Store] | [![storage_gif]][Storage]
 
-Messaging | InAppMessage | RemoteConfig
+RemoteConfig | InAppMessage | Messaging
 --- | --- | ---
-[![empty_gif]][Messaging] | [![empty_gif]][InAppMessage] | [![remoteconfig_gif]][RemoteConfig]
+[![remoteconfig_gif]][RemoteConfig] | [![empty_gif]][InAppMessage] | [![empty_gif]][Messaging]
 
 # Others
 Channel | Channel | DeviceInfo
