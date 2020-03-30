@@ -1,7 +1,7 @@
 # Firebase RemoteConfig
-<!--<p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/state.gif" height="649" width="300">
-</p>-->
+<p align="center">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/firebaseremoteconfig.gif" height="649" width="300">
+</p>
 
 ### Dependencies
 
