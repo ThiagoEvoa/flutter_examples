@@ -163,7 +163,7 @@ FilePicker | GoogleAuth | Bluetooth
 
 VideoPlayer | AudioPlayer | TODO
 --- | --- | ---
-[![empty_gif]][Video Player] | [![empty_gif]][Audio Player] | [![empty_gif]][https://github.com/ThiagoEvoa/flutter_examples]
+[![empty_gif]][Video Player] | [![empty_gif]][Audio Player] | [![empty_gif]](https://github.com/ThiagoEvoa/flutter_examples)
 
 
 
