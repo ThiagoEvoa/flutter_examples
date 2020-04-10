@@ -145,9 +145,9 @@ DeviceInfo | PackageInfo | Internationalization
 --- | --- | ---
 [![deviceinfoios_png]][Device Info] | [![packageinfo_png]][PackageInfo] | [![internationalization_png]][Internationalization]
 
-ImagePicker | Biometric | SharedPreferences
+ImagePicker | GoogleAuth | SharedPreferences
 --- | --- | ---
-[![imagepicker_gif]][ImagePicker] | [![empty_gif]][Biometric] | [![sharedpreferences_gif]][SharedPreferences]
+[![imagepicker_gif]][ImagePicker] | [![googleauth_gif]][Google Auth] | [![sharedpreferences_gif]][SharedPreferences]
 
 FlipCard | Geolocator | GoogleMaps
 --- | --- | ---
@@ -161,9 +161,9 @@ Connectivity | Share | SplashScreen
 --- | --- | ---
 [![connectivity_gif]][Connectivity] | [![share_gif]][Share] | [![splashscreen_gif]][SplashScreen]
 
-FilePicker | GoogleAuth | Bluetooth
+FilePicker | Biometric | Bluetooth
 --- | --- | ---
-[![filepicker_gif]][FilePicker] | [![googleauth_gif]][Google Auth] | [![empty_gif]][Bluetooth]
+[![filepicker_gif]][FilePicker] | [![empty_gif]][Biometric] | [![empty_gif]][Bluetooth]
 
 VideoPlayer | AudioPlayer | TODO
 --- | --- | ---
