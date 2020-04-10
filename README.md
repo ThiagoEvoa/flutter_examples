@@ -93,6 +93,10 @@ Transform | AnimatedPositioned | ListWheelScrollView
 --- | --- | ---
 [![transform_gif]][Transform] | [![animatedpositioned_gif]][AnimatedPositioned] | [![listwheelscrollview_gif]][ListWheelScrollView]
 
+SliverAppBar | TODO | TODO
+--- | --- | ---
+[![sliverappbar_gif]][SliverAppBar] | [![empty_gif]](https://github.com/ThiagoEvoa/flutter_examples) | [![empty_gif]](https://github.com/ThiagoEvoa/flutter_examples)
+
 # Management State
 
 <p align="center">
@@ -243,11 +247,7 @@ VideoPlayer | AudioPlayer | TODO
 [transform_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/transform.gif
 [animatedpositioned_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/animatedpositioned.gif
 [listwheelscrollview_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/listwheelscrollview.gif
-[share_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/share.gif
-[connectivity_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/connectivity.gif
-[splashscreen_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/splashscreen.gif
-[filepicker_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/filepicker.gif
-[empty_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/todo.gif
+[sliverappbar_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/sliverappbar.gif
 
 [auth_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/firebaseauth.gif
 [store_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/firebasedatabase.gif
@@ -263,6 +263,11 @@ VideoPlayer | AudioPlayer | TODO
 [flare_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flare.gif
 [localnotification_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/localnotification.gif
 [googleauth_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/google_auth.gif
+[share_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/share.gif
+[connectivity_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/connectivity.gif
+[splashscreen_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/splashscreen.gif
+[filepicker_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/filepicker.gif
+[empty_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/todo.gif
 
 <!-- Links -->
 [Text]: https://github.com/ThiagoEvoa/flutter_examples/tree/text
