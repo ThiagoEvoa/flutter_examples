@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'SliverAppBar'),
     );
   }
 }
@@ -24,38 +24,46 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+    final items = List<String>.generate(20, (items) => "Item $items");
+
+    return Material(
+      child: NestedScrollView(
+        headerSliverBuilder: (context, innerBoxIsScrolled) {
+          return <Widget>[
+            SliverAppBar(
+              title: !innerBoxIsScrolled ? Container() : Text(widget.title),
+              actions: <Widget>[
+                !innerBoxIsScrolled
+                    ? Container()
+                    : IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.menu),
+                      )
+              ],
+              backgroundColor: Colors.lightBlue[900],
+              expandedHeight: 300,
+              floating: false,
+              pinned: true,
+              flexibleSpace: FlexibleSpaceBar(
+                title: !innerBoxIsScrolled ? Container() : Text(widget.title),
+                background: FlutterLogo(),
+              ),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ],
+          ];
+        },
+        body: ListView.builder(
+          padding: EdgeInsets.zero,
+          itemCount: items.length,
+          itemBuilder: (context, index) {
+            return Container(
+              child: ListTile(
+                title: Text(items[index]),
+              ),
+            );
+          },
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
       ),
     );
   }
