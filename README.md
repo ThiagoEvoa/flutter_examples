@@ -336,6 +336,7 @@ VideoPlayer | AudioPlayer | TODO
 [AnimatedPositioned]: https://github.com/ThiagoEvoa/flutter_examples/tree/animatedpositioned
 [Placeholder]: https://github.com/ThiagoEvoa/flutter_examples/tree/placeholder
 [ListWheelScrollView]: https://github.com/ThiagoEvoa/flutter_examples/tree/listwheelscrollview
+[SliverAppBar]: https://github.com/ThiagoEvoa/flutter_examples/tree/sliverappbar
 
 [Auth]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebaseauth
 [Store]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestore
