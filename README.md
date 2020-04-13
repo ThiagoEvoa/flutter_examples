@@ -1,6 +1,17 @@
 # Flutter Examples
 
-> This repository contains examples of how to implement things in Flutter. If you didn't find what you expect, please let me know and I'll try to do the example for you. 
+> This repository contains examples of how to implement things in Flutter. If you didn't find what you expect, please let me know and I'll try to do the example for you.
+
+# How to build flutter aps?
+
+## Android
+> Debug version run the command:
+``
+flutter build apk --debug
+
+
+## iOS
+> 
 
 ___
 # Widgets
