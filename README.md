@@ -6,9 +6,10 @@
 
 ## Android
 > Debug version run the command:
+
 ``
 flutter build apk --debug
-
+``
 
 ## iOS
 > 
