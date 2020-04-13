@@ -11,9 +11,47 @@
 flutter build apk --debug
 ``
 
-## iOS
-> 
+> Release version run the command:
 
+``
+flutter build apk --release
+``
+
+> Bunble version run the command:
+
+``
+flutter build appbundle
+
+or
+
+flutter appbundle --target-platform android-arm, android-arm64, android-x64
+``
+
+> Split Bunble version run the command:
+
+``
+flutter build apk --split-per-abi
+``
+
+## iOS
+> Debug version run the command:
+
+``
+flutter build ios --debug
+``
+
+> Release version run the command:
+
+``
+flutter build ios --release
+``
+
+## Testing on multiple devices
+> If you want to test your app in multiple devices open the simulators and run this command:
+
+``
+flutter run -d all
+``
 ___
 # Widgets
 
