@@ -21,9 +21,9 @@ flutter build apk --release
 
 ``
 flutter build appbundle
+``
 
-or
-
+``
 flutter appbundle --target-platform android-arm, android-arm64, android-x64
 ``
 
