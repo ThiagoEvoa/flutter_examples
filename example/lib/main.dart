@@ -45,8 +45,11 @@ class _MyHomePageState extends State<MyHomePage> {
         padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 3),
         child: Container(
           decoration: BoxDecoration(
-              border: Border(
-                  top: BorderSide(width: 0.1), bottom: BorderSide(width: 0.1))),
+            border: Border(
+              top: BorderSide(width: 0.1),
+              bottom: BorderSide(width: 0.1),
+            ),
+          ),
           child: Row(
             children: <Widget>[
               Expanded(
