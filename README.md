@@ -143,9 +143,9 @@ Transform | AnimatedPositioned | ListWheelScrollView
 --- | --- | ---
 [![transform_gif]][Transform] | [![animatedpositioned_gif]][AnimatedPositioned] | [![listwheelscrollview_gif]][ListWheelScrollView]
 
-SliverAppBar | TODO | TODO
+SliverAppBar | DarkTheme Provider | TODO
 --- | --- | ---
-[![sliverappbar_gif]][SliverAppBar] | [![empty_gif]](https://github.com/ThiagoEvoa/flutter_examples) | [![empty_gif]](https://github.com/ThiagoEvoa/flutter_examples)
+[![sliverappbar_gif]][SliverAppBar] | [![empty_gif]][DarkTheme Provider] | [![empty_gif]](https://github.com/ThiagoEvoa/flutter_examples)
 
 # Management State
 
@@ -387,6 +387,7 @@ VideoPlayer | AudioPlayer | TODO
 [Placeholder]: https://github.com/ThiagoEvoa/flutter_examples/tree/placeholder
 [ListWheelScrollView]: https://github.com/ThiagoEvoa/flutter_examples/tree/listwheelscrollview
 [SliverAppBar]: https://github.com/ThiagoEvoa/flutter_examples/tree/sliverappbar
+[DarkTheme Provider]: https://github.com/ThiagoEvoa/flutter_examples/tree/dartheme_provider
 
 [Auth]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebaseauth
 [Store]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestore
