@@ -1,7 +1,7 @@
 # DarkTheme Provider
-<!--<p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/state.gif" height="649" width="300">
-</p> -->
+<p align="center">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/darktheme_provider.gif" height="649" width="300">
+</p>
 
 ### Main
 ```dart
