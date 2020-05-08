@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 void main() => runApp(
-      Provider(
+      ChangeNotifierProvider(
         create: (_) => ThemeProvider(false),
         child: MyApp(),
       ),
