@@ -6,7 +6,7 @@
 ### Main
 ```dart
 void main() => runApp(
-      Provider(
+      ChangeNotifierProvider(
         create: (_) => ThemeProvider(false),
         child: MyApp(),
       ),
