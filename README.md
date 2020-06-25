@@ -426,7 +426,11 @@ xcrun simctl io booted recordVideo <filename>.<file extension>
 https://ezgif.com/video-to-gif
 -->  
 
-<!-- 
+<!--
+AboutDialog
+-->
+
+<!--
 Apple Sign - https://pub.dev/packages/sign_in_with_apple
 Shimmer - https://pub.dev/packages/shimmer
 Screenshot - https://pub.dev/packages/screenshot
