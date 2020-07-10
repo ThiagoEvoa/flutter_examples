@@ -145,7 +145,7 @@ Transform | AnimatedPositioned | ListWheelScrollView
 
 SliverAppBar | DarkTheme Provider | CheckboxListTile
 --- | --- | ---
-[![sliverappbar_gif]][SliverAppBar] | [![darktheme_provider_gif]][DarkTheme Provider] | [![checkbox_listtile]][CheckboxListTile]
+[![sliverappbar_gif]][SliverAppBar] | [![darktheme_provider_gif]][DarkTheme Provider] | [![empty_gif]][CheckboxListTile]
 
 # Management State
 
