@@ -143,9 +143,9 @@ Transform | AnimatedPositioned | ListWheelScrollView
 --- | --- | ---
 [![transform_gif]][Transform] | [![animatedpositioned_gif]][AnimatedPositioned] | [![listwheelscrollview_gif]][ListWheelScrollView]
 
-SliverAppBar | DarkTheme Provider | TODO
+SliverAppBar | DarkTheme Provider | CheckboxListTile
 --- | --- | ---
-[![sliverappbar_gif]][SliverAppBar] | [![darktheme_provider_gif]][DarkTheme Provider] | [![empty_gif]](https://github.com/ThiagoEvoa/flutter_examples)
+[![sliverappbar_gif]][SliverAppBar] | [![darktheme_provider_gif]][DarkTheme Provider] | [![checkbox_listtile]][CheckboxListTile]
 
 # Management State
 
@@ -299,6 +299,7 @@ VideoPlayer | AudioPlayer | TODO
 [listwheelscrollview_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/listwheelscrollview.gif
 [sliverappbar_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/sliverappbar.gif
 [darktheme_provider_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/darktheme_provider.gif
+[checkbox_listtile_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/checkbox_listtile.gif
 
 [auth_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/firebaseauth.gif
 [store_gif]: https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/firebasedatabase.gif
@@ -389,6 +390,7 @@ VideoPlayer | AudioPlayer | TODO
 [ListWheelScrollView]: https://github.com/ThiagoEvoa/flutter_examples/tree/listwheelscrollview
 [SliverAppBar]: https://github.com/ThiagoEvoa/flutter_examples/tree/sliverappbar
 [DarkTheme Provider]: https://github.com/ThiagoEvoa/flutter_examples/tree/dartheme_provider
+[CheckboxListTile]: https://github.com/ThiagoEvoa/flutter_examples/tree/checkbox_listtile
 
 [Auth]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebaseauth
 [Store]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestore
