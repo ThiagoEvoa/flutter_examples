@@ -430,11 +430,10 @@ https://ezgif.com/video-to-gif
 
 <!--
 AboutDialog
-CheckboxListTile
 -->
 
 <!--
-Apple Sign - https://pub.dev/packages/sign_in_with_apple
+Apple Sign - https://pub.dev/packages/sign_in_with_apple (must have apple dev account)
 Shimmer - https://pub.dev/packages/shimmer
 Screenshot - https://pub.dev/packages/screenshot
 Tutoria Coach - https://pub.dev/packages/tutorial_coach_mark
