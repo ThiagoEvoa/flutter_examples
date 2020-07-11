@@ -147,6 +147,10 @@ SliverAppBar | DarkTheme Provider | CheckboxListTile
 --- | --- | ---
 [![sliverappbar_gif]][SliverAppBar] | [![darktheme_provider_gif]][DarkTheme Provider] | [![empty_gif]][CheckboxListTile]
 
+AboutDialog | TODO | TODO
+--- | --- | ---
+[![empty_gif]][] | [![empty_gif]](https://github.com/ThiagoEvoa/flutter_examples) | [![empty_gif]](https://github.com/ThiagoEvoa/flutter_examples)
+
 # Management State
 
 <p align="center">
