@@ -149,7 +149,7 @@ SliverAppBar | DarkTheme Provider | CheckboxListTile
 
 AboutDialog | TODO | TODO
 --- | --- | ---
-[![empty_gif]][] | [![empty_gif]](https://github.com/ThiagoEvoa/flutter_examples) | [![empty_gif]](https://github.com/ThiagoEvoa/flutter_examples)
+[![empty_gif]][AboutDialog] | [![empty_gif]](https://github.com/ThiagoEvoa/flutter_examples) | [![empty_gif]](https://github.com/ThiagoEvoa/flutter_examples)
 
 # Management State
 
@@ -395,6 +395,7 @@ VideoPlayer | AudioPlayer | TODO
 [SliverAppBar]: https://github.com/ThiagoEvoa/flutter_examples/tree/sliverappbar
 [DarkTheme Provider]: https://github.com/ThiagoEvoa/flutter_examples/tree/dartheme_provider
 [CheckboxListTile]: https://github.com/ThiagoEvoa/flutter_examples/tree/checkbox_listtile
+[AboutDialog]: https://github.com/ThiagoEvoa/flutter_examples/tree/aboutdialog
 
 [Auth]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebaseauth
 [Store]: https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestore
