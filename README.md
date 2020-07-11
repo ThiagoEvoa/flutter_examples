@@ -431,11 +431,7 @@ VideoPlayer | AudioPlayer | TODO
 <!-- 
 xcrun simctl io booted recordVideo <filename>.<file extension>
 https://ezgif.com/video-to-gif
--->  
-
-<!--
-AboutDialog
--->
+--> 
 
 <!--
 Apple Sign - https://pub.dev/packages/sign_in_with_apple (must have apple dev account)
