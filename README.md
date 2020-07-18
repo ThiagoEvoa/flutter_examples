@@ -54,7 +54,7 @@ flutter run -d all
 ``
 ___
 # Widgets
-[![Text]][Text]
+[Text][Text]
 
 
 Text | RichText | Icon
