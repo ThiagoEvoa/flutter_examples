@@ -260,7 +260,7 @@ ___
 
 [FlipWidget](https://github.com/ThiagoEvoa/flutter_examples/tree/flipwidget)
 
-[Flare/Rive](https://github.com/ThiagoEvoa/flutter_examples/blob/flare/README.md)
+[Flare/Rive](https://github.com/ThiagoEvoa/flutter_examples/tree/flare)
 
 [Local Notification](https://github.com/ThiagoEvoa/flutter_examples/tree/localnotification)
 
