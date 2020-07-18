@@ -54,6 +54,8 @@ flutter run -d all
 ``
 ___
 # Widgets
+Text [Text]: https://github.com/ThiagoEvoa/flutter_examples/tree/text
+
 
 Text | RichText | Icon
 --- | --- | ---
