@@ -205,7 +205,7 @@ ___
 ## Themes
 [Dark Theme](https://github.com/ThiagoEvoa/flutter_examples/tree/darktheme)
 
-[DarkTheme Provider](https://github.com/ThiagoEvoa/flutter_examples/tree/dartheme_provider)
+[Dark Theme Provider](https://github.com/ThiagoEvoa/flutter_examples/tree/dartheme_provider)
 
 # State Management
 [SetState](https://github.com/ThiagoEvoa/flutter_examples/tree/setstate)
