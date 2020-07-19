@@ -210,6 +210,8 @@ ___
 # Management State
 [SetState](https://github.com/ThiagoEvoa/flutter_examples/tree/setstate)
 
+[Hooks](https://github.com/ThiagoEvoa/flutter_examples/tree/hooks)
+
 [Provider](https://github.com/ThiagoEvoa/flutter_examples/tree/provider)
 
 [Bloc](https://github.com/ThiagoEvoa/flutter_examples/tree/bloc)
@@ -290,7 +292,6 @@ https://ezgif.com/video-to-gif
 --> 
 
 <!--
-Hooks - https://pub.dev/packages/flutter_hooks
 Apple Sign - https://pub.dev/packages/sign_in_with_apple (must have apple dev account)
 Shimmer - https://pub.dev/packages/shimmer
 Screenshot - https://pub.dev/packages/screenshot
