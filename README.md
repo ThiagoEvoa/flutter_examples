@@ -286,6 +286,8 @@ ___
 
 [FilePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/filepicker)
 
+[Shimmer](https://github.com/ThiagoEvoa/flutter_examples/tree/shimmer)
+
 <!-- 
 xcrun simctl io booted recordVideo <filename>.<file extension>
 https://ezgif.com/video-to-gif
@@ -293,7 +295,6 @@ https://ezgif.com/video-to-gif
 
 <!--
 Apple Sign - https://pub.dev/packages/sign_in_with_apple (must have apple dev account)
-Shimmer - https://pub.dev/packages/shimmer
 Screenshot - https://pub.dev/packages/screenshot
 Tutoria Coach - https://pub.dev/packages/tutorial_coach_mark
 Local Auth - https://pub.dev/packages/local_auth
