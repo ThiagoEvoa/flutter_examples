@@ -3,6 +3,16 @@
 <img src="" height="649" width="300">
 </p>
 
+### Dependencies
+
+#### Pubspec.yaml
+```dart
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_hooks: ^0.12.0
+```
+
 ### Main
 ```dart
 class MyHomePage extends HookWidget {
