@@ -207,7 +207,7 @@ ___
 
 [DarkTheme Provider](https://github.com/ThiagoEvoa/flutter_examples/tree/dartheme_provider)
 
-# Management State
+# State Management
 [SetState](https://github.com/ThiagoEvoa/flutter_examples/tree/setstate)
 
 [Hooks](https://github.com/ThiagoEvoa/flutter_examples/tree/hooks)
