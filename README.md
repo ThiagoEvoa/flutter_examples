@@ -3,6 +3,17 @@
 <img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/state.gif" height="649" width="300">
 </p>
 
+### Dependencies
+
+#### Pubspec.yaml
+```dart
+dependencies:
+  flutter:
+    sdk: flutter
+  mobx: ^1.2.1+1
+  flutter_mobx: ^1.1.0+1
+```
+
 ### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
@@ -42,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 ```
 
-### MobxCounter
+### CounterMobx
 ```dart
 class CounterMobx {
   CounterMobx() {
