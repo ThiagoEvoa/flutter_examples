@@ -214,6 +214,8 @@ ___
 
 [Bloc + rxDart](https://github.com/ThiagoEvoa/flutter_examples/tree/bloc_rxdart)
 
+[Mobx](https://github.com/ThiagoEvoa/flutter_examples/tree/mobx)
+
 # Database
 [SqfLite](https://github.com/ThiagoEvoa/flutter_examples/tree/sqflite)
 
