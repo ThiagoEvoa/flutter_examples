@@ -2,7 +2,7 @@
 
 ## Folder structure
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/folder_structure.png" height="649" width="800">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/folder_structure.png" height="649" width="1000">
 </p>
 
 ## Presentation
