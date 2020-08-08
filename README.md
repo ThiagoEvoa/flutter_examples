@@ -49,6 +49,9 @@ flutter build ios --release
 flutter run -d all
 ``
 ___
+# Architecture
+[Clean Architecture](https://github.com/ThiagoEvoa/flutter_examples/tree/clean_architecture)
+
 # Widgets
 
 ## Texts
