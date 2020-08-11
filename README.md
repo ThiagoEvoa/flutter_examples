@@ -26,7 +26,7 @@
 ### This layer will only have classes that are going to represent the entities and busyness logic.
 >  usecase -> Responsible for having busyness logic and make the communication with the repository implementation on the Data layer. 
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/usecase.png" height="649" width="1000">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/domain_usecase.png" height="649" width="1000">
 </p>
 
 >  repository -> Responsible for having the interfaces (abstract classes in Dart) that is going to be implemented by the repository on the Data layer.
