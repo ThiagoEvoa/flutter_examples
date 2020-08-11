@@ -31,32 +31,36 @@
 
 >  repository -> Responsible for having the interfaces (abstract classes in Dart) that is going to be implemented by the repository on the Data layer.
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/repository_domain.png" height="649" width="1000">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/domain_repository.png" height="649" width="1000">
 </p>
 
 >  error -> Responsible for having the custom exceptions.
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/error.png" height="649" width="1000">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/domain_error.png" height="649" width="1000">
 </p>
 
->  entity -> Responsible for having the entities.
+>  entity -> Responsible for having the entities, and should be language agnostic.
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/entity.png" height="649" width="1000">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/domain_entity.png" height="649" width="1000">
 </p>
 
 ## Data
 ### This layer will only have classes that are going to retrieve data from database, api's and etc.
 >  repository -> Responsible for having the interfaces (abstract classes in Dart) implementations created in the repository on the Domain layer.
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/repository_data.png" height="649" width="1000">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/data_repository.png" height="649" width="1000">
 </p>
 
->  model -> Responsiblel for having datasource validations. 
+>  model -> Responsiblel for having datasource functions, for example: convert object to json and json to object. 
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/model.png" height="649" width="1000">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/data_model.png" height="649" width="1000">
 </p>
 
 >  datasource ->  Responsible for retrieve the data from database, api's and etc.
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/datasource.png" height="649" width="1000">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/data_datasource1.png" height="649" width="1000">
+</p>
+
+<p align="center">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/data_datasource2.png" height="649" width="1000">
 </p>
