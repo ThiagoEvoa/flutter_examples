@@ -9,7 +9,7 @@
 ### This layer will only have classes that are going to present the screen elements.
 >  widget -> Responsible for having the customizable and reusable widgets.
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/widget.png" height="649" width="1000">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/presenter_widget.png" height="649" width="1000">
 </p>
 
 >  ui -> Responsible for having screen code that is going to be the widget tree.
