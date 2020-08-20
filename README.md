@@ -295,6 +295,8 @@ https://ezgif.com/video-to-gif
 --> 
 
 <!--
+Nottiefiles - https://lottiefiles.com
+URL launcher - https://pub.dev/packages/url_launcher
 Apple Sign - https://pub.dev/packages/sign_in_with_apple (must have apple dev account)
 Screenshot - https://pub.dev/packages/screenshot
 Tutoria Coach - https://pub.dev/packages/tutorial_coach_mark
