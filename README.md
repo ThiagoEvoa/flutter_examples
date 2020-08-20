@@ -209,8 +209,6 @@ ___
 # State Management
 [SetState](https://github.com/ThiagoEvoa/flutter_examples/tree/setstate)
 
-[Hooks](https://github.com/ThiagoEvoa/flutter_examples/tree/hooks)
-
 [Provider](https://github.com/ThiagoEvoa/flutter_examples/tree/provider)
 
 [Bloc](https://github.com/ThiagoEvoa/flutter_examples/tree/bloc)
@@ -287,7 +285,9 @@ ___
 
 [FilePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/filepicker)
 
-[Shimmer*](https://github.com/ThiagoEvoa/flutter_examples/tree/shimmer)
+[Shimmer](https://github.com/ThiagoEvoa/flutter_examples/tree/shimmer)
+
+[Hooks](https://github.com/ThiagoEvoa/flutter_examples/tree/hooks)
 
 <!-- 
 xcrun simctl io booted recordVideo <filename>.<file extension>
