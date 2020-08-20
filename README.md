@@ -114,7 +114,7 @@ ___
 
 [ListWheelScrollView](https://github.com/ThiagoEvoa/flutter_examples/tree/listwheelscrollview)
 
-[CheckboxListTile*](https://github.com/ThiagoEvoa/flutter_examples/tree/checkbox_listtile)
+[CheckboxListTile](https://github.com/ThiagoEvoa/flutter_examples/tree/checkbox_listtile)
 
 ## Progress
 [CircularProgressIndicator](https://github.com/ThiagoEvoa/flutter_examples/tree/circularprogressindicator)
