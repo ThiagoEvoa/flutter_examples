@@ -1,6 +1,6 @@
 # Shimmer
 <p align="center">
-<img src="" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/shimmer.gif" height="649" width="300">
 </p>
 
 ### Main
