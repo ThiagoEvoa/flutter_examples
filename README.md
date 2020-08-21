@@ -10,10 +10,9 @@
 dependencies:
   flutter:
     sdk: flutter
-  firebase_messaging: ^6.0.13
-  http: ^0.12.0+4
-  firebase_core: ^0.4.4+3
-  firebase_analytics: ^5.0.11
+  firebase_messaging: ^7.0.0
+  firebase_core: ^0.5.0
+  firebase_analytics: ^6.0.0
 ```
 
 ### Configuration
