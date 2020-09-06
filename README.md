@@ -217,6 +217,8 @@ ___
 
 [Mobx](https://github.com/ThiagoEvoa/flutter_examples/tree/mobx)
 
+[Getx](https://github.com/ThiagoEvoa/flutter_examples/tree/getx)
+
 # Database
 [SqfLite](https://github.com/ThiagoEvoa/flutter_examples/tree/sqflite)
 
