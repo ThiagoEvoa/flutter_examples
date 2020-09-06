@@ -3,6 +3,16 @@
 <img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/state.gif" height="649" width="300">
 </p>
 
+### Dependencies
+
+#### Pubspec.yaml
+```dart
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^3.8.0
+```
+
 ### Main
 ```dart
 void main() => runApp(GetMaterialApp(home: MyApp()));
