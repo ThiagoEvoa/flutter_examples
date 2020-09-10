@@ -1,4 +1,4 @@
-# How to build flutter aps?
+# How to build flutter app?
 
 ## Android
 > Debug version run the command:
