@@ -15,7 +15,7 @@ ios: true
 dependencies:
   flutter:
     sdk: flutter
-  image_picker: ^0.6.7+4
+  flutter_launcher_icons: ^0.8.0
 ```
 > Note: If you want to have different icons according to the platform use image_path according it
 
