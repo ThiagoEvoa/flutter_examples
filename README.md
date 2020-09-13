@@ -23,3 +23,8 @@ dependencies:
 image_path_ios: 'assets/images/icon_ios.png'
 image_path_android: 'assets/images/icon_android.png'
 ```
+
+> Inside your project run this command
+```dart
+flutter pub run flutter_launcher_icons:main
+```
