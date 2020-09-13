@@ -308,7 +308,6 @@ Screenshot - https://pub.dev/packages/screenshot
 Tutoria Coach - https://pub.dev/packages/tutorial_coach_mark
 Local Auth - https://pub.dev/packages/local_auth
 Time Ago - https://pub.dev/packages/timeago
-Flutter Launcher icons - https://pub.dev/packages/flutter_launcher_icons
 Auto size text - https://pub.dev/packages/auto_size_text
 Image gallery saver - https://pub.dev/packages/image_gallery_saver
 -->
