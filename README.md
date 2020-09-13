@@ -293,6 +293,8 @@ ___
 
 [Hooks](https://github.com/ThiagoEvoa/flutter_examples/tree/hooks)
 
+[Flutter Launcher Icons](https://github.com/ThiagoEvoa/flutter_examples/tree/flutter_launcher_icons)
+
 <!-- 
 xcrun simctl io booted recordVideo <filename>.<file extension>
 https://ezgif.com/video-to-gif
