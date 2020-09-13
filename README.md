@@ -65,6 +65,8 @@ ___
 
 [Form](https://github.com/ThiagoEvoa/flutter_examples/tree/form)
 
+[FilteringTextInputFormatter](https://github.com/ThiagoEvoa/flutter_examples/tree/filtering_text_input_formatter)
+
 ## Buttons
 [RaisedButton](https://github.com/ThiagoEvoa/flutter_examples/tree/raisedbutton)
 
