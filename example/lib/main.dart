@@ -1,4 +1,6 @@
+import 'package:example/uppercase_text_formatter.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,14 +26,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,23 +33,41 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ],
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 10),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              TextField(
+                inputFormatters: [
+                  FilteringTextInputFormatter.deny(RegExp(r'\s'))
+                ],
+                decoration: InputDecoration(hintText: 'Not allow spaces'),
+              ),
+              TextField(
+                inputFormatters: [
+                  FilteringTextInputFormatter.allow(RegExp(r'[a-zA-Z]+|\s'))
+                ],
+                decoration: InputDecoration(hintText: 'Only letters and space'),
+              ),
+              TextField(
+                maxLength: 6,
+                inputFormatters: [
+                  UpperCaseTextFormatter(),
+                  FilteringTextInputFormatter.allow(RegExp(r'[A-Z0-9]'))
+                ],
+                decoration:
+                    InputDecoration(hintText: 'Only uppercase and numbers'),
+              ),
+              TextField(
+                inputFormatters: [
+                  FilteringTextInputFormatter.allow(RegExp(r'^\d?\.?\d{0,2}'))
+                ],
+                decoration: InputDecoration(hintText: 'Amount input'),
+              ),
+            ],
+          ),
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
       ),
     );
   }
