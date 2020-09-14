@@ -310,4 +310,5 @@ Local Auth - https://pub.dev/packages/local_auth
 Time Ago - https://pub.dev/packages/timeago
 Auto size text - https://pub.dev/packages/auto_size_text
 Image gallery saver - https://pub.dev/packages/image_gallery_saver
+Pin code fields: https://pub.dev/packages/pin_code_fields
 -->
