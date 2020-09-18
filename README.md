@@ -1,8 +1,8 @@
 # CI/CD Github Actions
 
 ### Dependencies
-<p>If you want to distribute on firebase follow the steps 1 and 2</p>
-1) <p>Integrate the <b>Firebase</b> on your project</p>
+<p><b>If you want to distribute on firebase follow the steps 1 and 2</b></p>
+1) Integrate the <b>Firebase</b> on your project
 2) <p>On your Github Settings go to <b>Secrets</b> and create the secrets related to the <b>FIREBASE_IOS_APPID</b>, <b>FIREBASE_ANDROID_APPID</b> and <b>FIREBASE_TOKEN</b></p> 
 3) <p>On the root of your project, you need to create the folder <b>/.github/workflows</b>, and add the main.yml file inside with the code bellow</p>
 <p><b>OBS: Note that you have to choose beetwen one or more jobs</b></p>
