@@ -1,9 +1,9 @@
 # CI/CD Github Actions
 
 ### Dependencies
-<p>Integrate the <b>Firebase</b> on your project</p>
-<p>On the root of your project, you need to create the folder <b>/.github/workflows</b>, and add the main.yml file inside with the code bellow</p>
-<p><b>Note that you have to choose beetwen one or more jobs</b></p>
+1) <p>Integrate the <b>Firebase</b> on your project</p>
+2) <p>On the root of your project, you need to create the folder <b>/.github/workflows</b>, and add the main.yml file inside with the code bellow</p>
+<b>OBS: </b><p><b>Note that you have to choose beetwen one or more jobs</b></p>
 
 
 ### main.yml
