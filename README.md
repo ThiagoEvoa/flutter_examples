@@ -15,12 +15,12 @@
 name: Flutter CI/CD
 
 on:
-push:
-  branches:
-    - master
-pull_request:
-  branches:
-    - master
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
     
 jobs:
   build_ios:
@@ -42,66 +42,66 @@ jobs:
         name: ios-build
         path: build/ios/iphoneos
         
-   build_apk:
-     name: Build Flutter (Android)
-     runs-on: ubuntu-latest
-     steps:
-     - uses: actions/checkout@v1
-     - uses: actions/setup-java@v1
-       with:
-         java-version: '12.x'
-     - uses: subosito/flutter-action@v1
-       with:
-           channel: 'dev'
-     - run: flutter pub get
-     - run: flutter build apk
-     - name: Upload APK
-       uses: actions/upload-artifact@master
-       with:
-         name: apk-build
-         path: build/app/outputs/apk/release
+  build_apk:
+    name: Build Flutter (Android)
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-java@v1
+      with:
+        java-version: '12.x'
+    - uses: subosito/flutter-action@v1
+      with:
+          channel: 'dev'
+    - run: flutter pub get
+    - run: flutter build apk
+    - name: Upload APK
+      uses: actions/upload-artifact@master
+      with:
+        name: apk-build
+        path: build/app/outputs/apk/release
          
-   beta_ios:
-     name: Upload iOS Beta to Firebase App Distribution
-     needs: [build_ios]
-     runs-on: ubuntu-latest
-     steps:
-     - uses: actions/checkout@v1
-     - name: set up JDK 1.8
-       uses: actions/setup-java@v1
-       with:
-         java-version: 1.8
-     - name: Download Artifact
-       uses: actions/download-artifact@master
-       with:
-         name: ios-build
-     - name: Upload IPA
-       uses: wzieba/Firebase-Distribution-Github-Action@v1.0.0
-       with:
-         appId: ${{secrets.FIREBASE_IOS_APPID}}
-         token: ${{secrets.FIREBASE_TOKEN}}
-         group: testers
-         file: Runner.ipa
+  beta_ios:
+    name: Upload iOS Beta to Firebase App Distribution
+    needs: [build_ios]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+    - name: Download Artifact
+      uses: actions/download-artifact@master
+      with:
+        name: ios-build
+    - name: Upload IPA
+      uses: wzieba/Firebase-Distribution-Github-Action@v1.0.0
+      with:
+        appId: ${{secrets.FIREBASE_IOS_APPID}}
+        token: ${{secrets.FIREBASE_TOKEN}}
+        group: testers
+        file: Runner.ipa
          
-   beta_apk:
-     name: Upload Android Beta to Firebase App Distribution
-     needs: [build_apk]
-     runs-on: ubuntu-latest
-     steps:
-     - uses: actions/checkout@v1
-     - name: set up JDK 1.8
-       uses: actions/setup-java@v1
-       with:
-         java-version: 1.8
-     - name: Download Artifact
-       uses: actions/download-artifact@master
-       with:
-         name: apk-build
-     - name: Upload APK
-       uses: wzieba/Firebase-Distribution-Github-Action@v1.0.0
-       with:
-         appId: ${{secrets.FIREBASE_ANDROID_APPID}}
-         token: ${{secrets.FIREBASE_TOKEN}}
-         group: testers
-         file: app-release.aap
+  beta_apk:
+    name: Upload Android Beta to Firebase App Distribution
+    needs: [build_apk]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+    - name: Download Artifact
+      uses: actions/download-artifact@master
+      with:
+        name: apk-build
+    - name: Upload APK
+      uses: wzieba/Firebase-Distribution-Github-Action@v1.0.0
+      with:
+        appId: ${{secrets.FIREBASE_ANDROID_APPID}}
+        token: ${{secrets.FIREBASE_TOKEN}}
+        group: testers
+        file: app-release.aap
 ```
