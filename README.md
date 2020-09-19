@@ -52,6 +52,9 @@ ___
 # Architecture
 [Clean Architecture](https://github.com/ThiagoEvoa/flutter_examples/tree/clean_architecture)
 
+# Architecture
+[Github CI/CD](https://github.com/ThiagoEvoa/flutter_examples/tree/ci_cd_github_action)
+
 # Widgets
 
 ## Texts
