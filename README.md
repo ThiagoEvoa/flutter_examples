@@ -48,7 +48,7 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         name: ios-build
-        path: build/ios/iphoneos
+        path: build/ios/iphoneos/*.ipa
         
   build_apk:
     name: Build Flutter (Android)
@@ -57,7 +57,7 @@ jobs:
     - uses: actions/checkout@v1
     - uses: actions/setup-java@v1
       with:
-        java-version: '12.x'
+        java-version: 1.8
     - uses: subosito/flutter-action@v1
       with:
           flutter-version: '1.20.4'
@@ -71,8 +71,8 @@ jobs:
     - name: Upload APK
       uses: actions/upload-artifact@master
       with:
-        name: apk-build
-        path: build/app/outputs/apk/release
+        name: android-build
+        path: ./ci_cd/build/app/outputs/apk/debug/*.apk
          
   beta_ios:
     name: Upload iOS Beta to Firebase App Distributio
@@ -109,13 +109,12 @@ jobs:
     - name: Download Artifact
       uses: actions/download-artifact@master
       with:
-        name: apk-build
+        name: android-build
     - name: Upload APK
-      uses: wzieba/Firebase-Distribution-Github-Action@v1.0.0
+      uses: wzieba/Firebase-Distribution-Github-Action@v1
       with:
         appId: ${{secrets.FIREBASE_ANDROID_APPID}}
         token: ${{secrets.FIREBASE_TOKEN}}
-        group: testers
-        file: app-release.aap
-
+        groups: testers
+        file: app-debug.apk
 ```
