@@ -33,9 +33,14 @@ jobs:
         java-version: '12.x'
     - uses: subosito/flutter-action@v1
       with:
-          channel: 'dev'
+          flutter-version: '1.20.4'
+          channel: 'stable'
+    - run: flutter clean
+      working-directory: ./ci_cd
     - run: flutter pub get
-    - run: flutter build ios --release --no-codesign
+      working-directory: ./ci_cd
+    - run: flutter build ios --debug --no-codesign
+      working-directory: ./ci_cd
     - name: Upload iPA
       uses: actions/upload-artifact@master
       with:
@@ -52,9 +57,14 @@ jobs:
         java-version: '12.x'
     - uses: subosito/flutter-action@v1
       with:
-          channel: 'dev'
+          flutter-version: '1.20.4'
+          channel: 'stable'
+    - run: flutter clean
+      working-directory: ./ci_cd
     - run: flutter pub get
-    - run: flutter build apk
+      working-directory: ./ci_cd
+    - run: flutter build apk --debug
+      working-directory: ./ci_cd
     - name: Upload APK
       uses: actions/upload-artifact@master
       with:
@@ -62,7 +72,7 @@ jobs:
         path: build/app/outputs/apk/release
          
   beta_ios:
-    name: Upload iOS Beta to Firebase App Distribution
+    name: Upload iOS Beta to Firebase App Distributio
     needs: [build_ios]
     runs-on: ubuntu-latest
     steps:
@@ -104,4 +114,5 @@ jobs:
         token: ${{secrets.FIREBASE_TOKEN}}
         group: testers
         file: app-release.aap
+
 ```
