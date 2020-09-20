@@ -95,7 +95,7 @@ jobs:
         token: ${{secrets.FIREBASE_TOKEN}}
         group: testers
         file: Runner.ipa
-         
+
   beta_apk:
     name: Upload Android Beta to Firebase App Distribution
     needs: [build_apk]
@@ -117,4 +117,22 @@ jobs:
         token: ${{secrets.FIREBASE_TOKEN}}
         groups: testers
         file: app-debug.apk
+
+  delete_ios_artifact:
+    needs: [beta_ios]
+    name: Delete artifact
+    runs-on: ubuntu-latest
+    steps:
+    - uses: geekyeggo/delete-artifact@v1
+      with:
+        name: ios-build
+   
+  delete_android_artifact:
+    needs: [beta_apk]
+    name: Delete artifact
+    runs-on: ubuntu-latest
+    steps:
+    - uses: geekyeggo/delete-artifact@v1
+      with:
+        name: android-build
 ```
