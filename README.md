@@ -3,8 +3,8 @@
 ### Dependencies
 <p><b>If you want to distribute on firebase follow the steps 1 and 2</b></p>
 1) Integrate the <b>Firebase</b> on your project </br>
-2) Install firebase cli on your machine and run the command "firebase login:ci --no-localhost"
-3) After login copy the token
+2) Install firebase cli on your machine and run the command "firebase login:ci --no-localhost" </br>
+3) After login copy the token </br>
 4) On your Github Settings go to <b>Secrets</b> and create the secrets related to the <b>FIREBASE_IOS_APPID</b>, <b>FIREBASE_ANDROID_APPID</b> and <b>FIREBASE_TOKEN</b> </br>
 5) On the root of your Github repository, you need to create the folder <b>/.github/workflows</b>, and add the main.yml file inside with the code bellow </br>
 6) In order to run the yml file, you have to push your code to the informed branch </br></br>
