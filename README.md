@@ -3,10 +3,10 @@
 ### Dependencies
 <p><b>If you want to distribute on firebase follow the steps 1 to 6</b></p>
 <b>1)</b> Integrate the <b>Firebase</b> on your project </br>
-<b>2)</b> Install firebase cli on your machine and run the command "firebase login:ci --no-localhost" on terminal</br>
-<b>3)</b> After login  on browser, copy the token and paste on terminal</br>
-<b>4)</b> Copy the token on the terminal, to use on the <b>FIREBASE_TOKEN</b></br>
-<b>5)</b> Copy the app id on the firebase console to use on the <b>FIREBASE_IOS_APPID</b> and <b>FIREBASE_ANDROID_APPID</b></br>
+<b>2)</b> Install firebase-cli on your machine and run the command "firebase login:ci --no-localhost" on terminal</br>
+<b>3)</b> After login on browser, copy the given token and paste on terminal to finish the login process</br>
+<b>4)</b> Copy the token provided on the terminal, to use on the <b>FIREBASE_TOKEN</b></br>
+<b>5)</b> Copy the each app id on the firebase console to use on the <b>FIREBASE_IOS_APPID</b> and <b>FIREBASE_ANDROID_APPID</b></br>
 <b>6)</b> On your Github Settings go to <b>Secrets</b> and create the secrets related to the <b>FIREBASE_IOS_APPID</b>, <b>FIREBASE_ANDROID_APPID</b> and <b>FIREBASE_TOKEN</b> </br>
 <b>7)</b> On the root of your Github repository, you need to create the folder <b>/.github/workflows</b>, and add the main.yml file inside with the code bellow </br>
 <b>8)</b> In order to run the yml file, you have to push your code to the informed branch </br></br>
