@@ -55,6 +55,9 @@ ___
 # CI/CD
 [Github Actions](https://github.com/ThiagoEvoa/flutter_examples/tree/ci_cd_github_action)
 
+# Flavors
+[Flavors Dart](https://github.com/ThiagoEvoa/flutter_examples/tree/flavor_dart)
+
 # Widgets
 
 ## Texts
