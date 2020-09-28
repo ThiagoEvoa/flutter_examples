@@ -98,8 +98,7 @@ class HomeController extends InheritedWidget {
   Stream<int> get output => _streamController.stream;
 
   static HomeController of(BuildContext context) {
-    return context.inheritFromWidgetOfExactType(HomeController)
-        as HomeController;
+    return context.dependOnInheritedWidgetOfExactType();;
   }
 
   dispose() {
