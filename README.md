@@ -14,7 +14,7 @@
 <img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flavor_ios_2.png" height="600" width="800">
 </p>
 
-> Change the scheme name to <b>"dev"</b> for example, mark the <b>Shared</b> option and change the <b>Build Configuration</b> to <b>Debug</b>. Repeate the process to <b>prod</b>.
+> Change the scheme name to <b>"dev"</b> for example, mark the <b>Shared</b> option. Repeate the process to <b>"prod"</b>.
 
 <p align="center">
 <img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flavor_ios_3.png" height="600" width="800">
