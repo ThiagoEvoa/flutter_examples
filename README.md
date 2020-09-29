@@ -60,6 +60,8 @@ ___
 
 [Flavors Android](https://github.com/ThiagoEvoa/flutter_examples/tree/flavor_android)
 
+[Flavors iOS](https://github.com/ThiagoEvoa/flutter_examples/tree/flavor_ios)
+
 # Widgets
 
 ## Texts
