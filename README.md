@@ -57,6 +57,7 @@ ___
 
 # Flavors
 [Flavors Dart](https://github.com/ThiagoEvoa/flutter_examples/tree/flavor_dart)
+
 [Flavors Android](https://github.com/ThiagoEvoa/flutter_examples/tree/flavor_android)
 
 # Widgets
