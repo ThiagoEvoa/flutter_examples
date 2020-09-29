@@ -3,7 +3,7 @@
 <img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flavor_dart.png" height="649" width="300">
 </p>
 
-<b>OBS: In order to run the project, execute the command "flutter run lib/main_dev.dart" on terminal. Just remember to replace de "dev" for the desired environment.</b>
+> OBS: In order to run the project, execute the command <b>"flutter run lib/main_dev.dart"</b> on terminal. Just remember to replace de <b>"dev"</b> for the desired environment.
 
 ### Main
 ```dart
