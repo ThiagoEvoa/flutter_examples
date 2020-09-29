@@ -3,7 +3,7 @@
 ### Dependencies
 
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/gradle.png" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/gradle.png" height="300" width="300">
 </p>
 
 > Inside your app gradle level, add this configuration in order to create a dev and prod versions. 
