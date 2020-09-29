@@ -5,7 +5,7 @@
 > On XCode, go to Product > Scheme > Manage Scheme.
 
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flavor_ios_1.png" height="600" width="700">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flavor_ios_1.png" height="600" width="800">
 </p>
 
 > Select the Runner scheme and click on the engine, and select Duplicate.
