@@ -25,7 +25,7 @@ productFlavors {
 > On the <b>src</b> create those two folders and put the firebase json configuration if you want two firebase projects, according to the enviroment. 
 
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/folders.png" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/folders.png" height="600" width="600">
 </p>
 
 > OBS: In order to run the project, execute the command <b>"flutter run lib/main.dart flavor --dev"</b> on terminal. Just remember to replace de <b>"dev"</b> for the desired environment.
