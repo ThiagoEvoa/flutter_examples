@@ -1,45 +1,31 @@
-# SetState
+# Flavor Android
+
+### Dependencies
+
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/state.gif" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/gradle.png" height="649" width="300">
 </p>
 
-### Main
+> Inside your app gradle level, add this configuration in order to create a dev and prod versions. 
+
+#### App build.gradle
 ```dart
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ),
-    );
-  }
+flavorDimensions "default"
+productFlavors {
+    dev {
+        dimension "default"
+        applicationIdSuffix ".dev"
+    }
+    prod{
+        dimension "default"
+    }
 }
 ```
+
+> On the <b>src</b> create those two folders and put the firebase json configuration if you want two firebase projects, according to the enviroment. 
+
+<p align="center">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/folders.png" height="649" width="300">
+</p>
+
+> OBS: In order to run the project, execute the command <b>"flutter run lib/main.dart flavor --dev"</b> on terminal. Just remember to replace de <b>"dev"</b> for the desired environment.
