@@ -323,4 +323,5 @@ Image gallery saver - https://pub.dev/packages/image_gallery_saver
 Pin code fields: https://pub.dev/packages/pin_code_fields
 Intl: https://pub.dev/packages/intl
 Image cropper: https://pub.dev/packages/image_cropper
+Internationalization: https://medium.com/flutter-community/multi-language-support-in-flutter-a12de708f833
 -->
