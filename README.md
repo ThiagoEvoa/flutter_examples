@@ -304,24 +304,3 @@ ___
 [Hooks](https://github.com/ThiagoEvoa/flutter_examples/tree/hooks)
 
 [Flutter Launcher Icons](https://github.com/ThiagoEvoa/flutter_examples/tree/flutter_launcher_icons)
-
-<!-- 
-xcrun simctl io booted recordVideo <filename>.<file extension>
-https://ezgif.com/video-to-gif
---> 
-
-<!--
-Nottiefiles - https://lottiefiles.com
-URL launcher - https://pub.dev/packages/url_launcher
-Apple Sign - https://pub.dev/packages/sign_in_with_apple (must have apple dev account)
-Screenshot - https://pub.dev/packages/screenshot
-Tutoria Coach - https://pub.dev/packages/tutorial_coach_mark
-Local Auth - https://pub.dev/packages/local_auth
-Time Ago - https://pub.dev/packages/timeago
-Auto size text - https://pub.dev/packages/auto_size_text
-Image gallery saver - https://pub.dev/packages/image_gallery_saver
-Pin code fields: https://pub.dev/packages/pin_code_fields
-Intl: https://pub.dev/packages/intl
-Image cropper: https://pub.dev/packages/image_cropper
-Internationalization: https://medium.com/flutter-community/multi-language-support-in-flutter-a12de708f833
--->
