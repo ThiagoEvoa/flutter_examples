@@ -261,6 +261,8 @@ ___
 
 [Internationalization](https://github.com/ThiagoEvoa/flutter_examples/tree/internationalization)
 
+[EasyLocalization](https://github.com/ThiagoEvoa/flutter_examples/tree/easy_location)
+
 [SharedPreferences](https://github.com/ThiagoEvoa/flutter_examples/tree/sharedpreferences)
 
 [BarCode e QRCode](https://github.com/ThiagoEvoa/flutter_examples/tree/barcode_qrcode)
