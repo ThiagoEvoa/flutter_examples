@@ -1,6 +1,6 @@
 # InteractiveViewer
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/interactiveviewer.png" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/interactiveviewer.gif" height="649" width="300">
 </p>
 <!-- https://docs.google.com/uc?id=1fDWdaHU9UmvL05_2ZbaTygZSM-KGrYHz -->
 
