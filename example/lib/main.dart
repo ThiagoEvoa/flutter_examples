@@ -1,51 +1,6 @@
-# EasyLocalization
-<p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/internationalization.png" height="649" width="300">
-</p>
+import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/material.dart';
 
-### Dependencies
-
-#### Pubspec.yaml
-```dart
-dependencies:
-  flutter:
-    sdk: flutter
-  easy_localization: ^2.3.3
-
-assets:
-   - assets/translations/en.json
-   - assets/translations/pt.json
-```
-
-### Configuration
-
-#### iOS Info.plist
-```dart
-<key>CFBundleLocalizations</key>
-<array>
-    <string>en</string>
-    <string>pt</string>
-</array>
-```
-
-### en.json 
-```dart
-{
-    "title":"English version",
-    "phrase":"You have switched the version to english"
-}
-```
-
-### pt.json 
-```dart
-{
-    "title":"Versão português",
-    "phrase":"Você mudou a versão para português"
-}
-```
-
-### Main
-```dart
 void main() {
   runApp(
     EasyLocalization(
@@ -98,4 +53,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-```
