@@ -175,6 +175,8 @@ ___
 
 [Gradient](https://github.com/ThiagoEvoa/flutter_examples/tree/gradient)
 
+[InteractiveViewer](https://github.com/ThiagoEvoa/flutter_examples/tree/interactiveviewer)
+
 ## Navigations
 [Navigation](https://github.com/ThiagoEvoa/flutter_examples/tree/navigation)
 
