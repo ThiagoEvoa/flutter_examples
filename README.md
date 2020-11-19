@@ -52,6 +52,16 @@ ___
 # Architecture
 [Clean Architecture](https://github.com/ThiagoEvoa/flutter_examples/tree/clean_architecture)
 
+# Design Patterns
+
+## Creational
+[Factory Method](https://github.com/ThiagoEvoa/design_patterns/tree/factory_method)
+
+[Singleton](https://github.com/ThiagoEvoa/design_patterns/tree/singleton)
+
+[Prototype](https://github.com/ThiagoEvoa/design_patterns/tree/prototype)
+
+
 # CI/CD
 [Github Actions](https://github.com/ThiagoEvoa/flutter_examples/tree/ci_cd_github_action)
 
