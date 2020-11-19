@@ -61,6 +61,20 @@ ___
 
 [Prototype](https://github.com/ThiagoEvoa/design_patterns/tree/prototype)
 
+## Structural
+[Decorator](https://github.com/ThiagoEvoa/design_patterns/tree/decorator)
+
+[Adapter](https://github.com/ThiagoEvoa/design_patterns/tree/adapter)
+
+[Facade](https://github.com/ThiagoEvoa/design_patterns/tree/facade)
+
+## Behavioral
+[Strategy](https://github.com/ThiagoEvoa/design_patterns/tree/strategy)
+
+[State](https://github.com/ThiagoEvoa/design_patterns/tree/state)
+
+[Observer](https://github.com/ThiagoEvoa/design_patterns/tree/observer)
+
 
 # CI/CD
 [Github Actions](https://github.com/ThiagoEvoa/flutter_examples/tree/ci_cd_github_action)
