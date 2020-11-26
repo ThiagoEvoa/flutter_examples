@@ -1,13 +1,12 @@
-import 'package:clean_architecture/data/datasource/user_dao.dart';
-import 'package:clean_architecture/data/model/user_model.dart';
+import 'package:clean_architecture/data/datasource/user_datasource.dart';
 import 'package:clean_architecture/domain/entity/user.dart';
-import 'package:clean_architecture/domain/repository/user_repository.dart';
+import 'package:clean_architecture/domain/repository/iuser_repository.dart';
 
-class UserRepository implements IUserRepositorie {
-  UserModel userModel = UserModel();
+class UserRepository implements IUserRepository {
+  UserDataSource _userDataSource = UserDataSource();
 
   @override
-  Future<User> retrieveUser({User user}) async{
-    return await userModel.login(user: user);
+  Future<User> retrieveUser() {
+    return _userDataSource.retrieveUser();
   }
 }

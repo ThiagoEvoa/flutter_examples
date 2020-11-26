@@ -1,15 +1,20 @@
-import 'package:clean_architecture/data/datasource/user_dao.dart';
 import 'package:clean_architecture/domain/entity/user.dart';
-import 'package:clean_architecture/domain/error/login_exception.dart';
+import 'package:flutter/foundation.dart';
 
-class UserModel {
-  Future<User> login({User user}) async {
-    User result;
-    try {
-      result = await UserDAO().getUserByEmailPassword(user: user);
-    } catch (exception) {
-      throw LoginException('User not found');
-    }
-    return result;
+class UserModel extends User {
+  final String name;
+
+  UserModel({@required this.name}) : super(name);
+
+  factory UserModel.fromJson({@required Map<String, dynamic> json}) {
+    return UserModel(name: json['name']);
+  }
+
+  factory UserModel.fromUser({@required User user}) {
+    return UserModel(name: user.name);
+  }
+
+  Map<String, dynamic> toJson() {
+    return {'name': name};
   }
 }
