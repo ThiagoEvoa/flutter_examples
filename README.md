@@ -333,4 +333,4 @@ ___
 
 [Flutter Launcher Icons](https://github.com/ThiagoEvoa/flutter_examples/tree/flutter_launcher_icons)
 
-[Base64 Image on SQFLite](https://github.com/ThiagoEvoa/flutter_examples/tree/base64_image_database)
+[Base64 Image](https://github.com/ThiagoEvoa/flutter_examples/tree/base64_image_database)
