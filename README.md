@@ -1,334 +1,176 @@
-# How to build flutter app?
-
-## Android
-> Debug version run the command:
-
-``
-flutter build apk --debug
-``
-
-> Release version run the command:
-
-``
-flutter build apk --release
-``
-
-> Bunble version run the command:
-
-``
-flutter build appbundle
-``
-
-``
-flutter appbundle --target-platform android-arm, android-arm64, android-x64
-``
-
-> Split Bunble version run the command:
-
-``
-flutter build apk --split-per-abi
-``
-
-## iOS
-> Debug version run the command:
-
-``
-flutter build ios --debug
-``
-
-> Release version run the command:
-
-``
-flutter build ios --release
-``
-
-## Testing on multiple devices
-> If you want to test your app in multiple devices open the simulators and run this command:
-
-``
-flutter run -d all
-``
-___
-# Architecture
-[Clean Architecture](https://github.com/ThiagoEvoa/flutter_examples/tree/clean_architecture)
-
-# Design Patterns
-
-## Creational
-[Factory Method](https://github.com/ThiagoEvoa/design_patterns/tree/factory_method)
-
-[Singleton](https://github.com/ThiagoEvoa/design_patterns/tree/singleton)
-
-[Prototype](https://github.com/ThiagoEvoa/design_patterns/tree/prototype)
-
-## Structural
-[Decorator](https://github.com/ThiagoEvoa/design_patterns/tree/decorator)
-
-[Adapter](https://github.com/ThiagoEvoa/design_patterns/tree/adapter)
-
-[Facade](https://github.com/ThiagoEvoa/design_patterns/tree/facade)
-
-## Behavioral
-[Strategy](https://github.com/ThiagoEvoa/design_patterns/tree/strategy)
-
-[State](https://github.com/ThiagoEvoa/design_patterns/tree/state)
-
-[Observer](https://github.com/ThiagoEvoa/design_patterns/tree/observer)
-
-
-# CI/CD
-[Github Actions](https://github.com/ThiagoEvoa/flutter_examples/tree/ci_cd_github_action)
-
-# Flavors
-[Flavors Dart](https://github.com/ThiagoEvoa/flutter_examples/tree/flavor_dart)
-
-[Flavors Android](https://github.com/ThiagoEvoa/flutter_examples/tree/flavor_android)
-
-[Flavors iOS](https://github.com/ThiagoEvoa/flutter_examples/tree/flavor_ios)
-
-# Widgets
-
-## Texts
-[Text](https://github.com/ThiagoEvoa/flutter_examples/tree/text)
-
-[RichText](https://github.com/ThiagoEvoa/flutter_examples/tree/rich_text)
-
-[SelectableText](https://github.com/ThiagoEvoa/flutter_examples/tree/selectable_text)
-
-[TextField](https://github.com/ThiagoEvoa/flutter_examples/tree/textfield)
-
-[Form](https://github.com/ThiagoEvoa/flutter_examples/tree/form)
-
-[FilteringTextInputFormatter](https://github.com/ThiagoEvoa/flutter_examples/tree/filtering_text_input_formatter)
-
-## Buttons
-[RaisedButton](https://github.com/ThiagoEvoa/flutter_examples/tree/raisedbutton)
-
-[FlatButton](https://github.com/ThiagoEvoa/flutter_examples/tree/flatbutton)
-
-[IconButton](https://github.com/ThiagoEvoa/flutter_examples/tree/iconbutton)
-
-[InkWell](https://github.com/ThiagoEvoa/flutter_examples/tree/inkwell)
-
-## Icons
-[Icon](https://github.com/ThiagoEvoa/flutter_examples/tree/icon)
-
-[Animated Icon](https://github.com/ThiagoEvoa/flutter_examples/tree/animatedicon)
-
-## Dialogs
-[AlertDialog](https://github.com/ThiagoEvoa/flutter_examples/tree/alertdialog)
-
-[GeneralDialog](https://github.com/ThiagoEvoa/flutter_examples/tree/generaldialog)
-
-[AboutDialog](https://github.com/ThiagoEvoa/flutter_examples/tree/aboutdialog)
-
-## Images
-[Image NetWork](https://github.com/ThiagoEvoa/flutter_examples/tree/image_network)
-
-[Image Asset](https://github.com/ThiagoEvoa/flutter_examples/tree/image_asset)
-
-[ClipRRect](https://github.com/ThiagoEvoa/flutter_examples/tree/cliprrect)
-
-[ClipOval](https://github.com/ThiagoEvoa/flutter_examples/tree/clipoval)
-
-[ClipPath](https://github.com/ThiagoEvoa/flutter_examples/tree/clippath)
-
-[ColorFiltered](https://github.com/ThiagoEvoa/flutter_examples/tree/colorfiltered)
-
-## Lists
-[ListView](https://github.com/ThiagoEvoa/flutter_examples/tree/listview)
-
-[ListView Builder](https://github.com/ThiagoEvoa/flutter_examples/tree/listview_builder)
-
-[Dismissible](https://github.com/ThiagoEvoa/flutter_examples/tree/dismissible)
-
-[RefreshIndicator](https://github.com/ThiagoEvoa/flutter_examples/tree/refreshindicator)
-
-[Reorderable ListView](https://github.com/ThiagoEvoa/flutter_examples/tree/reorderablelistview)
-
-[GridView Builder](https://github.com/ThiagoEvoa/flutter_examples/tree/gridview_builder)
-
-[ListWheelScrollView](https://github.com/ThiagoEvoa/flutter_examples/tree/listwheelscrollview)
-
-[CheckboxListTile](https://github.com/ThiagoEvoa/flutter_examples/tree/checkbox_listtile)
-
-## Progress
-[CircularProgressIndicator](https://github.com/ThiagoEvoa/flutter_examples/tree/circularprogressindicator)
-
-[LinearProgressIndicator](https://github.com/ThiagoEvoa/flutter_examples/tree/linearprogressindicator)
-
-## Menus
-[TabBar](https://github.com/ThiagoEvoa/flutter_examples/tree/tabbar)
-
-[Bottom Navigation](https://github.com/ThiagoEvoa/flutter_examples/tree/bottomnavigationbar)
-
-[BottomAppBar](https://github.com/ThiagoEvoa/flutter_examples/tree/bottomappbar)
-
-[Drawer](https://github.com/ThiagoEvoa/flutter_examples/tree/drawer)
-
-[Popup Menu Button](https://github.com/ThiagoEvoa/flutter_examples/tree/popupmenubutton)
-
-[SliverAppBar](https://github.com/ThiagoEvoa/flutter_examples/tree/sliverappbar)
-
-## Layouts
-[Container](https://github.com/ThiagoEvoa/flutter_examples/tree/container)
-
-[Animated Container](https://github.com/ThiagoEvoa/flutter_examples/tree/animatedcontainer)
-
-[Placeholder](https://github.com/ThiagoEvoa/flutter_examples/tree/placeholder)
-
-[Column](https://github.com/ThiagoEvoa/flutter_examples/tree/column)
-
-[Row](https://github.com/ThiagoEvoa/flutter_examples/tree/row)
-
-[Wrap](https://github.com/ThiagoEvoa/flutter_examples/tree/wrap)
-
-[Stack](https://github.com/ThiagoEvoa/flutter_examples/tree/stack)
-
-[Material](https://github.com/ThiagoEvoa/flutter_examples/tree/material)
-
-[Scaffold](https://github.com/ThiagoEvoa/flutter_examples/tree/scaffold)
-
-[SafeArea](https://github.com/ThiagoEvoa/flutter_examples/tree/safearea)
-
-[Table](https://github.com/ThiagoEvoa/flutter_examples/tree/table)
-
-[LayoutBuilder](https://github.com/ThiagoEvoa/flutter_examples/tree/layoutbuilder)
-
-[WebView](https://github.com/ThiagoEvoa/flutter_examples/tree/webview)
-
-[Gradient](https://github.com/ThiagoEvoa/flutter_examples/tree/gradient)
-
-[InteractiveViewer](https://github.com/ThiagoEvoa/flutter_examples/tree/interactiveviewer)
-
-## Navigations
-[Navigation](https://github.com/ThiagoEvoa/flutter_examples/tree/navigation)
-
-## Animations
-[Slider](https://github.com/ThiagoEvoa/flutter_examples/tree/slider)
-
-[Switch](https://github.com/ThiagoEvoa/flutter_examples/tree/switch)
-
-[CheckBox](https://github.com/ThiagoEvoa/flutter_examples/tree/checkbox)
-
-[Radio](https://github.com/ThiagoEvoa/flutter_examples/tree/radio)
-
-[ExpansionPanel](https://github.com/ThiagoEvoa/flutter_examples/tree/expansionpanel)
-
-[Tooltip](https://github.com/ThiagoEvoa/flutter_examples/tree/tooltip)
-
-[SnackBar](https://github.com/ThiagoEvoa/flutter_examples/tree/snackbar)
-
-[Stepper](https://github.com/ThiagoEvoa/flutter_examples/tree/stepper)
-
-[Draggable](https://github.com/ThiagoEvoa/flutter_examples/tree/draggable)
-
-[DatePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/datepicker)
-
-[TimePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/timepicker)
-
-[FadeTransition](https://github.com/ThiagoEvoa/flutter_examples/tree/fadetransition)
-
-[Hero](https://github.com/ThiagoEvoa/flutter_examples/tree/hero)
-
-[DraggableScrollableSheet](https://github.com/ThiagoEvoa/flutter_examples/tree/draggablescrollablesheet)
-
-[AnimatedBuilder](https://github.com/ThiagoEvoa/flutter_examples/tree/animatedbuilder)
-
-[Transform](https://github.com/ThiagoEvoa/flutter_examples/tree/transform)
-
-[AnimatedPositioned](https://github.com/ThiagoEvoa/flutter_examples/tree/animatedpositioned)
-
-## Themes
-[Dark Theme](https://github.com/ThiagoEvoa/flutter_examples/tree/darktheme)
-
-[Dark Theme Provider](https://github.com/ThiagoEvoa/flutter_examples/tree/dartheme_provider)
-
-# State Management
-[SetState](https://github.com/ThiagoEvoa/flutter_examples/tree/setstate)
-
-[Provider](https://github.com/ThiagoEvoa/flutter_examples/tree/provider)
-
-[Bloc](https://github.com/ThiagoEvoa/flutter_examples/tree/bloc)
-
-[Bloc + rxDart](https://github.com/ThiagoEvoa/flutter_examples/tree/bloc_rxdart)
-
-[Mobx](https://github.com/ThiagoEvoa/flutter_examples/tree/mobx)
-
-[Getx](https://github.com/ThiagoEvoa/flutter_examples/tree/getx)
-
-# Database
-[SqfLite](https://github.com/ThiagoEvoa/flutter_examples/tree/sqflite)
-
-[Hive](https://github.com/ThiagoEvoa/flutter_examples/tree/hive)
-
-# API
-[HTTP](https://github.com/ThiagoEvoa/flutter_examples/tree/http)
-
-[Dio](https://github.com/ThiagoEvoa/flutter_examples/tree/dio)
-
-# Firebase
-[Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/firebaseauth)
-
-[Store](https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestore)
-
-[Storage](https://github.com/ThiagoEvoa/flutter_examples/tree/firebasestorage)
-
-[Messaging](https://github.com/ThiagoEvoa/flutter_examples/tree/firebase_messaging)
-
-[InAppMessage](https://github.com/ThiagoEvoa/flutter_examples/tree/firebase_inappmessage)
-
-[RemoteConfig](https://github.com/ThiagoEvoa/flutter_examples/tree/firebase_remoteconfig)
-
-# Packages and Others
-[ImagePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/imagepicker)
-
-[Internationalization](https://github.com/ThiagoEvoa/flutter_examples/tree/internationalization)
-
-[EasyLocalization](https://github.com/ThiagoEvoa/flutter_examples/tree/easy_location)
-
-[SharedPreferences](https://github.com/ThiagoEvoa/flutter_examples/tree/sharedpreferences)
-
-[BarCode e QRCode](https://github.com/ThiagoEvoa/flutter_examples/tree/barcode_qrcode)
-
-[Geolocator](https://github.com/ThiagoEvoa/flutter_examples/tree/geolocator)
-
-[Google Maps](https://github.com/ThiagoEvoa/flutter_examples/tree/googlemaps)
-
-[Biometric](https://github.com/ThiagoEvoa/flutter_examples/tree/biometric)
-
-[PackageInfo](https://github.com/ThiagoEvoa/flutter_examples/tree/packageinfo)
-
-[FlipCard](https://github.com/ThiagoEvoa/flutter_examples/tree/flipcard)
-
-[FlipWidget](https://github.com/ThiagoEvoa/flutter_examples/tree/flipwidget)
-
-[Flare/Rive](https://github.com/ThiagoEvoa/flutter_examples/tree/flare)
-
-[Local Notification](https://github.com/ThiagoEvoa/flutter_examples/tree/localnotification)
-
-[Google Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/google_auth)
-
-[Channel](https://github.com/ThiagoEvoa/flutter_examples/tree/channel)
-
-[Connectivity](https://github.com/ThiagoEvoa/flutter_examples/tree/connectivity)
-
-[Device Info](https://github.com/ThiagoEvoa/flutter_examples/tree/device_info)
-
-[Share](https://github.com/ThiagoEvoa/flutter_examples/tree/share)
-
-[Video Player](https://github.com/ThiagoEvoa/flutter_examples/tree/video_player)
-
-[Audio Player](https://github.com/ThiagoEvoa/flutter_examples/tree/audio_player)
-
-[Bluetooth](https://github.com/ThiagoEvoa/flutter_examples/tree/bluetooth)
-
-[SplashScreen](https://github.com/ThiagoEvoa/flutter_examples/tree/splashscreen)
-
-[FilePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/filepicker)
-
-[Shimmer](https://github.com/ThiagoEvoa/flutter_examples/tree/shimmer)
-
-[Hooks](https://github.com/ThiagoEvoa/flutter_examples/tree/hooks)
-
-[Flutter Launcher Icons](https://github.com/ThiagoEvoa/flutter_examples/tree/flutter_launcher_icons)
+# Base64 Image 
+<p align="center">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/base64_image.gif" height="649" width="300">
+</p>
+
+### Dependencies
+
+#### Pubspec.yaml
+```dart
+dependencies:
+  flutter:
+    sdk: flutter
+    image_picker: ^0.6.7+14
+    path_provider: ^1.6.24
+    sqflite: ^1.3.2+1
+```
+
+### Configuration
+
+#### iOS Info.plist
+> Add those lines into the Info.plist, to be able to ask for user permission 
+
+```dart
+<key>NSPhotoLibraryUsageDescription</key>
+<string>This app is requiring access to your gallery</string>
+<key>NSCameraUsageDescription</key>
+<string>This app is requiring access to your gallery</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>This app is requiring access to your microphone</string>
+```
+
+### Main
+```dart
+class _MyHomePageState extends State<MyHomePage> {
+  Future<File> imageFile;
+  Image image;
+  DBHelper dbHelper;
+  List<Photo> photos = [];
+
+  @override
+  void initState() {
+    dbHelper = DBHelper();
+    refreshImages();
+    super.initState();
+  }
+
+  refreshImages() {
+    dbHelper.getPhotos().then((value) {
+      setState(() {
+        photos.clear();
+        photos.addAll(value);
+      });
+    });
+  }
+
+  pickImageFromGallery() {
+    ImagePicker().getImage(source: ImageSource.gallery).then((file) {
+      file.readAsBytes().then((value) {
+        String imageString = Base64ImageUtil.base64String(data: value);
+        Photo photo = Photo(id: 0, name: imageString);
+        dbHelper.save(photo);
+        refreshImages();
+      });
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      body: ListView.builder(
+        itemCount: photos.length,
+        itemBuilder: (context, index) {
+          return Base64ImageUtil.imageFromBase64String(
+              base64String: photos[index].name);
+        },
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: pickImageFromGallery,
+        child: Icon(Icons.camera),
+      ),
+    );
+  }
+}
+```
+
+### Base64ImageUtil
+```dart
+class Base64ImageUtil{
+  static Image imageFromBase64String({@required String base64String}){
+    return Image.memory(base64Decode(base64String), fit: BoxFit.fill);
+  }
+
+  static Uint8List dataFromBase64String({@required String base64String}){
+    return base64Decode(base64String);
+  }
+
+  static String base64String({@required Uint8List data}){
+    return base64Encode(data);
+  }
+}
+```
+
+### Photo
+```dart
+class Photo {
+  int id;
+  String name;
+
+  Photo({this.id, this.name});
+
+  factory Photo.fromJson(Map<String, dynamic> json) {
+    return Photo(
+      id: json['id'],
+      name: json['name'],
+    );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {'id': id, 'name': name};
+  }
+}
+```
+
+### DBHelper
+```dart
+class DBHelper {
+  static Database _db;
+  static const String ID = 'id';
+  static const String NAME = 'name';
+  static const String TABLE = 'PhotosTable';
+  static const String DB_NAME = 'photos.db';
+
+  Future<Database> get db async {
+    if (null != _db) {
+      return _db;
+    }
+    _db = await initDb();
+    return _db;
+  }
+
+  initDb() async {
+    Directory documentsDirectory = await getApplicationDocumentsDirectory();
+    String path = join(documentsDirectory.path, DB_NAME);
+    var db = await openDatabase(path, version: 1, onCreate: _onCreate);
+    return db;
+  }
+
+  _onCreate(Database db, int version) async {
+    await db.execute("CREATE TABLE $TABLE ($ID INTEGER, $NAME TEXT)");
+  }
+
+  Future<Photo> save(Photo photo) async {
+    var dbClient = await db;
+    photo.id = await dbClient.insert(TABLE, photo.toJson());
+    return photo;
+  }
+
+  Future<List<Photo>> getPhotos() async {
+    var dbClient = await db;
+    List<Map> maps = await dbClient.query(TABLE, columns: [ID, NAME]);
+    List<Photo> photos = [];
+    if (maps.length > 0) {
+      for (int i = 0; i < maps.length; i++) {
+        photos.add(Photo.fromJson(maps[i]));
+      }
+    }
+    return photos;
+  }
+
+  Future close() async {
+    var dbClient = await db;
+    dbClient.close();
+  }
+}
+```
