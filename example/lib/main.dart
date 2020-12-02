@@ -1,20 +1,7 @@
-# Riverpo
-<p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/state.gif" height="649" width="300">
-</p>
+import 'package:example/riverpods.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/all.dart';
 
-### Dependencies
-
-#### Pubspec.yaml
-```dart
-dependencies:
-  flutter:
-    sdk: flutter
-  flutter_riverpod: ^0.12.1
-```
-
-### Main
-```dart
 void main() {
   runApp(ProviderScope(child: MyApp()));
 }
@@ -82,23 +69,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-```
-
-### CounterProvider
-```dart
-class CounterProvider extends ChangeNotifier {
-  int _counter = 0;
-
-  int get getCounter => _counter;
-
-  incrementCounter() {
-    _counter++;
-    notifyListeners();
-  }
-}
-```
-
-### CounterProvider
-```dart
-final counterProvider = ChangeNotifierProvider((ref) => CounterProvider());
-```
