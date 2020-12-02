@@ -257,6 +257,8 @@ ___
 
 [Getx](https://github.com/ThiagoEvoa/flutter_examples/tree/getx)
 
+[Riverpod](https://github.com/ThiagoEvoa/flutter_examples/tree/riverpod)
+
 # Database
 [SqfLite](https://github.com/ThiagoEvoa/flutter_examples/tree/sqflite)
 
