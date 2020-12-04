@@ -75,9 +75,11 @@ ___
 
 [Observer](https://github.com/ThiagoEvoa/design_patterns/tree/observer)
 
-
 # CI/CD
 [Github Actions](https://github.com/ThiagoEvoa/flutter_examples/tree/ci_cd_github_action)
+
+# Test
+[Unit tests] (https://github.com/ThiagoEvoa/flutter_examples/tree/unit_test)
 
 # Flavors
 [Flavors Dart](https://github.com/ThiagoEvoa/flutter_examples/tree/flavor_dart)
