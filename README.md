@@ -79,7 +79,7 @@ ___
 [Github Actions](https://github.com/ThiagoEvoa/flutter_examples/tree/ci_cd_github_action)
 
 # Test
-[Unit tests] (https://github.com/ThiagoEvoa/flutter_examples/tree/unit_test)
+[Unit tests](https://github.com/ThiagoEvoa/flutter_examples/tree/unit_test)
 
 # Flavors
 [Flavors Dart](https://github.com/ThiagoEvoa/flutter_examples/tree/flavor_dart)
