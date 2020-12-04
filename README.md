@@ -6,6 +6,8 @@
 
 > 2 - You can just write the test functions separatly using the keyword 'test' and then specifying the test expected cenario and a callback function.
 
+> To run the tests you cam just hit the Run | Debug option in the IDE, or in the terminal you can execute the command 'flutter test test/{file_name}.dart to execute the tests on a specific file or just 'flutter test' to execute all tests.
+
 ### Main
 ```dart
 void main() {
