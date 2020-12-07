@@ -1,6 +1,6 @@
 # Json_Serializable
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/google_auth.gif" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/json_serializable.gif" height="649" width="300">
 </p>
 
 ### Dependencies
