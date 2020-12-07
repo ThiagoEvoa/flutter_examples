@@ -340,3 +340,5 @@ ___
 [Flutter Launcher Icons](https://github.com/ThiagoEvoa/flutter_examples/tree/flutter_launcher_icons)
 
 [Base64 Image](https://github.com/ThiagoEvoa/flutter_examples/tree/base64_image_database)
+
+[Json Serializable](https://github.com/ThiagoEvoa/flutter_examples/tree/json_serializable)
