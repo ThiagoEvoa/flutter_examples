@@ -1,31 +1,27 @@
-# Json_Serializable
-<p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/google_auth.gif" height="649" width="300">
-</p>
+import 'dart:convert';
 
-### Dependencies
+import 'package:example/user.dart';
+import 'package:flutter/material.dart';
 
-#### Pubspec.yaml
-```dart
-dependencies:
-  flutter:
-    sdk: flutter
-  cupertino_icons: ^1.0.0
-  json_annotation: ^3.1.1
+void main() {
+  runApp(MyApp());
+}
 
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  build_runner: ^1.10.7
-  json_serializable: ^3.5.1
-```
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
+    );
+  }
+}
 
-### Generating code
-> After make the implementation, you must run the command "flutter pub run build_runner build", in order to generate the boilerplate code to convert from and to json.
-
-
-### Main
-```dart
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
@@ -74,39 +70,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-```
-
-### User
-```dart
-part 'user.g.dart';
-
-@JsonSerializable(explicitToJson: true)
-class User {
-  final String name;
-  final Address address;
-
-  User({this.name, this.address});
-
-  factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);
-
-  Map<String, dynamic> toJson() => _$UserToJson(this);
-}
-```
-
-### Address
-```dart
-part 'address.g.dart';
-
-@JsonSerializable()
-class Address {
-  final String street;
-
-  Address({this.street});
-
-  factory Address.fromJson(Map<String, dynamic> json) =>
-      _$AddressFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AddressToJson(this);
-}
-```
-
