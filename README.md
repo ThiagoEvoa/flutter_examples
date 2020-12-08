@@ -273,6 +273,8 @@ ___
 
 [Dio](https://github.com/ThiagoEvoa/flutter_examples/tree/dio)
 
+[Chopper](https://github.com/ThiagoEvoa/flutter_examples/tree/chopper)
+
 # Firebase
 [Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/firebaseauth)
 
