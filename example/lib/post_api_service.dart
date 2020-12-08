@@ -1,6 +1,8 @@
 import 'package:chopper/chopper.dart';
 import 'package:example/json_serializable_converter.dart';
 import 'package:example/post_model.dart';
+
+import 'post_model.dart';
 part 'post_api_service.chopper.dart';
 
 @ChopperApi()
@@ -24,6 +26,9 @@ abstract class PostApiService extends ChopperService {
       converter: JsonSerializableConverter({
         PostModel: (jsonData) => PostModel.fromJson(jsonData),
       }),
+      errorConverter: JsonSerializableConverter({
+        PostModel: (jsonData) => PostModel.fromJson(jsonData),
+      }),
       interceptors: [
         HttpLoggingInterceptor(),
       ],
@@ -31,5 +36,3 @@ abstract class PostApiService extends ChopperService {
     return _$PostApiService(client);
   }
 }
-
-//JsonTypeConverter({PostModel: (jsonData) => PostModel.fromJson(jsonData)}),

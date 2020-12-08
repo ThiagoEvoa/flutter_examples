@@ -1,4 +1,5 @@
 import 'package:chopper/chopper.dart';
+import 'package:example/resource_error.dart';
 
 typedef T JsonFactory<T>(Map<String, dynamic> json);
 
@@ -41,4 +42,13 @@ class JsonSerializableConverter extends JsonConverter {
   @override
   // all objects should implements toJson method
   Request convertRequest(Request request) => super.convertRequest(request);
+
+  Response convertError<ResultType, Item>(Response response) {
+    // use [JsonConverter] to decode json
+    final jsonRes = super.convertError(response);
+
+    return jsonRes.copyWith<ResourceError>(
+      body: ResourceError.fromJson(jsonRes.body),
+    );
+  }
 }

@@ -1,4 +1,3 @@
-import 'package:chopper/chopper.dart';
 import 'package:example/home.dart';
 import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
