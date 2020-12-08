@@ -268,6 +268,8 @@ ___
 
 [Hive](https://github.com/ThiagoEvoa/flutter_examples/tree/hive)
 
+[Moor](https://github.com/ThiagoEvoa/flutter_examples/tree/moor)
+
 # API
 [HTTP](https://github.com/ThiagoEvoa/flutter_examples/tree/http)
 
