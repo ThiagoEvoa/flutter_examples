@@ -63,10 +63,9 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Consumer(
               builder: (context, watch, child) {
-                final counter = watch(counterProvider);
-
+                final counter = watch(counterProvider.state);
                 return Text(
-                  '${counter.getCounter}',
+                  '$counter',
                   style: Theme.of(context).textTheme.headline4,
                 );
               },
@@ -86,19 +85,16 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ### CounterProvider
 ```dart
-class CounterProvider extends ChangeNotifier {
-  int _counter = 0;
-
-  int get getCounter => _counter;
+class CounterProvider extends StateNotifier<int> {
+  CounterProvider() : super(0);
 
   incrementCounter() {
-    _counter++;
-    notifyListeners();
+    state++;
   }
 }
 ```
 
 ### Riverpods
 ```dart
-final counterProvider = ChangeNotifierProvider((ref) => CounterProvider());
+final counterProvider = StateNotifierProvider((ref) => CounterProvider());
 ```

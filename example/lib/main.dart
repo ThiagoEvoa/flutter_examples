@@ -50,10 +50,9 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Consumer(
               builder: (context, watch, child) {
-                final counter = watch(counterProvider);
-
+                final counter = watch(counterProvider.state);
                 return Text(
-                  '${counter.getCounter}',
+                  '$counter',
                   style: Theme.of(context).textTheme.headline4,
                 );
               },
