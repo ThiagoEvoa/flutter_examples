@@ -11,12 +11,13 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.0
-  json_annotation: ^3.1.1
+  freezed_annotation: ^0.12.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  build_runner: ^1.10.7
+  build_runner: null
+  freezed: ^0.12.6
   json_serializable: ^3.5.1
 ```
 
@@ -78,35 +79,28 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ### User
 ```dart
+part 'user.freezed.dart';
 part 'user.g.dart';
 
-@JsonSerializable(explicitToJson: true)
-class User {
-  final String name;
-  final Address address;
-
-  User({this.name, this.address});
+@freezed
+abstract class User with _$User {
+  const factory User({String name, Address address}) = _User;
 
   factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);
-
-  Map<String, dynamic> toJson() => _$UserToJson(this);
 }
 ```
 
 ### Address
 ```dart
+part 'address.freezed.dart';
 part 'address.g.dart';
 
-@JsonSerializable()
-class Address {
-  final String street;
-
-  Address({this.street});
+@freezed
+abstract class Address with _$Address{
+  const factory Address({String street}) = _Address;
 
   factory Address.fromJson(Map<String, dynamic> json) =>
       _$AddressFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AddressToJson(this);
 }
 ```
 
