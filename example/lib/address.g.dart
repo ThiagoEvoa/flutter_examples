@@ -6,12 +6,13 @@ part of 'address.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-Address _$AddressFromJson(Map<String, dynamic> json) {
-  return Address(
+_$_Address _$_$_AddressFromJson(Map<String, dynamic> json) {
+  return _$_Address(
     street: json['street'] as String,
   );
 }
 
-Map<String, dynamic> _$AddressToJson(Address instance) => <String, dynamic>{
+Map<String, dynamic> _$_$_AddressToJson(_$_Address instance) =>
+    <String, dynamic>{
       'street': instance.street,
     };

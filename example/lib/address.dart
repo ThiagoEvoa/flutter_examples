@@ -1,14 +1,11 @@
-import 'package:json_annotation/json_annotation.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
+part 'address.freezed.dart';
 part 'address.g.dart';
 
-@JsonSerializable()
-class Address {
-  final String street;
-
-  Address({this.street});
+@freezed
+abstract class Address with _$Address{
+  const factory Address({String street}) = _Address;
 
   factory Address.fromJson(Map<String, dynamic> json) =>
       _$AddressFromJson(json);
-
-  Map<String, dynamic> toJson() => _$AddressToJson(this);
 }
