@@ -348,3 +348,5 @@ ___
 [Base64 Image](https://github.com/ThiagoEvoa/flutter_examples/tree/base64_image_database)
 
 [Json Serializable](https://github.com/ThiagoEvoa/flutter_examples/tree/json_serializable)
+
+[Freezed](https://github.com/ThiagoEvoa/flutter_examples/tree/freezed)
