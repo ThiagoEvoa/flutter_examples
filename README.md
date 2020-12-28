@@ -279,6 +279,8 @@ ___
 
 [Chopper](https://github.com/ThiagoEvoa/flutter_examples/tree/chopper)
 
+[Retrofit](https://github.com/ThiagoEvoa/flutter_examples/tree/retrofit)
+
 # Firebase
 [Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/firebaseauth)
 
