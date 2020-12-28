@@ -1,20 +1,33 @@
-# FlutterSecureStorage
-<p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/sharedpreferences.gif" height="649" width="300">
-</p>
+import 'package:flutter/material.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
-### Dependencies
+void main() {
+  runApp(MyApp());
+}
 
-#### Pubspec.yaml
-```dart
-dependencies:
-  flutter:
-    sdk: flutter
-    flutter_secure_storage: ^3.3.5
-```
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
+    );
+  }
+}
 
-### Main
-```dart
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
@@ -81,4 +94,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-```
