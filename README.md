@@ -301,6 +301,8 @@ ___
 
 [SharedPreferences](https://github.com/ThiagoEvoa/flutter_examples/tree/sharedpreferences)
 
+[FlutterSecureStorage](https://github.com/ThiagoEvoa/flutter_examples/tree/secure_storage)
+
 [BarCode e QRCode](https://github.com/ThiagoEvoa/flutter_examples/tree/barcode_qrcode)
 
 [Geolocator](https://github.com/ThiagoEvoa/flutter_examples/tree/geolocator)
