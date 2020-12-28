@@ -1,38 +1,32 @@
-import 'package:chopper/chopper.dart';
-import 'package:example/json_serializable_converter.dart';
+import 'package:dio/dio.dart';
 import 'package:example/post_model.dart';
+import 'package:pretty_dio_logger/pretty_dio_logger.dart';
+import 'package:retrofit/retrofit.dart';
 
 import 'post_model.dart';
-part 'post_api_service.chopper.dart';
+part 'post_api_service.g.dart';
 
-@ChopperApi()
-abstract class PostApiService extends ChopperService {
-  @Get()
-  Future<Response<List<PostModel>>> fetch();
+@RestApi(baseUrl: 'https://jsonplaceholder.typicode.com/')
+abstract class PostApiService {
+  factory PostApiService(Dio dio, {String baseUrl}) = _PostApiService;
 
-  @Post()
-  Future<Response> save(@Body() PostModel postModel);
+  @GET('posts')
+  Future<List<PostModel>> fetch();
 
-  @Put(path: '/{id}')
-  Future<Response> update(@Body() PostModel postModel, @Path('id') String id);
+  @POST('posts')
+  Future<HttpResponse> save(@Body() PostModel postModel);
 
-  @Delete(path: '/{id}')
-  Future<Response> delete(@Body() PostModel postModel);
+  @PUT('posts/{id}')
+  Future<HttpResponse> update(@Body() PostModel postModel, @Path('id') String id);
+
+  @DELETE('posts/{id}')
+  Future<HttpResponse> delete(@Body() PostModel postModel);
 
   static PostApiService create() {
-    final client = ChopperClient(
-      baseUrl: 'https://jsonplaceholder.typicode.com/posts',
-      services: [_$PostApiService()],
-      converter: JsonSerializableConverter({
-        PostModel: (jsonData) => PostModel.fromJson(jsonData),
-      }),
-      errorConverter: JsonSerializableConverter({
-        PostModel: (jsonData) => PostModel.fromJson(jsonData),
-      }),
-      interceptors: [
-        HttpLoggingInterceptor(),
-      ],
-    );
-    return _$PostApiService(client);
+    Dio dio = Dio();
+    dio.options.headers['Content-Type'] = 'application/json';
+    dio.interceptors.add(PrettyDioLogger());
+
+    return PostApiService(dio);
   }
 }

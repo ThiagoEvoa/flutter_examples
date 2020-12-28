@@ -1,8 +1,8 @@
-import 'package:chopper/chopper.dart';
 import 'package:example/detail.dart';
 import 'package:example/post_api_service.dart';
 import 'package:example/post_model.dart';
 import 'package:flutter/material.dart';
+import 'package:retrofit/retrofit.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -10,7 +10,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  Response _message;
+  HttpResponse _message;
   PostApiService _postApiService;
 
   _openDetail({PostModel post}) {
@@ -29,41 +29,35 @@ class _HomeState extends State<Home> {
   }
 
   @override
-  void dispose() {
-    _postApiService.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('List'),
       ),
-      body: FutureBuilder(
+      body: FutureBuilder<List<PostModel>>(
         future: _postApiService.fetch(),
         builder: (context, snapshot) {
           if (snapshot.data != null) {
             return ListView.builder(
-              itemCount: snapshot.data.body.length,
+              itemCount: snapshot.data.length,
               itemBuilder: (context, index) {
                 return Card(
                   elevation: 5,
                   child: ListTile(
                     onTap: () {
-                      _openDetail(post: snapshot.data.body[index]);
+                      _openDetail(post: snapshot.data[index]);
                     },
-                    leading: Text(snapshot.data.body[index].id.toString()),
-                    title: Text(snapshot.data.body[index].title),
-                    subtitle: Text(snapshot.data.body[index].body),
+                    leading: Text(snapshot.data[index].id.toString()),
+                    title: Text(snapshot.data[index].title),
+                    subtitle: Text(snapshot.data[index].body),
                     trailing: IconButton(
                       onPressed: () async {
-                        _message = await _postApiService
-                            .delete(snapshot.data.body[index]);
+                        _message =
+                            await _postApiService.delete(snapshot.data[index]);
 
                         Scaffold.of(context).showSnackBar(
                           SnackBar(
-                            content: Text(_message.statusCode == 200
+                            content: Text(_message.response.statusCode == 200
                                 ? 'Post deleted'
                                 : 'Failed to delete post'),
                             duration: Duration(seconds: 5),

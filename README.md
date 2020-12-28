@@ -1,4 +1,4 @@
-# Chopper
+# Retrofit
 <p align="center">
 <img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/http.gif" height="649" width="300">
 </p>
@@ -9,59 +9,27 @@
 ```dart
 flutter:
   sdk: flutter
-chopper: ^3.0.6
+dio: ^3.0.10
 json_annotation: ^3.1.1
-cupertino_icons: ^1.0.0
-
+retrofit: ^1.3.4+1
+pretty_dio_logger: ^1.1.1
+  
 dev_dependencies:
 flutter_test:
   sdk: flutter
 build_runner:
-chopper_generator: ^3.0.6
 json_serializable: ^3.5.1
+retrofit_generator: ^1.4.1
 ```
 
 ### Generating code
 > After make the implementation, you must run the command "flutter pub run build_runner build", in order to generate the boilerplate code to convert from and to json.
 
-### Main
-```dart
-void main() {
-  _setupLogging();
-  runApp(MyApp());
-}
-
-void _setupLogging(){
-  Logger.root.level = Level.ALL;
-  Logger.root.onRecord.listen((event) { 
-    print('${event.level.name}: ${event.time}: ${event.message}');
-  });
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: Home(),
-    );
-  }
-}
-```
 
 ### HomePage
 ```dart
-class Home extends StatefulWidget {
-  @override
-  _HomeState createState() => _HomeState();
-}
-
 class _HomeState extends State<Home> {
-  Response _message;
+  HttpResponse _message;
   PostApiService _postApiService;
 
   _openDetail({PostModel post}) {
@@ -80,41 +48,35 @@ class _HomeState extends State<Home> {
   }
 
   @override
-  void dispose() {
-    _postApiService.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('List'),
       ),
-      body: FutureBuilder(
+      body: FutureBuilder<List<PostModel>>(
         future: _postApiService.fetch(),
         builder: (context, snapshot) {
           if (snapshot.data != null) {
             return ListView.builder(
-              itemCount: snapshot.data.body.length,
+              itemCount: snapshot.data.length,
               itemBuilder: (context, index) {
                 return Card(
                   elevation: 5,
                   child: ListTile(
                     onTap: () {
-                      _openDetail(post: snapshot.data.body[index]);
+                      _openDetail(post: snapshot.data[index]);
                     },
-                    leading: Text(snapshot.data.body[index].id.toString()),
-                    title: Text(snapshot.data.body[index].title),
-                    subtitle: Text(snapshot.data.body[index].body),
+                    leading: Text(snapshot.data[index].id.toString()),
+                    title: Text(snapshot.data[index].title),
+                    subtitle: Text(snapshot.data[index].body),
                     trailing: IconButton(
                       onPressed: () async {
-                        _message = await _postApiService
-                            .delete(snapshot.data.body[index]);
+                        _message =
+                            await _postApiService.delete(snapshot.data[index]);
 
                         Scaffold.of(context).showSnackBar(
                           SnackBar(
-                            content: Text(_message.statusCode == 200
+                            content: Text(_message.response.statusCode == 200
                                 ? 'Post deleted'
                                 : 'Failed to delete post'),
                             duration: Duration(seconds: 5),
@@ -162,7 +124,7 @@ class _DetailState extends State<Detail> {
   final _formKey = GlobalKey<FormState>();
   final _globalKey = GlobalKey<ScaffoldState>();
   Widget _form;
-  Response _message;
+  HttpResponse _message;
 
   _save(PostModel post) async {
     if (widget.id == null) {
@@ -173,7 +135,8 @@ class _DetailState extends State<Detail> {
 
     _globalKey.currentState.showSnackBar(
       SnackBar(
-        content: Text(_message.statusCode == 200 || _message.statusCode == 200
+        content: Text(_message.response.statusCode == 200 ||
+                _message.response.statusCode == 201
             ? 'Post saved'
             : 'Failed to save post'),
         duration: Duration(seconds: 5),
@@ -191,12 +154,6 @@ class _DetailState extends State<Detail> {
   void initState() {
     _postApiService = PostApiService.create();
     super.initState();
-  }
-
-  @override
-  void dispose() {
-    _postApiService.dispose();
-    super.dispose();
   }
 
   @override
@@ -267,40 +224,40 @@ class _DetailState extends State<Detail> {
 }
 ```
 
-### PostService
+### PostApiService
 ```dart
-@ChopperApi()
-abstract class PostApiService extends ChopperService {
-  @Get()
-  Future<Response<List<PostModel>>> fetch();
+part 'post_api_service.g.dart';
 
-  @Post()
-  Future<Response> save(@Body() PostModel postModel);
+@RestApi(baseUrl: 'https://jsonplaceholder.typicode.com/')
+abstract class PostApiService {
+  factory PostApiService(Dio dio, {String baseUrl}) = _PostApiService;
 
-  @Put(path: '/{id}')
-  Future<Response> update(@Body() PostModel postModel, @Path('id') String id);
+  @GET('posts')
+  Future<List<PostModel>> fetch();
 
-  @Delete(path: '/{id}')
-  Future<Response> delete(@Body() PostModel postModel);
+  @POST('posts')
+  Future<HttpResponse> save(@Body() PostModel postModel);
+
+  @PUT('posts/{id}')
+  Future<HttpResponse> update(@Body() PostModel postModel, @Path('id') String id);
+
+  @DELETE('posts/{id}')
+  Future<HttpResponse> delete(@Body() PostModel postModel);
 
   static PostApiService create() {
-    final client = ChopperClient(
-      baseUrl: 'https://jsonplaceholder.typicode.com/posts',
-      services: [_$PostApiService()],
-      converter: JsonSerializableConverter({
-        PostModel: (jsonData) => PostModel.fromJson(jsonData),
-      }),
-      interceptors: [
-        HttpLoggingInterceptor(),
-      ],
-    );
-    return _$PostApiService(client);
+    Dio dio = Dio();
+    dio.options.headers['Content-Type'] = 'application/json';
+    dio.interceptors.add(PrettyDioLogger());
+
+    return PostApiService(dio);
   }
 }
 ```
 
-### Post
+### PostModel
 ```dart
+part 'post_model.g.dart';
+
 @JsonSerializable()
 class PostModel {
   int id;
@@ -314,51 +271,5 @@ class PostModel {
       _$PostModelFromJson(json);
 
   Map<String, dynamic> toJson() => _$PostModelToJson(this);
-}
-```
-
-### JsonSerializableConverter
-```dart
-typedef T JsonFactory<T>(Map<String, dynamic> json);
-
-class JsonSerializableConverter extends JsonConverter {
-  final Map<Type, JsonFactory> factories;
-
-  JsonSerializableConverter(this.factories);
-
-  T _decodeMap<T>(Map<String, dynamic> values) {
-    /// Get jsonFactory using Type parameters
-    /// if not found or invalid, throw error or return null
-    final jsonFactory = factories[T];
-    if (jsonFactory == null || jsonFactory is! JsonFactory<T>) {
-      /// throw serializer not found error;
-      return null;
-    }
-
-    return jsonFactory(values);
-  }
-
-  List<T> _decodeList<T>(List values) =>
-      values.where((v) => v != null).map<T>((v) => _decode<T>(v)).toList();
-
-  dynamic _decode<T>(entity) {
-    if (entity is Iterable) return _decodeList<T>(entity);
-
-    if (entity is Map) return _decodeMap<T>(entity);
-
-    return entity;
-  }
-
-  @override
-  Response<ResultType> convertResponse<ResultType, Item>(Response response) {
-    // use [JsonConverter] to decode json
-    final jsonRes = super.convertResponse(response);
-
-    return jsonRes.copyWith<ResultType>(body: _decode<Item>(jsonRes.body));
-  }
-
-  @override
-  // all objects should implements toJson method
-  Request convertRequest(Request request) => super.convertRequest(request);
 }
 ```

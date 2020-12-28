@@ -1,7 +1,7 @@
-import 'package:chopper/chopper.dart';
 import 'package:example/post_api_service.dart';
 import 'package:example/post_model.dart';
 import 'package:flutter/material.dart';
+import 'package:retrofit/dio.dart';
 
 class Detail extends StatefulWidget {
   final int id;
@@ -19,7 +19,7 @@ class _DetailState extends State<Detail> {
   final _formKey = GlobalKey<FormState>();
   final _globalKey = GlobalKey<ScaffoldState>();
   Widget _form;
-  Response _message;
+  HttpResponse _message;
 
   _save(PostModel post) async {
     if (widget.id == null) {
@@ -30,7 +30,8 @@ class _DetailState extends State<Detail> {
 
     _globalKey.currentState.showSnackBar(
       SnackBar(
-        content: Text(_message.statusCode == 200 || _message.statusCode == 200
+        content: Text(_message.response.statusCode == 200 ||
+                _message.response.statusCode == 201
             ? 'Post saved'
             : 'Failed to save post'),
         duration: Duration(seconds: 5),
@@ -48,12 +49,6 @@ class _DetailState extends State<Detail> {
   void initState() {
     _postApiService = PostApiService.create();
     super.initState();
-  }
-
-  @override
-  void dispose() {
-    _postApiService.dispose();
-    super.dispose();
   }
 
   @override
