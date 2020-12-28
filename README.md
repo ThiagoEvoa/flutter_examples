@@ -173,7 +173,7 @@ class _DetailState extends State<Detail> {
 
     _globalKey.currentState.showSnackBar(
       SnackBar(
-        content: Text(_message.statusCode == 200 || _message.statusCode == 200
+        content: Text(_message.statusCode == 200 || _message.statusCode == 201
             ? 'Post saved'
             : 'Failed to save post'),
         duration: Duration(seconds: 5),
