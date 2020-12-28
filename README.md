@@ -267,8 +267,10 @@ class _DetailState extends State<Detail> {
 }
 ```
 
-### PostService
+### PostApiService
 ```dart
+part 'post_api_service.chopper.dart';
+
 @ChopperApi()
 abstract class PostApiService extends ChopperService {
   @Get()
@@ -299,8 +301,10 @@ abstract class PostApiService extends ChopperService {
 }
 ```
 
-### Post
+### PostModel
 ```dart
+part 'post_model.g.dart';
+
 @JsonSerializable()
 class PostModel {
   int id;
