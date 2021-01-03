@@ -1,19 +1,34 @@
-# Flutter Slidable
-<p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flutter_slidable.gif" height="649" width="300">
-</p>
+import 'package:flutter/material.dart';
+import 'package:flutter_slidable/flutter_slidable.dart';
 
-### Dependencies
+void main() {
+  runApp(MyApp());
+}
 
-#### Pubspec.yaml
-```dart
-dependencies:
-  flutter:
-    sdk: flutter
-  flutter_slidable: ^0.5.7
-```
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
+    );
+  }
+}
 
-```dart
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
 class _MyHomePageState extends State<MyHomePage> {
   final items = List<String>.generate(20, (index) => "ListView Builder $index");
 
@@ -49,4 +64,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-```
