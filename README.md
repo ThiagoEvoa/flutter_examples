@@ -1,6 +1,6 @@
-# Flutter Slidable
+# Flutter Swiper
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flutter_slidable.gif" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flutter_swiper.gif" height="649" width="300">
 </p>
 
 ### Dependencies
@@ -10,39 +10,29 @@
 dependencies:
   flutter:
     sdk: flutter
-  flutter_slidable: ^0.5.7
+  flutter_swiper: ^1.1.6
 ```
 
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
-  final items = List<String>.generate(20, (index) => "ListView Builder $index");
+  List<String> items = [
+    'https://flutter.dev/images/flutter-logo-sharing.png',
+    'https://www.oficinadanet.com.br/imagens/post/13939/android-10-google.jpg',
+    'https://cergntnu.files.wordpress.com/2016/10/web-ios-logo.jpg',
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: ListView.builder(
+      child: Swiper(
         itemCount: items.length,
+        itemWidth: 50,
+        itemHeight: 50,
+        pagination: SwiperPagination(),
+        control: SwiperControl(),
         itemBuilder: (context, index) {
-          return Slidable(
-            actionPane: SlidableBehindActionPane(),
-            actionExtentRatio: 0.25,
-            child: ListTile(
-              title: Text(
-                items[index],
-              ),
-            ),
-            secondaryActions: [
-              IconSlideAction(
-                caption: 'Delete',
-                color: Colors.red,
-                icon: Icons.delete,
-                onTap: () {
-                  setState(() {
-                    items.removeAt(index);
-                  });
-                },
-              ),
-            ],
+          return Image.network(
+            items[index],
           );
         },
       ),

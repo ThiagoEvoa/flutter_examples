@@ -24,7 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.0
-  flutter_slidable: ^0.5.7
+  flutter_swiper: ^1.1.6
 
 dev_dependencies:
   flutter_test:
