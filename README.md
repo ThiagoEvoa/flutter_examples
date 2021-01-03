@@ -356,3 +356,5 @@ ___
 [Freezed](https://github.com/ThiagoEvoa/flutter_examples/tree/freezed)
 
 [Flutter Slidable](https://github.com/ThiagoEvoa/flutter_examples/tree/flutter_slidable)
+
+[Flutter Swiper](https://github.com/ThiagoEvoa/flutter_examples/tree/flutter_swiper)
