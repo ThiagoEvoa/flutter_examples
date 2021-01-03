@@ -354,3 +354,5 @@ ___
 [Json Serializable](https://github.com/ThiagoEvoa/flutter_examples/tree/json_serializable)
 
 [Freezed](https://github.com/ThiagoEvoa/flutter_examples/tree/freezed)
+
+[Flutter Slidable](https://github.com/ThiagoEvoa/flutter_examples/tree/flutter_slidable)
