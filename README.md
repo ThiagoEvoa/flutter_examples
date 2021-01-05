@@ -1,6 +1,6 @@
 # SlideTransiction
 <p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/slide_transiction.gif" height="649" width="300">
+<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/slide_transition.gif" height="649" width="300">
 </p>
 
 ### Main
