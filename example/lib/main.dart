@@ -1,10 +1,37 @@
-# SlideTransiction
-<p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/slide_transiction.gif" height="649" width="300">
-</p>
+import 'package:flutter/material.dart';
 
-### Main
-```dart
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
 class _MyHomePageState extends State<MyHomePage>
     with SingleTickerProviderStateMixin {
   AnimationController _controller;
@@ -69,4 +96,3 @@ class _MyHomePageState extends State<MyHomePage>
     );
   }
 }
-```
