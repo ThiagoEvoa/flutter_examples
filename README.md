@@ -245,6 +245,8 @@ ___
 
 [AnimatedPositioned](https://github.com/ThiagoEvoa/flutter_examples/tree/animatedpositioned)
 
+[SlideTransition](https://github.com/ThiagoEvoa/flutter_examples/tree/slide_transition)
+
 ## Themes
 [Dark Theme](https://github.com/ThiagoEvoa/flutter_examples/tree/darktheme)
 
