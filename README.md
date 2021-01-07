@@ -210,6 +210,8 @@ ___
 ## Navigations
 [Navigation](https://github.com/ThiagoEvoa/flutter_examples/tree/navigation)
 
+[Navigation 2](https://github.com/ThiagoEvoa/flutter_examples/tree/navigation2)
+
 ## Animations
 [Slider](https://github.com/ThiagoEvoa/flutter_examples/tree/slider)
 
