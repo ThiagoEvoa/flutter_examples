@@ -269,6 +269,8 @@ ___
 
 [Riverpod](https://github.com/ThiagoEvoa/flutter_examples/tree/riverpod)
 
+[ValueNotifier](https://github.com/ThiagoEvoa/flutter_examples/tree/value_notifier)
+
 # Database
 [SqfLite](https://github.com/ThiagoEvoa/flutter_examples/tree/sqflite)
 
