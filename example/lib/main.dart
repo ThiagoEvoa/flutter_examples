@@ -1,22 +1,33 @@
-# Flutter Linkedin
-<p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flutter_linkedin.gif" height="649" width="300">
-</p>
+import 'package:flutter/material.dart';
+import 'package:flutter_linkedin/linkedloginflutter.dart';
 
-### Dependencies
+void main() {
+  runApp(MyApp());
+}
 
-#### Pubspec.yaml
-```dart
-dependencies:
-  flutter:
-    sdk: flutter
-  flutter_linkedin: ^1.0.2
-```
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
+    );
+  }
+}
 
-### Configure LinkedIn App
-> Enter in the link https://www.linkedin.com/developers/, and create the app. After do it go to the Products section and anable the Sign in with LinkedIn. On the Auth section copy the Client ID and the Client Secret, and past on your project.
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
 
-```dart
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
 class _MyHomePageState extends State<MyHomePage> {
   String _profilePicture;
   String _email;
@@ -25,9 +36,9 @@ class _MyHomePageState extends State<MyHomePage> {
   initializeLinkedIn() {
     LinkedInLogin.initialize(
       context,
-      clientId: '',
-      clientSecret: '',
-      redirectUri: '',
+      clientId: '77sojs1lyiemc4',
+      clientSecret: 'vB1NQttsSlZEo2fw',
+      redirectUri: 'https://www.linkedin.com/company/1337',
     );
   }
 
@@ -118,4 +129,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-```
