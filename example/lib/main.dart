@@ -36,9 +36,9 @@ class _MyHomePageState extends State<MyHomePage> {
   initializeLinkedIn() {
     LinkedInLogin.initialize(
       context,
-      clientId: '77sojs1lyiemc4',
-      clientSecret: 'vB1NQttsSlZEo2fw',
-      redirectUri: 'https://www.linkedin.com/company/1337',
+      clientId: '',
+      clientSecret: '',
+      redirectUri: '',
     );
   }
 
