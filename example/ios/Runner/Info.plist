@@ -41,5 +41,19 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+
+	<key>CFBundleURLTypes</key> 
+	<array> 
+		<dict> 
+			<key>CFBundleURLSchemes</key> 
+			<array> 
+				<string>fb3803721006355412</string> 
+			</array> 
+		</dict> 
+	</array> 
+	<key>FacebookAppID</key> 
+	<string>3803721006355412</string> 
+	<key>FacebookDisplayName</key> 
+	<string>Flutter FLogin</string>
 </dict>
 </plist>

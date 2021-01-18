@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_linkedin/linkedloginflutter.dart';
+import 'package:flutter_facebook_login/flutter_facebook_login.dart';
+import 'package:http/http.dart' as http;
+import 'package:http/http.dart';
+import 'dart:convert';
 
 void main() {
   runApp(MyApp());
@@ -29,64 +32,51 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String _profilePicture;
-  String _email;
-  String _accessToken;
+  FacebookLogin _facebookLogin;
+  FacebookLoginResult _result;
+  String _token;
+  dynamic _profile;
 
-  initializeLinkedIn() {
-    LinkedInLogin.initialize(
-      context,
-      clientId: '',
-      clientSecret: '',
-      redirectUri: '',
-    );
+  login() async {
+    _result = await _facebookLogin.logIn(['email']);
+
+    switch (_result.status) {
+      case FacebookLoginStatus.loggedIn:
+        {
+          _token = _result.accessToken.token;
+          Response response = await http.get(
+              'https://graph.facebook.com/v2.12/me?fields=picture,name,first_name,last_name,email&access_token=$_token');
+          setState(() {
+            _profile = json.decode(response.body);
+          });
+          break;
+        }
+      case FacebookLoginStatus.cancelledByUser:
+        {
+          print('Cancelled by user');
+          break;
+        }
+      case FacebookLoginStatus.error:
+        {
+          print(_result.errorMessage);
+          break;
+        }
+    }
   }
 
-  getAccessToken() {
-    LinkedInLogin.loginForAccessToken(
-      destroySession: true,
-      appBar: AppBar(
-        title: Text('Flutter LinkedIn'),
-      ),
-    ).then((accessToken) {
-      _accessToken = accessToken;
-    }).catchError((onError) => print(onError));
+  logout() {
+    _facebookLogin.logOut();
   }
 
-  getLinkedInProfile() {
-    LinkedInLogin.getProfile(
-      destroySession: true,
-      forceLogin: true,
-      appBar: AppBar(
-        title: Text('Flutter LinkedIn'),
-      ),
-    ).then((profile) {
-      setState(() {
-        setState(() {
-          _profilePicture = profile.profilePicture.profilePictureDisplayImage
-              .elements.first.identifiers.first.identifier;
-        });
-      });
-    }).catchError((onError) => print(onError));
-  }
-
-  getLinkedInProfileEmail() {
-    LinkedInLogin.getEmail(
-      destroySession: true,
-      forceLogin: true,
-      appBar: AppBar(
-        title: Text('Flutter LinkedIn'),
-      ),
-    ).then((email) {
-      setState(() {
-        _email = email.elements.first.elementHandle.emailAddress;
-      });
-    }).catchError((onError) => print(onError));
+  @override
+  void dispose() {
+    logout();
+    super.dispose();
   }
 
   @override
   void initState() {
-    initializeLinkedIn();
+    _facebookLogin = FacebookLogin();
     super.initState();
   }
 
@@ -100,11 +90,11 @@ class _MyHomePageState extends State<MyHomePage> {
           alignment: WrapAlignment.center,
           spacing: 10,
           children: <Widget>[
-            _profilePicture == null
+            _profile == null
                 ? Container()
-                : Image.network(_profilePicture),
+                : Image.network(_profile['picture']['data']['url']),
             RaisedButton(
-              onPressed: getLinkedInProfile,
+              onPressed: login,
               color: Color(0xFF163F64),
               child: Wrap(
                 crossAxisAlignment: WrapCrossAlignment.center,
@@ -114,10 +104,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     'assets/images/logo.png',
                     width: 20,
                     height: 20,
-                    color: Colors.white,
                   ),
                   Text(
-                    'Sign in with Linkedin',
+                    'Sign in with Facebook',
                     style: TextStyle(color: Colors.white),
                   )
                 ],
