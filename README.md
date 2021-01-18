@@ -368,3 +368,5 @@ ___
 [Flutter LinkedIn](https://github.com/ThiagoEvoa/flutter_examples/tree/linkedin_login)
 
 [Flutter Facebook](https://github.com/ThiagoEvoa/flutter_examples/tree/facebook_login)
+
+[Infinite Scroll](https://github.com/ThiagoEvoa/flutter_examples/tree/infinity_scroll)
