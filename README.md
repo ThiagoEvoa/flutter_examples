@@ -366,3 +366,5 @@ ___
 [Flutter Swiper](https://github.com/ThiagoEvoa/flutter_examples/tree/flutter_swiper)
 
 [Flutter LinkedIn](https://github.com/ThiagoEvoa/flutter_examples/tree/linkedin_login)
+
+[Flutter Facebook](https://github.com/ThiagoEvoa/flutter_examples/tree/facebook_login)
