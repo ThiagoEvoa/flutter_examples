@@ -1,12 +1,38 @@
-# Text
-<p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/infinity_scroll.gif" height="649" width="300">
-</p>
+import 'package:example/list_notifier.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 
-### Main
-```dart
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: MyHomePage(
+        title: 'Flutter',
+      ),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, @required this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
 class _MyHomePageState extends State<MyHomePage> {
-  final _counterNotifier = CounterNotifier();
+  final _counterNotifier = ListNotifier();
   ScrollController _scrollController = ScrollController();
 
   @override
@@ -55,29 +81,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-```
-
-### ListNotifier
-```dart
-class CounterNotifier extends ChangeNotifier {
-  final items = ValueNotifier<List<String>>([]);
-  final hasMore = ValueNotifier<bool>(false);
-
-  fetch() async {
-    final result = await _fetch(items.value);
-
-    if (result.length > 0 && result.length < 40) {
-      hasMore.value = true;
-      items.value = result;
-    } else {
-      hasMore.value = false;
-    }
-    items.notifyListeners();
-  }
-
-  Future<List<String>> _fetch(List<String> list) async {
-    await Future.delayed(Duration(seconds: 3));
-    return List<String>.generate(list.length + 20, (index) => 'Item: $index');
-  }
-}
-```
