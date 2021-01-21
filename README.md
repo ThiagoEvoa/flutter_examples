@@ -370,3 +370,5 @@ ___
 [Flutter Facebook](https://github.com/ThiagoEvoa/flutter_examples/tree/facebook_login)
 
 [Infinite Scroll](https://github.com/ThiagoEvoa/flutter_examples/tree/infinity_scroll)
+
+[Websocket](https://github.com/ThiagoEvoa/flutter_examples/tree/websocket)
