@@ -1,20 +1,33 @@
-# Websocket
-<p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/websocket.gif" height="649" width="300">
-</p>
+import 'package:flutter/material.dart';
+import 'package:web_socket_channel/io.dart';
 
-### Dependencies
+void main() {
+  runApp(MyApp());
+}
 
-#### Pubspec.yaml
-```dart
-dependencies:
-  flutter:
-    sdk: flutter
-  web_socket_channel: ^1.2.0
-```
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
+    );
+  }
+}
 
-#### Main.dart
-```dart
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
 class _MyHomePageState extends State<MyHomePage> {
   IOWebSocketChannel _channel;
   TextEditingController _controller = TextEditingController();
@@ -79,4 +92,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-```
