@@ -207,6 +207,8 @@ ___
 
 [InteractiveViewer](https://github.com/ThiagoEvoa/flutter_examples/tree/interactiveviewer)
 
+[SearchDelegate](https://github.com/ThiagoEvoa/flutter_examples/tree/search_delegate)
+
 ## Navigations
 [Navigation](https://github.com/ThiagoEvoa/flutter_examples/tree/navigation)
 
