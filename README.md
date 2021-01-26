@@ -42,6 +42,20 @@ flutter build ios --debug
 flutter build ios --release
 ``
 
+## Find devices
+> If you want to see all connected devices run this command:
+
+``
+flutter devices
+``
+
+## Testing on single device
+> If you want to test your app in a single device open the simulator and run this command:
+
+``
+flutter run -d {deviceName}
+``
+
 ## Testing on multiple devices
 > If you want to test your app in multiple devices open the simulators and run this command:
 
