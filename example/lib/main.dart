@@ -1,21 +1,33 @@
-# MaterialFloatingSearchBar
-<p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/material_floating_search_bar.gif" height="649" width="300">
-</p>
+import 'package:flutter/material.dart';
+import 'package:material_floating_search_bar/material_floating_search_bar.dart';
 
-### Dependencies
+void main() {
+  runApp(MyApp());
+}
 
-#### Pubspec.yaml
-```dart
-dependencies:
-  flutter:
-    sdk: flutter
-  material_floating_search_bar: ^0.2.6
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
+    );
+  }
+}
 
-```
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
 
-### Main
-```dart
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
 class _MyHomePageState extends State<MyHomePage> {
   FloatingSearchBarController _controller;
   static const historyLength = 4;
@@ -179,4 +191,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-```
