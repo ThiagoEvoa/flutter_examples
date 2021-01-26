@@ -151,6 +151,8 @@ ___
 
 [FilePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/filepicker)
 
+[ImageFiltered](https://github.com/ThiagoEvoa/flutter_examples/tree/image_filtered)
+
 ## Lists
 [ListView](https://github.com/ThiagoEvoa/flutter_examples/tree/listview)
 
