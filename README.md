@@ -243,6 +243,8 @@ ___
 
 [SearchDelegate](https://github.com/ThiagoEvoa/flutter_examples/tree/search_delegate)
 
+[MaterialFloatingSearchBar](https://github.com/ThiagoEvoa/flutter_examples/tree/material_floating_search_bar)
+
 ## Navigations
 [Navigation](https://github.com/ThiagoEvoa/flutter_examples/tree/navigation)
 
