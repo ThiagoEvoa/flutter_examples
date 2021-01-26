@@ -128,7 +128,7 @@ ___
 
 [AboutDialog](https://github.com/ThiagoEvoa/flutter_examples/tree/aboutdialog)
 
-## Images
+## Images / Videos
 [Image NetWork](https://github.com/ThiagoEvoa/flutter_examples/tree/image_network)
 
 [Image Asset](https://github.com/ThiagoEvoa/flutter_examples/tree/image_asset)
@@ -140,6 +140,16 @@ ___
 [ClipPath](https://github.com/ThiagoEvoa/flutter_examples/tree/clippath)
 
 [ColorFiltered](https://github.com/ThiagoEvoa/flutter_examples/tree/colorfiltered)
+
+[ImagePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/imagepicker)
+
+[Base64 Image](https://github.com/ThiagoEvoa/flutter_examples/tree/base64_image_database)
+
+[Video Player](https://github.com/ThiagoEvoa/flutter_examples/tree/video_player)
+
+[Audio Player](https://github.com/ThiagoEvoa/flutter_examples/tree/audio_player)
+
+[FilePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/filepicker)
 
 ## Lists
 [ListView](https://github.com/ThiagoEvoa/flutter_examples/tree/listview)
@@ -158,10 +168,18 @@ ___
 
 [CheckboxListTile](https://github.com/ThiagoEvoa/flutter_examples/tree/checkbox_listtile)
 
+[Infinite Scroll](https://github.com/ThiagoEvoa/flutter_examples/tree/infinity_scroll)
+
+[Flutter Slidable](https://github.com/ThiagoEvoa/flutter_examples/tree/flutter_slidable)
+
+[Flutter Swiper](https://github.com/ThiagoEvoa/flutter_examples/tree/flutter_swiper)
+
 ## Progress
 [CircularProgressIndicator](https://github.com/ThiagoEvoa/flutter_examples/tree/circularprogressindicator)
 
 [LinearProgressIndicator](https://github.com/ThiagoEvoa/flutter_examples/tree/linearprogressindicator)
+
+[Shimmer](https://github.com/ThiagoEvoa/flutter_examples/tree/shimmer)
 
 ## Menus
 [TabBar](https://github.com/ThiagoEvoa/flutter_examples/tree/tabbar)
@@ -251,6 +269,14 @@ ___
 
 [SlideTransition](https://github.com/ThiagoEvoa/flutter_examples/tree/slide_transition)
 
+[FlipCard](https://github.com/ThiagoEvoa/flutter_examples/tree/flipcard)
+
+[FlipWidget](https://github.com/ThiagoEvoa/flutter_examples/tree/flipwidget)
+
+[Flare/Rive](https://github.com/ThiagoEvoa/flutter_examples/tree/flare)
+
+[SplashScreen](https://github.com/ThiagoEvoa/flutter_examples/tree/splashscreen)
+
 ## Themes
 [Dark Theme](https://github.com/ThiagoEvoa/flutter_examples/tree/darktheme)
 
@@ -273,12 +299,18 @@ ___
 
 [ValueNotifier](https://github.com/ThiagoEvoa/flutter_examples/tree/value_notifier)
 
+[Hooks](https://github.com/ThiagoEvoa/flutter_examples/tree/hooks)
+
 # Database
 [SqfLite](https://github.com/ThiagoEvoa/flutter_examples/tree/sqflite)
 
 [Hive](https://github.com/ThiagoEvoa/flutter_examples/tree/hive)
 
 [Moor](https://github.com/ThiagoEvoa/flutter_examples/tree/moor)
+
+[SharedPreferences](https://github.com/ThiagoEvoa/flutter_examples/tree/sharedpreferences)
+
+[FlutterSecureStorage](https://github.com/ThiagoEvoa/flutter_examples/tree/secure_storage)
 
 # API
 [HTTP](https://github.com/ThiagoEvoa/flutter_examples/tree/http)
@@ -288,6 +320,8 @@ ___
 [Chopper](https://github.com/ThiagoEvoa/flutter_examples/tree/chopper)
 
 [Retrofit](https://github.com/ThiagoEvoa/flutter_examples/tree/retrofit)
+
+[Websocket](https://github.com/ThiagoEvoa/flutter_examples/tree/websocket)
 
 # Firebase
 [Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/firebaseauth)
@@ -302,36 +336,27 @@ ___
 
 [RemoteConfig](https://github.com/ThiagoEvoa/flutter_examples/tree/firebase_remoteconfig)
 
-# Packages and Others
-[ImagePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/imagepicker)
+# Authentication
+[Google Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/google_auth)
 
+[Flutter LinkedIn](https://github.com/ThiagoEvoa/flutter_examples/tree/linkedin_login)
+
+[Flutter Facebook](https://github.com/ThiagoEvoa/flutter_examples/tree/facebook_login)
+
+[Biometric](https://github.com/ThiagoEvoa/flutter_examples/tree/biometric)
+
+# Internationalization
 [Internationalization](https://github.com/ThiagoEvoa/flutter_examples/tree/internationalization)
 
 [EasyLocalization](https://github.com/ThiagoEvoa/flutter_examples/tree/easy_location)
 
-[SharedPreferences](https://github.com/ThiagoEvoa/flutter_examples/tree/sharedpreferences)
-
-[FlutterSecureStorage](https://github.com/ThiagoEvoa/flutter_examples/tree/secure_storage)
-
-[BarCode e QRCode](https://github.com/ThiagoEvoa/flutter_examples/tree/barcode_qrcode)
-
+# Geolocator
 [Geolocator](https://github.com/ThiagoEvoa/flutter_examples/tree/geolocator)
 
 [Google Maps](https://github.com/ThiagoEvoa/flutter_examples/tree/googlemaps)
 
-[Biometric](https://github.com/ThiagoEvoa/flutter_examples/tree/biometric)
-
+# Connectivity
 [PackageInfo](https://github.com/ThiagoEvoa/flutter_examples/tree/packageinfo)
-
-[FlipCard](https://github.com/ThiagoEvoa/flutter_examples/tree/flipcard)
-
-[FlipWidget](https://github.com/ThiagoEvoa/flutter_examples/tree/flipwidget)
-
-[Flare/Rive](https://github.com/ThiagoEvoa/flutter_examples/tree/flare)
-
-[Local Notification](https://github.com/ThiagoEvoa/flutter_examples/tree/localnotification)
-
-[Google Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/google_auth)
 
 [Channel](https://github.com/ThiagoEvoa/flutter_examples/tree/channel)
 
@@ -339,38 +364,26 @@ ___
 
 [Device Info](https://github.com/ThiagoEvoa/flutter_examples/tree/device_info)
 
-[Share](https://github.com/ThiagoEvoa/flutter_examples/tree/share)
-
-[Video Player](https://github.com/ThiagoEvoa/flutter_examples/tree/video_player)
-
-[Audio Player](https://github.com/ThiagoEvoa/flutter_examples/tree/audio_player)
-
 [Bluetooth](https://github.com/ThiagoEvoa/flutter_examples/tree/bluetooth)
 
-[SplashScreen](https://github.com/ThiagoEvoa/flutter_examples/tree/splashscreen)
+[Share](https://github.com/ThiagoEvoa/flutter_examples/tree/share)
 
-[FilePicker](https://github.com/ThiagoEvoa/flutter_examples/tree/filepicker)
+[BarCode e QRCode](https://github.com/ThiagoEvoa/flutter_examples/tree/barcode_qrcode)
 
-[Shimmer](https://github.com/ThiagoEvoa/flutter_examples/tree/shimmer)
+# Others
 
-[Hooks](https://github.com/ThiagoEvoa/flutter_examples/tree/hooks)
+[Local Notification](https://github.com/ThiagoEvoa/flutter_examples/tree/localnotification)
 
 [Flutter Launcher Icons](https://github.com/ThiagoEvoa/flutter_examples/tree/flutter_launcher_icons)
-
-[Base64 Image](https://github.com/ThiagoEvoa/flutter_examples/tree/base64_image_database)
 
 [Json Serializable](https://github.com/ThiagoEvoa/flutter_examples/tree/json_serializable)
 
 [Freezed](https://github.com/ThiagoEvoa/flutter_examples/tree/freezed)
 
-[Flutter Slidable](https://github.com/ThiagoEvoa/flutter_examples/tree/flutter_slidable)
 
-[Flutter Swiper](https://github.com/ThiagoEvoa/flutter_examples/tree/flutter_swiper)
 
-[Flutter LinkedIn](https://github.com/ThiagoEvoa/flutter_examples/tree/linkedin_login)
 
-[Flutter Facebook](https://github.com/ThiagoEvoa/flutter_examples/tree/facebook_login)
 
-[Infinite Scroll](https://github.com/ThiagoEvoa/flutter_examples/tree/infinity_scroll)
 
-[Websocket](https://github.com/ThiagoEvoa/flutter_examples/tree/websocket)
+
+
