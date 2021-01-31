@@ -245,6 +245,8 @@ ___
 
 [MaterialFloatingSearchBar](https://github.com/ThiagoEvoa/flutter_examples/tree/material_floating_search_bar)
 
+[ShaderMask](https://github.com/ThiagoEvoa/flutter_examples/tree/shader_mask)
+
 ## Navigations
 [Navigation](https://github.com/ThiagoEvoa/flutter_examples/tree/navigation)
 
