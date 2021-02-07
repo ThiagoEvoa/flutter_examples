@@ -1,19 +1,34 @@
-# Camera
+import 'dart:io';
+import 'package:camera/camera.dart';
+import 'package:flutter/material.dart';
 
-### Dependencies
+void main() {
+  runApp(MyApp());
+}
 
-#### Pubspec.yaml
-```dart
-dependencies:
-  flutter:
-    sdk: flutter
-  camera:
-  path_provider:
-  path:
-```
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
+    );
+  }
+}
 
-### Main
-```dart
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
 class _MyHomePageState extends State<MyHomePage> {
   CameraController _controller;
   String path;
@@ -52,4 +67,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-```
