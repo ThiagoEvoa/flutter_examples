@@ -345,6 +345,8 @@ ___
 
 [Websocket](https://github.com/ThiagoEvoa/flutter_examples/tree/websocket)
 
+[Flutter Mdns Plugin](https://github.com/ThiagoEvoa/flutter_examples/tree/flutter_mdns_plugin)
+
 # Firebase
 [Auth](https://github.com/ThiagoEvoa/flutter_examples/tree/firebaseauth)
 
