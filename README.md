@@ -167,6 +167,8 @@ ___
 
 [ImageFiltered](https://github.com/ThiagoEvoa/flutter_examples/tree/image_filtered)
 
+[Camera](https://github.com/ThiagoEvoa/flutter_examples/tree/camera)
+
 ## Lists
 [ListView](https://github.com/ThiagoEvoa/flutter_examples/tree/listview)
 
