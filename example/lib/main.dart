@@ -1,17 +1,34 @@
-# PackageInfo
+import 'package:flutter/material.dart';
+import 'package:flutter_mdns_plugin/flutter_mdns_plugin.dart';
 
-### Dependencies
+void main() {
+  runApp(MyApp());
+}
 
-#### Pubspec.yaml
-```dart
-dependencies:
-  flutter:
-    sdk: flutter
-  flutter_mdns_plugin: ^0.0.2
-```
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
+    );
+  }
+}
 
-### Main
-```dart
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
 class _MyHomePageState extends State<MyHomePage> {
   FlutterMdnsPlugin _flutterMdnsPlugin;
   List<String> messageLog = <String>[];
@@ -67,4 +84,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-```
