@@ -1,20 +1,35 @@
-# Pincode Fields
-<p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/pincode.gif" height="649" width="300">
-</p>
+import 'dart:async';
 
-### Dependencies
+import 'package:flutter/material.dart';
+import 'package:pin_code_fields/pin_code_fields.dart';
 
-#### Pubspec.yaml
-```dart
-dependencies:
-  flutter:
-    sdk: flutter
-  pin_code_fields: ^6.1.0
-```
+void main() {
+  runApp(MyApp());
+}
 
-### Main
-```dart
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
 class _MyHomePageState extends State<MyHomePage> {
   StreamController<ErrorAnimationType> errorController;
   final TextEditingController textEditingController = TextEditingController();
@@ -93,4 +108,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-```
