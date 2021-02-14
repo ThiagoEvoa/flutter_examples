@@ -121,6 +121,8 @@ ___
 
 [FilteringTextInputFormatter](https://github.com/ThiagoEvoa/flutter_examples/tree/filtering_text_input_formatter)
 
+[Pincode fields](https://github.com/ThiagoEvoa/flutter_examples/tree/pincode)
+
 ## Buttons
 [RaisedButton](https://github.com/ThiagoEvoa/flutter_examples/tree/raisedbutton)
 
