@@ -1,7 +1,6 @@
-import 'dart:async';
-
+import 'package:example/person.dart';
 import 'package:flutter/material.dart';
-import 'package:pin_code_fields/pin_code_fields.dart';
+import 'package:group_list_view/group_list_view.dart';
 
 void main() {
   runApp(MyApp());
@@ -31,78 +30,60 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  StreamController<ErrorAnimationType> errorController;
-  final TextEditingController textEditingController = TextEditingController();
-  final formKey = GlobalKey<FormState>();
+  Map<String, List> mapList;
+  List<Person> people = List<Person>.generate(
+    20,
+    (index) => Person('Person $index', index.isOdd ? 'Team Odd' : 'Team Even'),
+  );
 
-  final String pin = '123456';
-  bool hasError = false;
-  String currentValue;
+  Map<String, List> createMapList() {
+    Map<String, List<Person>> map = {};
 
-  @override
-  void initState() {
-    errorController = StreamController<ErrorAnimationType>();
-    super.initState();
+    people.forEach((element) {
+      if (!map.containsKey(element.category)) {
+        map[element.category] = [];
+      }
+
+      map[element.category].add(element);
+    });
+
+    return map;
   }
 
   @override
-  void dispose() {
-    errorController.close();
-    super.dispose();
+  void initState() {
+    mapList = createMapList();
+    super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.black,
-      child: Center(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
-          child: Form(
-            key: formKey,
-            child: PinCodeTextField(
-              validator: (value) {
-                if (value == pin) {
-                  hasError = false;
-                  return null;
-                } else {
-                  hasError = true;
-                  return 'Wrong pin';
-                }
-              },
-              onCompleted: (value) {},
-              onChanged: (value) {},
-              beforeTextPaste: (text) {
-                //if you return true then it will show the paste confirmation dialog. Otherwise if false, then nothing will happen.
-                //but you can show anything you want here, like your pop up saying wrong paste format or etc
-                return true;
-              },
-              appContext: context,
-              length: 6,
-              obscureText: false,
-              animationType: AnimationType.fade,
-              animationDuration: Duration(milliseconds: 300),
-              backgroundColor: Colors.transparent,
-              enableActiveFill: true,
-              errorAnimationController: errorController,
-              controller: textEditingController,
-              keyboardType: TextInputType.number,
-              cursorColor: Colors.black,
-              pinTheme: PinTheme(
-                shape: PinCodeFieldShape.box,
-                borderRadius: BorderRadius.circular(5),
-                fieldHeight: 50,
-                fieldWidth: 40,
-                activeFillColor: Colors.white,
-                activeColor: hasError ? Colors.red : Colors.white,
-                inactiveFillColor: Colors.white,
-                inactiveColor: Colors.white,
-                selectedFillColor: Colors.white,
-                selectedColor: Colors.white,
-                disabledColor: Colors.white,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+        child: GroupListView(
+          sectionsCount: mapList.length,
+          countOfItemInSection: (int section) {
+            return mapList.values.toList()[section].length;
+          },
+          itemBuilder: (BuildContext context, IndexPath index) {
+            return Card(
+              child: ListTile(
+                title: Text(
+                  mapList.values.toList()[index.section][index.index].name,
+                  style: TextStyle(fontSize: 18),
+                ),
               ),
-            ),
-          ),
+            );
+          },
+          groupHeaderBuilder: (BuildContext context, int section) {
+            return Text(
+              mapList.keys.toList()[section],
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+            );
+          },
+          separatorBuilder: (context, index) => SizedBox(height: 10),
+          sectionSeparatorBuilder: (context, section) => SizedBox(height: 10),
         ),
       ),
     );

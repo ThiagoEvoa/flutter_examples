@@ -24,7 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.0
-  pin_code_fields: ^6.1.0
+  group_list_view: ^1.0.6
 
 dev_dependencies:
   flutter_test:
