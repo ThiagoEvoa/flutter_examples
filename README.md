@@ -303,6 +303,8 @@ ___
 
 [SplashScreen](https://github.com/ThiagoEvoa/flutter_examples/tree/splashscreen)
 
+[Lottie](https://github.com/ThiagoEvoa/flutter_examples/tree/lottie)
+
 ## Themes
 [Dark Theme](https://github.com/ThiagoEvoa/flutter_examples/tree/darktheme)
 
