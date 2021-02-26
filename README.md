@@ -1,4 +1,4 @@
-# Flare
+# Flare/Rive
 <p align="center">
 <img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/flare.gif" height="649" width="300">
 </p>
