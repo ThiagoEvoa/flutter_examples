@@ -1,4 +1,4 @@
-# Aumented Reality
+# Augmented Reality
 
 ### Dependencies
 
