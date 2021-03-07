@@ -410,6 +410,8 @@ ___
 
 [Freezed](https://github.com/ThiagoEvoa/flutter_examples/tree/freezed)
 
+[Augmented Reality](https://github.com/ThiagoEvoa/flutter_examples/tree/augmented_reality)
+
 
 
 
