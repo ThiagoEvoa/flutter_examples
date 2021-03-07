@@ -171,6 +171,8 @@ ___
 
 [Camera](https://github.com/ThiagoEvoa/flutter_examples/tree/camera)
 
+[Augmented Reality](https://github.com/ThiagoEvoa/flutter_examples/tree/augmented_reality)
+
 ## Lists
 [ListView](https://github.com/ThiagoEvoa/flutter_examples/tree/listview)
 
@@ -409,13 +411,3 @@ ___
 [Json Serializable](https://github.com/ThiagoEvoa/flutter_examples/tree/json_serializable)
 
 [Freezed](https://github.com/ThiagoEvoa/flutter_examples/tree/freezed)
-
-[Augmented Reality](https://github.com/ThiagoEvoa/flutter_examples/tree/augmented_reality)
-
-
-
-
-
-
-
-
