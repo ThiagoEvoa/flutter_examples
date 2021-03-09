@@ -1,20 +1,33 @@
-# ScrollablePositionedList
-<p align="center">
-<img src="https://github.com/ThiagoEvoa/flutter_examples/blob/master/images/scrollable_positioned_list.gif" height="649" width="300">
-</p>
+import 'package:flutter/material.dart';
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
-### Dependencies
+void main() {
+  runApp(MyApp());
+}
 
-#### Pubspec.yaml
-```dart
-dependencies:
-  flutter:
-    sdk: flutter
-  scrollable_positioned_list: ^0.1.10
-```
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
+    );
+  }
+}
 
-### Main
-```dart
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
 class _MyHomePageState extends State<MyHomePage> {
   final list = List.generate(100, (index) => 'Item $index');
   ItemScrollController itemScrollController = ItemScrollController();
@@ -71,4 +84,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-```
