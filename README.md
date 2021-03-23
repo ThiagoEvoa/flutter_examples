@@ -63,10 +63,9 @@ flutter run -d {deviceName}
 flutter run -d all
 ``
 ___
-# Architecture
+<!--# Architecture
 [MVVM](https://github.com/ThiagoEvoa/flutter_examples/tree/mvvm_architecture)
-
-[Clean Architecture](https://github.com/ThiagoEvoa/flutter_examples/tree/clean_architecture)
+[Clean Architecture](https://github.com/ThiagoEvoa/flutter_examples/tree/clean_architecture) -->
 
 # Design Patterns
 
