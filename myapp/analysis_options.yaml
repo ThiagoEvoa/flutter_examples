@@ -1,0 +1,8 @@
+include: package:lint/analysis_options.yaml
+
+linter:
+  rules:
+
+analyzer:
+  errors:
+  exclude:
