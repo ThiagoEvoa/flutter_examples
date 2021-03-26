@@ -67,6 +67,9 @@ ___
 [MVVM](https://github.com/ThiagoEvoa/flutter_examples/tree/mvvm_architecture)
 [Clean Architecture](https://github.com/ThiagoEvoa/flutter_examples/tree/clean_architecture) -->
 
+# Reference
+[App](https://github.com/ThiagoEvoa/flutter_examples/tree/app_reference)
+
 # Design Patterns
 
 ## Creational
