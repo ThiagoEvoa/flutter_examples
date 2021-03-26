@@ -1,5 +1,5 @@
 ## Reference App
-> In this reference app we have some commons usage in a mobile app construction, such as http connection, internationalization, navigation beteween screens, animation, theme personalization and so on. 
+> In this reference app we have some commons usage in a mobile app construction, such as http connection, internationalization, navigation between screens, animation, theme personalization and so on. 
 
 > To build the project, follow the instructions bellow.
 
