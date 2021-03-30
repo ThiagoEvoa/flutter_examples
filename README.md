@@ -6,5 +6,7 @@
 
 1) In the root of the project, open the terminal.
 2) Run the command flutter clean.
-3) Run the commad flutter pub run build_runner build --delete-conflicting-outputs.
-4) Run the project on a device or web.
+3) Run the command flutter pub get.
+4) Run the command flutter pub run build_runner build --delete-conflicting-outputs.
+5) Run the command flutter devices to find all connected devices
+6) flutter run -d <device name>
