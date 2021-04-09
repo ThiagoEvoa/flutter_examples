@@ -13,6 +13,7 @@ dependencies:
   flutter_slidable: ^0.5.7
 ```
 
+### Main
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   final items = List<String>.generate(20, (index) => "ListView Builder $index");
@@ -46,6 +47,21 @@ class _MyHomePageState extends State<MyHomePage> {
           );
         },
       ),
+    );
+  }
+}
+```
+
+### IconButtonWidget
+```dart
+class IconButtonWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return IconButton(
+      onPressed: () {
+        Slidable.of(context).open(actionType: SlideActionType.secondary);
+      },
+      icon: Icon(Icons.more_vert_rounded),
     );
   }
 }
