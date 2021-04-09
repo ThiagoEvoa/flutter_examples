@@ -1,3 +1,4 @@
+import 'package:example/icon_button_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 
@@ -45,6 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
               title: Text(
                 items[index],
               ),
+              trailing: IconButtonWidget(),
             ),
             secondaryActions: [
               IconSlideAction(
