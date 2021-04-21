@@ -10,7 +10,7 @@
 dependencies:
   flutter:
     sdk: flutter
-  flutter_riverpod: ^0.12.1
+  flutter_riverpod: ^0.14.0+1
 ```
 
 ### Main
@@ -20,7 +20,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -45,7 +44,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   _incrementCounter() {
-    context.read(counterProvider).incrementCounter();
+    context.read(counterProvider.notifier).incrementCounter();
   }
 
   @override
@@ -63,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Consumer(
               builder: (context, watch, child) {
-                final counter = watch(counterProvider.state);
+                final counter = watch(counterProvider);
                 return Text(
                   '$counter',
                   style: Theme.of(context).textTheme.headline4,
@@ -96,5 +95,5 @@ class CounterProvider extends StateNotifier<int> {
 
 ### Riverpods
 ```dart
-final counterProvider = StateNotifierProvider((ref) => CounterProvider());
+final counterProvider = StateNotifierProvider<CounterProvider, int>((ref) => CounterProvider());
 ```

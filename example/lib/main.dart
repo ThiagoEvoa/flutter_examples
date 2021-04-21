@@ -1,13 +1,12 @@
 import 'package:example/riverpods.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/all.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
   runApp(ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,7 +31,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   _incrementCounter() {
-    context.read(counterProvider).incrementCounter();
+    context.read(counterProvider.notifier).incrementCounter();
   }
 
   @override
@@ -50,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Consumer(
               builder: (context, watch, child) {
-                final counter = watch(counterProvider.state);
+                final counter = watch(counterProvider);
                 return Text(
                   '$counter',
                   style: Theme.of(context).textTheme.headline4,
