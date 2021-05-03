@@ -5,7 +5,7 @@ import 'package:camera/camera.dart';
 import 'package:firebase_ml_vision/firebase_ml_vision.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'dart:html' as html;
+import 'package:universal_html/html.dart' as html;
 import 'dart:convert';
 
 typedef HandleFacesDetection = Future<List<Face>> Function(
@@ -74,7 +74,6 @@ class _HomeScreenState extends State<HomeScreen> {
     }
     return image;
   }
-
 
   Future<void> _processImage(CameraImage image) async {
     if (_isCheckingImage) {
@@ -151,8 +150,10 @@ class _HomeScreenState extends State<HomeScreen> {
         height: 300,
         width: 300,
       );
-    } else {
+    } else if (_file != null) {
       return Image.memory(_file);
+    } else {
+      return Text('detecting face...');
     }
   }
 
@@ -173,7 +174,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-        child: _file == null ? Text('detecting face...') : _setImage(),
+        child: _setImage(),
       ),
     );
   }
