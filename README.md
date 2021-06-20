@@ -316,6 +316,8 @@ ___
 
 [Dark Theme Provider](https://github.com/ThiagoEvoa/flutter_examples/tree/dartheme_provider)
 
+[System Theme Mode](https://github.com/ThiagoEvoa/flutter_examples/tree/system_theme_mode)
+
 # State Management
 [SetState](https://github.com/ThiagoEvoa/flutter_examples/tree/setstate)
 
