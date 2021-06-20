@@ -388,6 +388,8 @@ ___
 
 [EasyLocalization](https://github.com/ThiagoEvoa/flutter_examples/tree/easy_location)
 
+[Internationalization v2](https://github.com/ThiagoEvoa/flutter_examples/tree/internationalizationv2)
+
 # Geolocator
 [Geolocator](https://github.com/ThiagoEvoa/flutter_examples/tree/geolocator)
 
