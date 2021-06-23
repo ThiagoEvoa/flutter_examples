@@ -45,3 +45,16 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
   }
 }
 ```
+
+### ThemeModeNotifier
+```dart
+class ThemeModeNotifier {
+  ThemeModeNotifier(this.appBrightness);
+
+  final appBrightness;
+
+  changeBrightness({required Brightness brightness}) {
+    appBrightness.value = brightness;
+  }
+}
+```
